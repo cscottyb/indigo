@@ -1,0 +1,47 @@
+//
+//
+// _assets.scss
+//
+//
+
+
+$pin:      $theme-color;
+$pin-alt:  $theme-color-alt;
+
+
+$pin-bg:            $pin;
+$pin-bg-hover:      $pin;
+$pin-bg-active:     $pin;
+$pin-bg-inactive:   $pin;
+
+
+// bg
+filter(
+        hue-rotate(hue($pin-bg))
+        saturation(100-(100-sat($pin-bg)))
+        lightness(100-(100-sat($pin-bg)))
+      );
+
+
+// hover
+filter(
+        hue-rotate(hue($pin-bg))
+        saturation(100-(100-sat($pin-bg)) + 5)
+        lightness(100-(100-sat($pin-bg))+ 7)
+      );
+
+
+// active
+filter(
+        hue-rotate(hue($pin-bg))
+        saturation(100-(100-sat($pin-bg)) + 7)
+        lightness(100-(100-sat($pin-bg)))
+      );
+
+
+// inactive
+filter(
+        hue-rotate(hue($pin-bg))
+        saturation(100-(100-sat($pin-bg)) + 7)
+        lightness(100-(100-sat($pin-bg)))
+      );
