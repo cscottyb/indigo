@@ -26,12 +26,12 @@ $theme-color-alt-sat:  saturation($theme-color-alt);
 $theme-color-alt-lig:   lightness($theme-color-alt);
 
 $theme-color-neon:      hsl($theme-color-hue, 100%, 100%);
-$theme-color-neon-alt:  hsl($theme-color-hue-alt, 100%, 100%);
+$theme-color-neon-alt:  hsl($theme-color-alt-hue, 100%, 100%);
 
 // fonts
 $system-fonts: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 
-$body-text-color:   hsl($theme-color-hue, $theme-color-sat, 2%);
+$body-text-color:   hsl($theme-color-hue, $theme-color-sat, 2);
 $body-text-weight:  400;
 $body-text-size:    90%; //default
 $text-thick:   auto !important;
@@ -64,7 +64,7 @@ $search-result-url-font-weight-thickness:  $text-thick;
 
 
 // search description
-$search-result-desc:           hsl(($theme-color - 2), 9, 60);
+$search-result-desc:           $theme-color;        //hsl($theme-color, 9, 60);
 $search-result-desc-hover:     $search-result-desc;
 $search-result-desc-visited:   $search-result-desc;
 
@@ -87,20 +87,20 @@ $page-bg-translucent-72:  rgba($page-bg, .72);
 
 
 // search bar and auto-complete
-$search-bar-bg-translucent:
-$search-bar-border-color:
+$search-bar-bg-translucent:  red;
+$search-bar-border-color:  red;
 
-$search-AC-bg:
-$search-AC-bg-translucent:
+$search-AC-bg:  red;
+$search-AC-bg-translucent:  red;
 
 
 
 // modal
-$modal-bg:
+$modal-bg:  red;
 $modal-bg-translucent: rbga($modal-bg, .72);
 $model-body: $body-text-color;
-$model-border:
-$modal-list-bg-hover:
+$model-border:  red;
+$modal-list-bg-hover:  red;
 
 
 // card
@@ -118,5 +118,5 @@ $card-title-hover:  $search-result-title;
 
 $card-link:  $theme-color;
 
-$card-body:
-$card-body-ui:
+$card-body:  red;
+$card-body-ui:  red;

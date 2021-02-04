@@ -4,7 +4,10 @@
   "description": "Duck Duck Go Indigo Theme.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "node-sass -w .notes/test/scss -o .notes/test/css",
+    "pingen": "js/pingin.js",
+    "mypingen": "js/mypingen.js",
+    "watch-scss": "node-sass -w src/scss -o src/build/css"
   },
   "keywords": [
     "duckduckgo",
@@ -16,6 +19,7 @@
   "author": "Scott Borland",
   "license": "MIT",
   "dependencies": {
+    "node-sass": "^5.0.0",
     "sass": "^1.32.6",
     "sass-watch": "^0.1.0"
   }

@@ -12,25 +12,92 @@
 //
 
 $pin:      $theme-color;
-$pin-alt:  $theme-color-alt;
 
 
 $pin-bg-default:    $pin;
 $pin-bg-hover:      $pin;
 $pin-bg-inactive:   $pin;
 
-// pin filters
-$default-huer:  hue($pin-bg-default);
-$default-satu:  100 - (100 - saturation($pin-bg-default));
-$default-ligh:  100 - (100 - lightness($pin-bg-default));
 
-$hover-huer:  hue($pin-bg-hover)
-$hover-satu:  100 - (100 - saturation($pin-bg-hover)) + 5;
-$hover-ligh:  100 - (100 - lightness($pin-bg-hover)) + 7;
+
+$pin-number: #FFFFFF;
+
+// pin filter values
+$default-huer:  hue($pin-bg-default);
+$default-satu:  $default-satu-math;
+$default-ligh:  $default-ligh-math;
+
+$hover-huer:  hue($pin-bg-hover);
+$hover-satu:  $hover-satu-math;
+$hover-ligh:  $hover-ligh-math;
+
 
 $inactive-huer:  hue($pin-bg-inactive);
-$inactive-satu:  100 - (100 - saturation($pin-bg-inactive)) + 7;
-$inactive-ligh:  100 - (100 - lightness($pin-bg-inactive));
+$inactive-satu:  $inactive-satu-math;
+$inactive-ligh:  $inactive-ligh-math;
+
+
+//
+$default-satu-math:  100 - (100 - saturation($pin-bg-default));
+
+//
+$pin-hover-satu: saturation($pin-bg-hover);
+
+@if ($pin-hover-satu > 92){
+  $hover-satu-math:  saturation($pin-bg-hover);
+}
+@else {
+  $hover-satu-math:  100 - (100 - $pin-bg-hover) + 7;
+}
+
+//
+$pin-inactive-satu: saturation($pin-bg-inactive);
+
+@if ($pin-inactive-satu > 92){
+  $inactive-satu-math:  saturation($pin-bg-inactive);
+}
+@else {
+  $inactive-satu-math:  100 - (100 - $pin-bg-inactive) + 7;
+}
+
+
+$default-ligh-math:  100 - (100 - lightness($pin-bg-default));
+
+//
+$pin-hover-ligh: lightness($pin-bg-default);
+
+@if ($pin-default-ligh > 72){
+  $spin-default-number:  desaturate(darken($pin-bg-default, 50%), 50%);
+}
+@else {
+  $pin-default-number:  $pin-number;
+}
+
+//
+$pin-hover-ligh: lightness($pin-bg-hover);
+
+@if ($pin-hover-ligh > 84){
+  $hover-ligh-math:    100;
+  $spin-hover-number:  $pin-bg-hover;
+}
+@else {
+  $hover-ligh-math:    100 - (100 - $pin-bg-hover) + 10;
+  $pin-hover-number:  $pin-number;
+}
+
+//
+$pin-inactive-ligh: lightness($pin-bg-inactive);
+
+@if ($pin-inactive-ligh > 24%){
+  $inactive-ligh-math:  25%;
+  $pin-inactive-number: #ffffff;
+}
+@else {
+  $inactive-ligh-math:  100 - (100 - $pin-bg-inactive) + 7;
+  $pin-inactive-number: $pin;
+}
+
+
 
 
 
@@ -42,17 +109,25 @@ $inactive-ligh:  100 - (100 - lightness($pin-bg-inactive));
 
   .mgl-marker.mgl-marker--numbered {
     filter: hue-rotate($default-huer)saturate($default-satu)brightness($default-ligh) !important;
+
+    span.mgl-marker__num{
+      color:$pin-default-number;
+    }
   }
 
   .mgl-marker.mgl-marker--numbered.mgl-marker--highlighted {
     filter: hue-rotate($hover-huer)saturate($hover-satu)brightness($hover-ligh) !important;
+
+    span.mgl-marker__num{
+      color:$pin-hover-number;
+    }
   }
 
   .mgl-marker.mgl-marker--numbered.mgl-marker--disabled {
     filter: hue-rotate($inactive-huer)saturate($inactive-satu)brightness($inactive-ligh) !important;
 
     span.mgl-marker__num{
-      opacity: 0.6 !important;
+      color:$pin-inactive-number;
     }
   }
 
