@@ -13,8 +13,9 @@
 // color
 $theme-color:         #698bff; //226.4
 $theme-color-alt:     #698bff;
+$transparent:           transparent;
 
-$dual-tone:             false;
+$dual-tone:             true;
 
 
 $theme-color-hue:                 hue($theme-color);
