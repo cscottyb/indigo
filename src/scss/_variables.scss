@@ -10,7 +10,7 @@
 // theme base
 //
 
-// color
+// colors
 $theme-color:         #698bff; //226.4
 $theme-color-alt:     #698bff;
 $transparent:           transparent;
@@ -82,7 +82,7 @@ $search-results-border-hover:  $card-border;
 
 
 // background-color
-$page-bg:                 hsl($theme-color-hue-alt, 0, 99);
+$page-bg:                 hsl($theme-color-hue-alt, 0, 99); //fbfbfb
 $page-bg-translucent-92:  rgba($page-bg, .92);
 $page-bg-translucent-72:  rgba($page-bg, .72);
 
