@@ -1,0 +1,211 @@
+//
+// 
+// darkmode
+//
+//
+
+
+
+
+@media (prefers-color-scheme: dark) {
+
+  #pg-index.page-index.body--home,
+  .has-zcm body,
+  .has-zcm div#header_wrapper,
+  .has-zcm .set-header--fixed .tileview--grid .metabar--fixed,
+  .has-zcm .tileview--grid .metabar--fixed.is-stuck,
+  .has-zcm .modal__box,
+  .has-zcm .vertical--map__sidebar__wrapper,
+  .has-zcm .acp-wrap,
+  #zci-dictionary_definition,
+  .has-zcm .site-wrapper{
+    background-color: #1e1e1e !important;
+    background-color: #0d0f17 !important;
+  }
+
+  /* translucency- opacity 92%*/
+  .has-zcm div#header_wrapper,
+  .has-zcm .set-header--fixed .tileview--grid .metabar--fixed,
+  .has-zcm .tileview--grid .metabar--fixed.is-stuck,
+  .has-zcm .modal__box,
+  .has-zcm .vertical--map__sidebar__wrapper,
+  .has-zcm .acp-wrap,
+  .has-zcm .vertical--map__sidebar__header,
+  .has-zcm .vertical--map__sidebar__wrapper,
+  .has-zcm .btn.place-detail__cta-icon{
+    background-color: #1e1e1eeb !important;
+    background-color: #0d0f17eb !important;
+  }
+  /* translucency- opacity 72%*/
+  .has-zcm .modal__box,
+  .has-zcm .vertical--map__sidebar__wrapper,
+  .has-zcm .btn.place-detail__cta-icon{
+    background-color: #1e1e1eb8 !important;
+    background-color: #0d0f17b8 !important;
+  }
+
+  /* tinted translucency- opacity 72%*/
+  .has-zcm .modal__box{
+    background-color: #27282dc2 !important;
+  }
+
+
+  /* search dropdown */
+  .has-zcm .acp-wrap {
+    background-color: #1e1e1ec2 !important;
+    background-color: #27282dcd !important;
+  }
+
+
+  /* UI background */
+
+  .has-zcm .result.highlight,
+  .has-zcm .tile,
+  .has-zcm .tile .tile__body,
+  .has-zcm .tile.tile--c,
+  .has-zcm .tile.tile--pr.tile--products,
+  .has-zcm .module--carousel__item,
+  .has-zcm .results--sidebar #m0-0,
+  .has-zcm .results--sidebar #m2-0,
+  .has-zcm .tile.tile--vid,
+  .has-zcm .dark-bg .prettyprint,
+  .has-zcm .dark-bg .prettyprint code{
+    background-color: #27282d !important;
+    background-color: #181C28 !important;
+  }
+
+  /* UI color */
+  .has-zcm .result__pagenum.result__pagenum--side {
+    color: #555762 !important;
+  }
+
+  /* UI color background */
+  .has-zcm .result--sep--hr:before {
+    background-color: #555762 !important;
+  }
+
+
+
+  /* light text */
+  .has-zcm a.zcm__link,
+  .has-zcm .result__a,
+  .has-zcm a.result__a,
+  .has-zcm a.result__a:hover,
+  .has-zcm #links .result__a strong,
+  .has-zcm a.module--carousel__body__title,
+  .has-zcm .modal--dropdown .modal__list__link,
+  .has-zcm .modal__list__link.js-custom-date-range,
+  .modal--dropdown--settings .settings-dropdown--button,
+  .has-zcm a.about-profiles__link,
+  .has-zcm a.about-profiles__link:hover,
+  .has-zcm a.about-profiles__link:visited,
+  .has-zcm a.about-profiles__link:active,
+  .has-zcm .zci__def__attribution.tx-clr--lt2.t-s,
+  .has-zcm #zci-dictionary_definition,
+  .has-zcm a.tile--img__sub,
+  .has-zcm .tile__title a,
+  .has-zcm .module__title__link,
+  .has-zcm .module__title__link:hover,
+  .has-zcm .module__title__link:active,
+  .has-zcm .module__title__link:visited,
+  .has-zcm a.dropdown__button,
+  .has-zcm .btn.vertical--map__search-this-area,
+  .module__link.module__link--blue.module__link--two-line.tx--bold {
+    color: #dfdfdf !important;
+  }
+
+  /* grey #a7a7a7 text*/
+  .has-zcm .result__snippet,
+  .has-zcm .result__snippet b,
+  .has-zcm .result__snippet strong,
+  .has-zcm span.related-searches__item-text:visited,
+  .has-zcm .search--header,
+  .has-zcm .search__button,
+  .has-zcm .header__button,
+  .has-zcm .header__button--menu,
+  .has-zcm .header__button:visited,
+  .has-zcm .header__button--menu:visited,
+  .has-zcm .header__button:focus,
+  .has-zcm .header__button--menu:focus,
+  .has-zcm .header__button:hover,
+  .has-zcm .header__button--menu:hover,
+  .has-zcm .module--carousel__body__content{
+    color: #b0b0b0 !important;
+    color: #8f94a2 !important;
+  }
+
+  .has-zcm .modal__box {
+    border: 1px solid #555762 !important;
+  }
+
+  .has-zcm .modal--dropdown.modal--dropdown--date .modal__footer,
+  .has-zcm .map-sidebar-footer {
+    border-top: 1px solid #555762 !important;
+  }
+
+  .has-zcm .metabar__dropdowns-wrap:after,
+  .has-zcm .search-filters-wrap:before{
+    /* background-image: linear-gradient(90deg, #1e1e1eaa, rgba(11%, 11%, 11%, 0)) !important; */
+    background-image: none !important;
+  }
+  .has-zcm .metabar__dropdowns-wrap:after,
+  .has-zcm .search-filters-wrap:after {
+    /* background-image: linear-gradient(90deg, rgba(11%, 11%, 11%, 0), #1e1e1eaa) !important; */
+    background-image: none !important;
+  }
+
+  .has-zcm .modal__header {
+    background-color: transparent !important;
+    border-bottom: 1px solid #555762 !important;
+  }
+
+  .has-zcm .zci__def__links {
+    border-bottom: 1px solid #27282d !important;
+  }
+
+  .has-zcm .place-detail,
+  .has-zcm .vertical--map__sidebar,
+  .vertical--map__sidebar__header,
+  .vertical--map__sidebar__results__inner{
+    background-color: transparent !important;
+  }
+
+  .has-zcm .modal__header,
+  .has-zcm .module__section,
+  .has-zcm .module__section:first-child.place-detail__section--tab,
+  .has-zcm .module__clickable-header,
+  .has-zcm .faq__section,
+  .has-zcm .faq__section:last-child,
+  .has-zcm .modal--dropdown--settings .settings-dropdown--section {
+    border-color: #555762 !important;
+  }
+
+  .has-zcm .has-zcm .btn.vertical--map__search-this-area,
+  .has-zcm .result--sep--hr:before,
+  .has-zcm .result--more.is-loading,
+  .has-zcm .feedback--button.btn--wire,
+  /* .has-zcm .place-list-item:hover, */
+  .has-zcm .footer--mobile .feedback-btn
+  /* .has-zcm .module__section.place-list-item:hover{ */{
+    background-color: #555762 !important;
+  }
+
+  .has-zcm .mgl-marker.mgl-marker--numbered.mgl-marker--disabled {
+    filter: brightness(.72)grayscale(1);
+  }
+
+  .has-zcm .mgl-marker.mgl-marker--numbered.mgl-marker--disabled span.mgl-marker__num{
+    opacity: 0.8125 !important;
+  }
+
+  .has-zcm .zcm__link:hover,
+  .has-zcm .zcm__link:active,
+  .has-zcm .zcm__link.is-active,
+  .has-zcm .btn.feedback-btn{
+    background-color: transparent !important;
+    background: transparent !important;
+
+  }
+
+
+}/*end of dark*/

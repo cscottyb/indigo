@@ -1,0 +1,107 @@
+.has-zcm{
+
+  .modal__box{
+    background-color: $gray-100 !important;
+    background-color: rgba($gray-100, 0.72) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px)!important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+  }
+
+  .modal__list__link,
+  .modal__list__link.js-custom-date-range,
+  .modal--dropdown--settings .settings-dropdown--button{
+    color: $body-text-color !important;
+  }
+
+  .modal__list__link.is-active,
+  .modal__list__link:active,
+  .modal__list__link:hover,
+  .modal__list__link.is-highlighted,
+  // a.modal__list__link:hover,
+  .modal--dropdown--settings a.settings-dropdown--button:hover{
+    background-color: $theme-color !important;
+    color: #ffffff !important;
+    border-radius: 4px !important;
+  }
+
+
+
+  .modal__header{
+    background-color: transparent !important;
+  }
+
+  .modal--dropdown--region .region-flag__wrap{
+    display: none !important;
+  }
+
+  .modal--dropdown--region.modal--popout .frm__input{
+    background-color: transparent !important;
+  }
+  .modal--dropdown .modal__body {
+   padding: .3em;
+  }
+  .modal--dropdown .modal__list__link {
+   height: 0.8125em !important;
+   height: 1em !important;
+   line-height: 0.8125em !important;
+   line-height: 1em !important;
+   font-size: 0.8125em !important;
+   -webkit-font-smoothing: auto !important;
+   padding: .3em .5em !important;
+  }
+  .modal__list__link.is-selected {
+     font-weight: 500 !important;
+  }
+
+  .modal--dropdown--settings .settings-dropdown--section .frm__field .frm__select:before,
+  .modal--dropdown--region.modal--popout .frm__input{
+   background-image: none !important;
+  }
+  .modal__list__link.js-custom-date-range{
+   margin: 1em 0em .5em !important;
+  }
+  .modal__list__link.js-custom-date-range,
+  .modal--dropdown--settings .settings-dropdown--button,
+  .dropdown.is-active .dropdown__button {
+   font-weight: 400 !important;
+   text-decoration: none !important;
+  }
+  .settings-dropdown--button {
+   margin: 6px !important;
+   padding: 10px 12px !important;
+  }
+  .modal--dropdown.modal--dropdown--date .modal__footer {
+   border-top: 1px solid #e9e9e9 !important;
+   margin: 2px 8px 1px !important;
+   border-bottom: 0 !important;
+  }
+
+  .modal__header__clear.sep--before.js-region-filter-clear{
+    color: $theme-color !important;
+  }
+
+  .modal--dropdown .modal__list__link{
+    color: $body-text-color !important;
+  }
+
+  .switch.is-on {
+    background: $theme-color !important;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .has-zcm{
+
+
+
+
+
+
+
+
+
+
+
+  }
+}

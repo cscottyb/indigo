@@ -1,0 +1,76 @@
+.has-zcm{
+  font-size: $body-text-size;
+
+  body,
+  select,
+  textarea,
+  input#search_form_input,
+  .modal--dropdown--region.modal--popout .frm__input,
+  .vertical--map__search-this-area {
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", "Inter", "Noto Sans","Liberation Sans", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-weight: 400 !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  ::selection{
+    background: $selection-color !important;
+  }
+
+  body,
+  div#header_wrapper,
+  .set-header--fixed .tileview--grid .metabar--fixed,
+  .tileview--grid .metabar--fixed.is-stuck,
+  .modal__box,
+  .vertical--map__sidebar__wrapper,
+  .acp-wrap,
+  #zci-dictionary_definition,
+  .site-wrapper{
+    background-color: $gray-100 !important;
+  }
+
+  div#header_wrapper,
+  .set-header--fixed .tileview--grid .metabar--fixed,
+  .tileview--grid .metabar--fixed.is-stuck,
+  .vertical--map__sidebar__wrapper,
+  .acp-wrap,
+  .vertical--map__sidebar__header,
+  .vertical--map__sidebar__wrapper,
+  .btn.place-detail__cta-icon{
+    -webkit-backdrop-filter: saturate(180%) blur(20px)!important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    background-color: #fdfdfdeb !important;
+  }
+
+    /* translucency- opacity 72%*/
+  .vertical--map__sidebar__wrapper,
+  .btn.place-detail__cta-icon{
+    background-color: #fdfdfdb8 !important;
+    background-color: rgba($gray-100, 0.72) !important;
+  }
+  /* search dropdown */
+  .acp-wrap{
+    background-color: #f2f2f2c2 !important;
+  }
+
+
+
+
+
+
+
+} //.has-zcm
+
+
+@media (prefers-color-scheme: dark) {
+  .has-zcm{
+
+
+
+
+
+
+
+
+
+  } //has-zcm
+} //dark

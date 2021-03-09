@@ -6,43 +6,40 @@
 
 
 
-
 //
 // theme base
 //
 
 // colors
-$theme-color:               #698bff;
-$selection-color:           #c3d0ff;
+$theme-color:         #698bff; //226.4
+$theme-color-alt:     #698bff;
 $transparent:           transparent;
 
-$gray-100:       #fbfbfb;
-$gray-200:       #f0f1f4;
-$gray-300:       #e9e9e9;
-$gray-400:       #e1e3e8;
-$gray-500:       #8e8e93;
-$gray-600:       #636367;
-$gray-700:       #202020;
-$gray-800:       #1e1e1e;
+$dual-tone:             true;
 
 
-$theme-color-hue:                 hue($theme-color); //226.4
+$theme-color-hue:                 hue($theme-color);
 $theme-color-sat:          saturation($theme-color);
 $theme-color-lig:           lightness($theme-color);
 
+$theme-color-alt-hue:         hue($theme-color-alt);
+$theme-color-alt-sat:  saturation($theme-color-alt);
+$theme-color-alt-lig:   lightness($theme-color-alt);
+
+$theme-color-neon:      hsl($theme-color-hue, 100%, 100%);
+$theme-color-neon-alt:  hsl($theme-color-alt-hue, 100%, 100%);
 
 // fonts
-$system-fonts: -apple-system, BlinkMacSystemFont,"Segoe UI","Inter", Roboto,"Helvetica Neue", Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+$system-fonts: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+ 
 
-
-$body-text-color:   #000000;
+$body-text-color:   hsl($theme-color-hue, $theme-color-sat, 2);
 $body-text-weight:  400;
-$body-text-size:    90%; //90% default size
-$text-thick:        auto !important;
+$body-text-size:    90%; //default
+$text-thick:   auto !important;
 
 //border
 $border-radius:  1em;
-$border-color: $gray-100;
 
 
 
@@ -53,9 +50,9 @@ $border-color: $gray-100;
 // search title
 $search-result-title:            $body-text-color;
 $search-result-title-hover:      $search-result-title;
-$search-result-title-visited:    $gray-600;
+$search-result-title-visited:    $search-result-desc;
 
-$search-result-title-weight:     ($body-text-weight + 100);
+$search-result-title-weight:     500;
 $search-result-title-weight-b:   ($search-result-title-weight + 100);
 
 
@@ -69,7 +66,7 @@ $search-result-url-font-weight-thickness:  $text-thick;
 
 
 // search description
-$search-result-desc:           $gray-600;
+$search-result-desc:           $theme-color;        //hsl($theme-color, 9, 60);
 $search-result-desc-hover:     $search-result-desc;
 $search-result-desc-visited:   $search-result-desc;
 
@@ -81,13 +78,14 @@ $search-result-desc-weight-b:  ($search-result-desc-weight + 100);
 $search-results-bg:            $transparent;
 $search-results-border:        $transparent;
 
-$search-results-bg-hover:      $gray-200;
-$search-results-border-hover:  $gray-200;
+$search-results-bg-hover:      $card-bg;
+$search-results-border-hover:  $card-border;
 
 
-// translucent background-color
-$page-bg-translucent-92:  rgba($gray-100, .92);
-$page-bg-translucent-72:  rgba($gray-100, .72);
+// background-color
+$page-bg:                 hsl($theme-color-hue-alt, 0, 99); //fbfbfb
+$page-bg-translucent-92:  rgba($page-bg, .92);
+$page-bg-translucent-72:  rgba($page-bg, .72);
 
 
 // search bar and auto-complete
@@ -100,15 +98,15 @@ $search-AC-bg-translucent:  red;
 
 
 // modal
-$modal-bg:  $gray-100;
+$modal-bg:  red;
 $modal-bg-translucent: rbga($modal-bg, .72);
 $model-body: $body-text-color;
-$model-border:  rgba(0,0,0,0.12);
-$modal-list-bg-hover:  $theme-color;
+$model-border:  red;
+$modal-list-bg-hover:  red;
 
 
 // card
-$card-bg:      $gray-200;
+$card-bg:      hsl(($theme-color), 40, 16);
 $card-border:  $card-bg;
 
 $card-bg-hover:      $card-bg;
@@ -122,4 +120,5 @@ $card-title-hover:  $search-result-title;
 
 $card-link:  $theme-color;
 
-$card-body:  $gray-600;
+$card-body:  red;
+$card-body-ui:  red;
