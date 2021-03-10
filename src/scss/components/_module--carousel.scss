@@ -1,0 +1,57 @@
+.has-zcm{
+  .module.module--carousel{
+    .module--carousel__left,
+    .module--carousel__right{
+      background-color: $theme-color !important;
+      color: #ffffff !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    .ddgsi-right:before,
+    .ddgsi-left:before {
+    position: relative;
+    top: 1px;
+}
+    .module__header.module__header--link {
+      font-weight: 600 !important;
+      font-size: 1.125em !important;
+    }
+    .module--carousel__item{
+      background-color: $gray-200 !important;
+      border-radius: .5em !important;
+      border: 0px solid transparent !important;
+      -webkit-box-shadow: 0px 0px 0px transparent !important;
+      box-shadow: 0px 0px 0px transparent !important;
+    }
+    .module--carousel__body{
+      a.module--carousel__body__title{
+        text-decoration: none !important;
+        color: $body-text-color !important;
+        font-weight: 500 !important;
+      }
+      .module--carousel__extra-row,
+      .module--carousel__gray-text{
+        color: $gray-600 !important;
+      }
+    }
+    .module--carousel__footer{
+      .module--carousel__source result__url{
+        color: $theme-color !important;
+      }
+      .sep{
+        border-left: 1px solid transparent !important;
+      }
+      .tile__time{
+        color: $gray-600 !important;
+      }
+
+    }
+    a.module__footer{
+      color: $theme-color !important;
+    }
+    .feedback-prompt{
+      display: $feedback-prompt_display !important;
+    }
+  }
+}

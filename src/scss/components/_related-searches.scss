@@ -1,0 +1,19 @@
+.has-zcm{
+  .related-searches{
+    // padding: .5em 1.2em 0.8em;
+
+    .related-searches__title-long,
+    .related-searches__title-short{
+      font-weight: 500 !important;
+    }
+
+    .related-searches__list{
+
+      a.related-searches__link{
+        font-weight: 400 !important;
+        color: $theme-color !important;
+      }
+
+    }
+  }
+}

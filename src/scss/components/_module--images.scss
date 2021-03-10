@@ -1,0 +1,34 @@
+.has-zcm{
+  .module.module--images{
+    .module__header.module__header--link {
+      font-weight: 500 !important;
+      font-size: 1.125em !important;
+
+      b{
+        font-weight:600 !important;
+      }
+    }
+    .module__footer {
+      font-weight: 500 !important;
+      a{
+        color: $theme-color !important;
+      }
+
+      b{
+        font-weight:600 !important;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .has-zcm{
+    .module.module--images{
+      .module__footer {
+        a{
+          color: $theme-color !important;
+        }
+      }
+    }
+  }
+}
