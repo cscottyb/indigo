@@ -1,4 +1,78 @@
 .has-zcm{
+  .module.module--about{
+    border-radius: $border-color !important;
+    overflow: hidden !important;
+
+    .module__title{
+
+    }
+    .module__official-url{
+      color: $theme-color !important;
+      -webkit-font-smoothing: auto !important;
+    }
+    .module__text{
+      color: $gray-600 !important;
+
+      .module__more-a.tx--bold{
+        font-weight:500 !important;
+        color: $theme-color !important;
+      }
+    }
+    .about-info-box {
+      padding-top: .25em !important;
+      color: $gray-600 !important;
+
+      .about-info-box__info-row:first-child,
+      .about-info-box__link-row:first-child{
+        padding-top: .125em !important;
+      }
+      .about-info-box__info-row{
+        border-top: $gray-400 !important;
+      }
+    }
+    a.about-profiles__link{
+      color: $body-text-color !important;
+    }
+    .module__toggle {
+      background-color: transparent !important;
+      border-top: none !important;
+      border-radius: .25rem !important;
+      color: $theme-color !important;
+    }
+    .feedback-prompt{
+      display: $feedback-prompt_display !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.has-zcm{
 
   .modal__box{
     background-color: $gray-100 !important;
