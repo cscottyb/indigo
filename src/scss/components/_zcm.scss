@@ -1,0 +1,20 @@
+//
+// zcm
+//
+
+.has-zcm{
+  .zcm{
+    a.zcm__link{
+      color: $body-text-color !important;
+      font-weight: 400 !important;
+
+      &.is-active{
+        border-bottom: solid 1px $body-text-color !important;
+        cursor: default !important;
+      }
+    }
+    .sep--before:before{
+      border-left: 1px solid $gray-600;
+    }
+  }
+}

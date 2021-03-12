@@ -1,3 +1,23 @@
+@import "variables.scss";
+
+//header
+@import "zcm.scss";
+
+//components
+@import "search-filters.scss";
+@import "result.scss";
+@import "related-searches.scss";
+@import "results--more.scss";
+
+// modules
 @import "module--about.scss";
 @import "module--carousel.scss";
 @import "module--images.scss";
+
+//pages
+
+
+
+//img
+@import "logo.scss";
+@import "pin.scss"

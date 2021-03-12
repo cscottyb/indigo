@@ -1,6 +1,18 @@
+//
+// related-searches
+//
+
 .has-zcm{
   .related-searches{
-    // padding: .5em 1.2em 0.8em;
+    background-color: $gray-200 !important;
+    border-radius: $border-radius !important;
+    overflow:hidden !important;
+    padding: .5em 1.2em 0.8em !important;
+
+    &.at-bottom{
+      padding: 0 !important;
+      background: transparent !important;
+    }
 
     .related-searches__title-long,
     .related-searches__title-short{

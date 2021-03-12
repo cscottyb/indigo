@@ -4,7 +4,8 @@
 
 .has-zcm{
   .module.module--about{
-    border-radius: $border-color !important;
+    background-color: $gray-200;
+    border-radius: $border-radius !important;
     overflow: hidden !important;
 
     .module__title{
@@ -24,12 +25,28 @@
         -webkit-font-smoothing: auto !important;
       }
     }
+    a.module__clickable-header {
+      margin: -8px 0px 8px !important;
+      padding: 7px 0px !important;
+      border-bottom: none !important;
+
+      .module__link.module__link--blue.module__link--two-line.tx--bold {
+          color: $body-text-color !important;
+          font-weight: 600 !important;
+          font-size: 1.5em !important;
+      }
+    }
+
+
     .module__text{
       color: $gray-600 !important;
 
       .module__more-a.tx--bold{
         font-weight:500 !important;
         color: $theme-color !important;
+      }
+      pre{
+        background-color: saturate(lighten($gray-200, 3%),17%) !important;
       }
     }
     .about-info-box {
@@ -52,6 +69,9 @@
       border-top: none !important;
       border-radius: .25rem !important;
       color: $theme-color !important;
+    }
+    .module__toggle--more::after{
+      background: linear-gradient(rgba(255,255,255,0), #f0f1f4) !important;
     }
     .feedback-prompt{
       display: $feedback-prompt_display !important;
