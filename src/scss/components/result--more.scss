@@ -2,8 +2,8 @@
 // results--more
 //
 
-$bg-color_result--more: color.scale($theme-color, $alpha: -73%);
-$bg-color-hover_result--more: color.adjust($bg-color_result--more, $lightness: 10%);
+$bg-color_result--more: adjust-color($theme-color, $alpha: -73%);
+$bg-color-hover_result--more: adjust-color($bg-color_result--more, $lightness: 10%);
 
 .has-zcm{
   .result--more{
