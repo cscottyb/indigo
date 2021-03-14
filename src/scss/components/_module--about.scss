@@ -7,6 +7,15 @@
     background-color: $gray-200;
     border-radius: $border-radius !important;
     overflow: hidden !important;
+    box-shadow: none !important;
+    border: solid 1px darken($gray-200, 1) !important;
+    border-bottom-color: transparent !important;
+
+    .module__header{
+      .module__header__shadow{
+        box-shadow: 0 -1px 1px darken($gray-200, 3);
+      }
+    }
 
     .module__title{
       color: $body-text-color !important;
@@ -19,11 +28,16 @@
       .dir-btn__link.btn {
         color: $theme-color !important;
         font-weight: 600 !important;
-        text-shadow: none !important;
-        background-color: adjust-color($theme-color, $alpha: -80%) !important;
-        border: 1px solid transparent !important;
+        background-color: transparentize($theme-color, .8) !important;
+        border: 1px solid transparentize($theme-color, .93) !important;
         -webkit-font-smoothing: auto !important;
+        transition: all .1s ease-out;
+
+        &:hover{
+          background-color: transparentize($theme-color, .78) !important;
+        }
       }
+
     }
     a.module__clickable-header {
       margin: -8px 0px 8px !important;

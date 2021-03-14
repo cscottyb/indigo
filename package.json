@@ -8,7 +8,7 @@
     "pingen": "js/pingin.js",
     "mypingen": "js/mypingen.js",
     "watch-scss": "node-sass -w src/scss -o src/build/css",
-    "watch-module": "node-sass -w src/scss/components -o src/build/components/css"
+    "watch-modules": "node-sass -w src/scss/components -o src/build/css/components"
   },
   "keywords": [
     "duckduckgo",

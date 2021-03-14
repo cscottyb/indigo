@@ -1,0 +1,55 @@
+.has-zcm{
+  .zci-wrap{
+    background-color: transparent !important;
+
+    .zci{
+      background-color: transparent !important;
+      color: $body-text-color !important;
+      border-bottom: 1px solid transparent !important;
+
+      .tileview,
+      .tileview--grid{
+        .metabar--fixed{
+          background-color: transparent !important;
+        }
+        .metabar__mode{
+          background-color: transparent !important;
+          color: $gray-500 !important;
+        }
+        a.attribution--link .attribution--link__icon{
+          color: $gray-500 !important;
+        }
+
+        .tile-wrap{
+          .zci__main{
+            .tile-nav.can-scroll, .tile-nav.can-scroll:after{
+              color: $gray-100 !important;
+              background-color: $theme-color !important;
+              box-shadow: none !important;
+            }
+            .tile{
+              background-color: $gray-200 !important;
+              border: solid 1px darken($gray-200, 1) !important;
+              box-shadow: none !important;
+              border-radius: 1em !important;
+              border-bottom-color: darken($gray-200, 1) !important;
+
+              .tile__title a{
+                color: $body-text-color !important;
+                font-weight: 500 !important;
+              }
+              .tile__title__sub {
+                color: $gray-500 !important;
+              }
+              .tile__content{
+                color: $gray-500 !important;
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}

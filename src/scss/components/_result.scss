@@ -1,9 +1,9 @@
 .has-zcm{
-  .result{
-    .result__body {
-      padding: .8em !important;
-      .result__title{
-        h2 {
+  #links{
+    .result{
+      .result__body {
+        padding: .8em !important;
+        h2.result__title{
           a.result__a{
             font-weight: 500 !important;
             color: $body-text-color !important;
@@ -18,27 +18,29 @@
               color: $gray-600 !important;
             }
           }
-        }
-      }
-      .result__extras{
-        .result__extras__url{
-          a.result__url{
-            -webkit-font-smoothing: auto !important;
-            color: $theme-color !important;
-          }
-        }
 
+        }
+        .result__extras{
+          .result__extras__url{
+            a.result__url{
+              -webkit-font-smoothing: auto !important;
+              color: $theme-color !important;
+            }
+          }
+
+        }
+        .result__snippet{
+          -webkit-font-smoothing: antialiased !important;
+          color: $gray-600 !important;
+        }
       }
-      .result__snippet{
-        -webkit-font-smoothing: antialiased !important;
-        color: $gray-600 !important;
+      &.highlight{
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border-radius: 8px !important;
+        background-color: $gray-200 !important;
+        border: solid 1px transparent !important;
       }
-    }
-    .highlight{
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important;
-      border-radius: 8px !important;
-      background-color: $gray-200 !important;
     }
   }
 }

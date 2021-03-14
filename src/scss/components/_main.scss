@@ -1,0 +1,9 @@
+.has-zcm body{
+  font-family: $system-fonts;
+  background-color: $gray-100 !important;
+  color: $body-text-color !important;
+
+  a{
+    color: $theme-color !important;
+  }
+}

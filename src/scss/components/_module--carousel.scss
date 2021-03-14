@@ -1,6 +1,6 @@
 //
 // modules--carousel
-// 
+//
 
 .has-zcm{
   .module.module--carousel{
@@ -11,6 +11,9 @@
       -webkit-box-shadow: none !important;
       box-shadow: none !important;
       border: none !important;
+      &:hover{
+        background-color: darken($theme-color, 3) !important;
+      }
     }
     .ddgsi-right:before,
     .ddgsi-left:before {
@@ -24,7 +27,7 @@
     .module--carousel__item{
       background-color: $gray-200 !important;
       border-radius: .5em !important;
-      border: 0px solid transparent !important;
+      border: solid 1px darken($gray-200, 1) !important;
       -webkit-box-shadow: 0px 0px 0px transparent !important;
       box-shadow: 0px 0px 0px transparent !important;
     }
@@ -32,15 +35,22 @@
       a.module--carousel__body__title{
         text-decoration: none !important;
         color: $body-text-color !important;
-        font-weight: 500 !important;
+        font-weight: 600 !important;
       }
       .module--carousel__extra-row,
       .module--carousel__gray-text{
         color: $gray-600 !important;
       }
+      .module--carousel__body__content{
+        color: $gray-600 !important;
+      }
+
     }
     .module--carousel__footer{
-      .module--carousel__source result__url{
+      .result__url{
+        color: $gray-500 !important;
+      }
+      .module--carousel__source.result__url{
         color: $theme-color !important;
       }
       .sep{

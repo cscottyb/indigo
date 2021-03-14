@@ -24,8 +24,11 @@
       a.related-searches__link{
         font-weight: 400 !important;
         color: $theme-color !important;
+        font-size: 1.1em !important;
       }
-
+      .related-searches__item-text::before{
+        color: $theme-color !important;
+      }
     }
   }
 }

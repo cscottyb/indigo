@@ -1,4 +1,8 @@
-@import "../variables.scss";
+@import "variables.scss";
+
+//main
+@import "main.scss";
+
 
 //header
 @import "zcm.scss";
@@ -9,10 +13,13 @@
 @import "related-searches.scss";
 @import "result--more.scss";
 
+
 // modules
 @import "module--about.scss";
 @import "module--carousel.scss";
 @import "module--images.scss";
+@import "module--places.scss";
+@import "zci-wrap";
 
 //pages
 
@@ -21,3 +28,5 @@
 //img
 // @import "logo.scss";
 // @import "pin.scss"
+
+@import "footer.scss"
