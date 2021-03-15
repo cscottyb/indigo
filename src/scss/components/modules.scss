@@ -4,7 +4,10 @@
 @import "main.scss";
 
 
+
 //header
+@import "header.scss";
+@import "search.scss";
 @import "zcm.scss";
 
 //components
@@ -22,7 +25,7 @@
 @import "zci-wrap";
 
 //pages
-
+@import "pg-index.scss";
 
 
 //img

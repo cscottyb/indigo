@@ -1,0 +1,18 @@
+#pg-index{
+  background-color: $gray-100 !important;
+  font-family: $system-fonts;
+
+  .content-wrap--home{
+    top: 40% !important;
+  }
+
+  .tag-home,
+  .logo-wrap--home{
+    color: $gray-600 !important;
+    display: none !important;
+
+    a{
+      color: $theme-color;
+    }
+  }
+}
