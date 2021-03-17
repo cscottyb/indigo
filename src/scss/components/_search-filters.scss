@@ -13,6 +13,12 @@
       a.dropdown__button{
         color: $body-text-color !important;
       }
+      .switch{
+        color: $gray-600 !important;
+      }
+      .switch.is-on{
+        background-color: $theme-color !important;
+      }
     }
   }
   .search-filters-wrap:before,

@@ -9,9 +9,12 @@
 @import "header.scss";
 @import "search.scss";
 @import "zcm.scss";
+@import "burger-menu.scss";
+@import "pg-index.scss";
 
 //components
 @import "search-filters.scss";
+@import "modal.scss"; 
 @import "result.scss";
 @import "related-searches.scss";
 @import "result--more.scss";
@@ -25,7 +28,7 @@
 @import "zci-wrap";
 
 //pages
-@import "pg-index.scss";
+
 
 
 //img

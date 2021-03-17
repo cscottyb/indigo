@@ -96,7 +96,7 @@
 @media (prefers-color-scheme: dark) {
   .has-zcm{
     .module.module--about{
-      border-radius: $border-color !important;
+      border-radius: $border-radius !important;
 
       .module__title{
         color: $body-text-color !important;

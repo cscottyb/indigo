@@ -21,7 +21,7 @@ $gray-200:       #f0f1f4;
 $gray-300:       #e9e9e9;
 $gray-400:       #e1e3e8;
 $gray-500:       #8e8e93;
-$gray-600:       #636367;
+$gray-600:       #666c7f; //#6d7283;//#636367;
 $gray-700:       #202020;
 $gray-800:       #1e1e1e;
 
@@ -30,9 +30,13 @@ $theme-color-hue:                 hue($theme-color); //226.4
 $theme-color-sat:          saturation($theme-color);
 $theme-color-lig:           lightness($theme-color);
 
+$backdrop-filter: saturate(180%) blur(20px);
+
 
 // fonts
 $system-fonts: -apple-system, BlinkMacSystemFont,"Segoe UI","Inter", Roboto,"Helvetica Neue", Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+
+$DDG_ProximaNova:"DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
 
 
 $body-text-color:   #000000;

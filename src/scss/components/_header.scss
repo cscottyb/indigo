@@ -10,6 +10,9 @@
         background-image: $header__logo !important;
         background-color: $theme-color !important;
         border-radius: 50% !important;
+        background-size: cover !important;
+        width: 36px !important;
+        height: 36px !important;
       }
     }
 
@@ -41,4 +44,6 @@
 
 
   }
+
+
 }

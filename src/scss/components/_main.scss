@@ -6,4 +6,15 @@
   a{
     color: $theme-color !important;
   }
+
+  .is-mobile .results_links_deep,
+  .is-mobile .results_links,
+  .is-mobile .result--news,
+  .is-mobile .related-searches {
+    border-radius: .5em !important;
+    box-shadow: none !important;
+    border:solid 1px transparent !important;
+    border-bottom-color: transparent !important;
+    margin: 0 0 1em 0 !important;
+  }
 }

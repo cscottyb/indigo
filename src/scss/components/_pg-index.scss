@@ -6,13 +6,112 @@
     top: 40% !important;
   }
 
-  .tag-home,
   .logo-wrap--home{
     color: $gray-600 !important;
-    display: none !important;
+    // display: none !important;
+    max-width: 590px !important;
+    padding: 0 1.25em !important;
+    margin-bottom: -.5em;
+    width:70%;
+    margin-top: -3.25em;
+
+    &::after{
+      content: 'DuckDuckGo';
+      color: $gray-600 !important;
+      display: block;
+      position: absolute;
+      width: 148px;
+      height: 36px;
+      font-size: 1.8em;
+      left: 69px;
+      z-index: 8000;
+      top: -1px;
+      font-family: $DDG_ProximaNova !important;
+    }
 
     a{
       color: $theme-color;
     }
+    a#logo_homepage_link{
+      width: 36px !important;
+      height: 36px !important;
+      background-position: left !important;
+      margin: 0 0 0 8px !important;
+      background-color: $theme-color !important;
+      border-radius: 50% !important;
+      background-image: $header__logo;
+    }
+  }
+  span.logo_homepage__tt {
+      bottom: 1px;
+      top: 0;
+      background-color: #fbfbfb;
+      z-index: 9001;
+      left: 43px;
+      color: #6d7283 !important;
+      font-size: 26px;
+      height: 36px;
+      width: 159px;
+      padding: 0;
+      font-weight: 500;
+      font-family: $DDG_ProximaNova !important;
+      transition: opacity .05s ease 0s;
+      &:before{
+        border-right-color: transparent;
+      }
+  }
+  .tag-home{
+    display:none !important;
+    .tag-home__item{
+      color: $gray-600 !important;
+      a.tag-home__link{
+        color: $theme-color !important;
+
+      }
+    }
+  }
+
+  @media only screen and (max-width: 590px){
+    .logo-wrap--home {
+        width: auto !important;
+        padding: 0 0.8em !important;
+    }
+    .has-search-focus .search-wrap--home{
+      width: auto !important;
+    }
+    .search-wrap--home{
+     width: auto !important;
+   }
+   span.logo_homepage__tt {
+     left: 49.5px !important;
+     bottom: 2px !important;
+   }
+
+  }
+  @media only screen and (max-width: 425px){
+    .logo-wrap--home {
+        width: auto !important;
+        padding: 0 0.8em !important;
+    }
+    span.logo_homepage__tt {
+      left: 49.5px !important;
+    }
+  }
+  @media only screen and (max-height: 361.25px) and (min-width: 864px){
+    .search--home {
+
+    }
+    .logo-wrap--home {
+      max-width: 36px !important;
+      padding: 0 !important;
+      margin-bottom: 0 !important;
+      margin-top:0em !important;
+    }
+    .logo-wrap--home::after,
+    .logo_homepage__tt,
+    .logo_homepage__tt:before{
+      display: none !important;
+    }
+
   }
 }

@@ -11,19 +11,22 @@
       border: 1px solid transparent !important;
       color: #698bff !important;
       // background-color: $bg-color_result--more !important;
-      background-color: transparentize($theme-color, .7) !important;
+      background-color: transparentize($theme-color, .8) !important;
+      font-weight: 500 !important;
+      border-radius: 1em !important;
 
       &:hover{
-        background-color: transparentize($theme-color, .4) !important;
+        background-color: transparentize($theme-color, .9) !important;
+        border-color: transparentize($theme-color, .9) !important;
       }
     }
   }
   .result--sep{
-    .result--sep--hr:before{
-      background-color: $gray-400 !important;
+    &.result--sep--hr:before{
+      background-color: $gray-500 !important;
     }
     .result__pagenum {
-      color: $gray-400 !important; 
+      color: $gray-500 !important;
     }
   }
 }

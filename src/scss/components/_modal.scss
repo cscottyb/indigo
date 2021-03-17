@@ -1,181 +1,186 @@
-.has-zcm{
-  .module.module--about{
-    border-radius: $border-color !important;
-    overflow: hidden !important;
+$modal-border-color: $gray-400; //hsl(hue($theme-color), 25%, 92%);
+$modal-divider-color: hsl(hue($theme-color), 26%, 88%);
+$modal-bg-color: hsl(hue($theme-color), 50%, 99%);
 
-    .module__title{
+$modal-padd-size: 0.5em;
+$modal-padd-size-3fifths: $modal-padd-size * 3/5;
 
-    }
-    .module__official-url{
-      color: $theme-color !important;
-      -webkit-font-smoothing: auto !important;
-    }
-    .module__text{
-      color: $gray-600 !important;
-
-      .module__more-a.tx--bold{
-        font-weight:500 !important;
-        color: $theme-color !important;
-      }
-    }
-    .about-info-box {
-      padding-top: .25em !important;
-      color: $gray-600 !important;
-
-      .about-info-box__info-row:first-child,
-      .about-info-box__link-row:first-child{
-        padding-top: .125em !important;
-      }
-      .about-info-box__info-row{
-        border-top: $gray-400 !important;
-      }
-    }
-    a.about-profiles__link{
-      color: $body-text-color !important;
-    }
-    .module__toggle {
-      background-color: transparent !important;
-      border-top: none !important;
-      border-radius: .25rem !important;
-      color: $theme-color !important;
-    }
-    .feedback-prompt{
-      display: $feedback-prompt_display !important;
-    }
-  }
+@mixin modal-pad {
+  padding: $modal-padd-size !important;
+  border-bottom: 1px solid $modal-divider-color !important;
+  background-color: transparent !important;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .has-zcm{
+  .modal{
+    font-weight: 400 !important;
 
-  .modal__box{
-    background-color: $gray-100 !important;
-    background-color: rgba($gray-100, 0.72) !important;
-    -webkit-backdrop-filter: saturate(180%) blur(20px)!important;
-    backdrop-filter: saturate(180%) blur(20px) !important;
-  }
+    .modal__box{
+      background-color: $gray-100 !important;
+      background-color: $modal-bg-color !important;
+      background-color: transparentize($modal-bg-color, .12) !important;
+      backdrop-filter: $backdrop-filter !important;
+      border: 1px solid $modal-border-color !important;
+      box-shadow: 0px 2px 8px -6px #000000;
+      border-radius: .5em !important;
 
-  .modal__list__link,
-  .modal__list__link.js-custom-date-range,
-  .modal--dropdown--settings .settings-dropdown--button{
-    color: $body-text-color !important;
-  }
+      a{
+        color: $body-text-color !important;
+        height: 0.8125em !important;
+        line-height: 0.8125em !important;
+        font-size: 0.8125em !important;
+        padding: $modal-padd-size-3fifths $modal-padd-size !important;
+        -webkit-font-smoothing: auto !important;
+        border-radius: 0.25em !important;
 
-  .modal__list__link.is-active,
-  .modal__list__link:active,
-  .modal__list__link:hover,
-  .modal__list__link.is-highlighted,
-  // a.modal__list__link:hover,
-  .modal--dropdown--settings a.settings-dropdown--button:hover{
-    background-color: $theme-color !important;
-    color: #ffffff !important;
-    border-radius: 4px !important;
-  }
-
-
-
-  .modal__header{
-    background-color: transparent !important;
-  }
-
-  .modal--dropdown--region .region-flag__wrap{
-    display: none !important;
-  }
-
-  .modal--dropdown--region.modal--popout .frm__input{
-    background-color: transparent !important;
-  }
-  .modal--dropdown .modal__body {
-   padding: .3em;
-  }
-  .modal--dropdown .modal__list__link {
-   height: 0.8125em !important;
-   height: 1em !important;
-   line-height: 0.8125em !important;
-   line-height: 1em !important;
-   font-size: 0.8125em !important;
-   -webkit-font-smoothing: auto !important;
-   padding: .3em .5em !important;
-  }
-  .modal__list__link.is-selected {
-     font-weight: 500 !important;
-  }
-
-  .modal--dropdown--settings .settings-dropdown--section .frm__field .frm__select:before,
-  .modal--dropdown--region.modal--popout .frm__input{
-   background-image: none !important;
-  }
-  .modal__list__link.js-custom-date-range{
-   margin: 1em 0em .5em !important;
-  }
-  .modal__list__link.js-custom-date-range,
-  .modal--dropdown--settings .settings-dropdown--button,
-  .dropdown.is-active .dropdown__button {
-   font-weight: 400 !important;
-   text-decoration: none !important;
-  }
-  .settings-dropdown--button {
-   margin: 6px !important;
-   padding: 10px 12px !important;
-  }
-  .modal--dropdown.modal--dropdown--date .modal__footer {
-   border-top: 1px solid #e9e9e9 !important;
-   margin: 2px 8px 1px !important;
-   border-bottom: 0 !important;
-  }
-
-  .modal__header__clear.sep--before.js-region-filter-clear{
-    color: $theme-color !important;
-  }
-
-  .modal--dropdown .modal__list__link{
-    color: $body-text-color !important;
-  }
-
-  .switch.is-on {
-    background: $theme-color !important;
-  }
-
-}
-
-@media (prefers-color-scheme: dark) {
-  .has-zcm{
+        &:hover{
+          background-color: $theme-color !important;
+          color: #ffffff !important;
+          text-decoration: none !important;
+          text-shadow: 0px 1px 2px #00000033 !important;
+        }
+      }
+      .modal__header{
+        @include modal-pad;
+      }
 
 
+      .modal__body{
+        @include modal-pad;
+        padding: 0 !important;
+
+        .modal__list{
+          padding: $modal-padd-size !important;
+
+          li{
+            a{
+              &.is-selected{
+                font-weight: 500 !important;
+
+                &:before{
+                  top: 0px !important;
+                }
+              }
+              &.js-region-filter-link{
+                .region-flag__wrap{
+                  left: 0 !important;
+                  margin-top: 0 !important;
+                  top: -3px !important;
+                  transform: scale(0.75) !important;
+                }
+              }
+
+            }
+            &.modal__list__item{
+              margin: 0 !important;
+            }
+            &.modal__list__divider{
+              background-color: $modal-divider-color !important;
+            }
+          }
+          &.js-region-filter-link{
+            li{
+              margin-left: 0 !important;
+            }
+          }
+        }
+      }
+      .modal__footer{
+        @include modal-pad;
+        a.js-custom-date-range{
+          font-weight: 500 !important;
+        }
+      }
+      .settings-dropdown--section{
+        @include modal-pad;
+        &:first-child{
+          // padding-top: 0 !important;
+        }
+      }
+      .settings-dropdown--button{
+        @include modal-pad;
+      }
+      *:last-child{
+        border-bottom: 0px solid transparent !important;
+      }
+    }
+    &.modal--dropdown--settings .modal__body{
+      padding: $modal-padd-size !important;
+
+      h3.settings-dropdown--header {
+          font-size: .8125em !important;
+          margin: 0.2em 0 !important;
+          &:first-child{
+            margin-top: 0 !important;
+          }
+      }
+      .set-themes .set-theme.is-checked .set-theme__check{
+        background: $theme-color !important;
+      }
+      .frm__field {
+        font-size: .8em !important;
+        margin: 0.4em 0 !important;
+
+        .frm__switch .frm__switch__label.btn{
+          background-color: $gray-600 !important;
+        }
+        &.is-checked{
+          .frm__switch .frm__switch__label.btn{
+            background-color: $theme-color !important;
+          }
+        }
+        .frm__select{
+          background-color: rgba(97, 107, 143, 0.1) !important;
+
+          &:before{
+            background-image: none !important;
+          }
+          &:after {
+            right: 3px;
+          }
+        }
+
+      }
+      a.settings-dropdown--button {
+        margin-top: 0.6em !important;
+        font-weight: 500 !important;
+        padding: .3em .5em !important;
+        margin-bottom: .1em !important;
+      }
+    }
+    &.modal--dropdown--region{
+      .modal__header{
+        height: 1.5em !important;
+
+        a.modal__header__clear{
+          height: 15px !important;
+          width: 65px !important;
+          text-align: center !important;
+
+          &:hover{
+            background: transparent !important;
+            color: $gray-600 !important;
+          }
+        }
+      }
 
 
-
-
-
-
-
-
-
+      .frm__input{
+        background-color: transparent !important;
+        padding-left: 30px !important;
+        padding-top: 4px;
+      }
+    }
+    &.modal--dropdown--date{
+      .modal__body{
+        border-bottom: 0px solid transparent !important;
+      }
+      .modal__footer{
+        padding: $modal-padd-size 0 !important;
+        margin: 0 $modal-padd-size !important;
+        border-top: 1px solid $modal-divider-color !important;
+      }
+    }
   }
 }
