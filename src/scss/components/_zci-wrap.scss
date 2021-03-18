@@ -14,10 +14,10 @@
         }
         .metabar__mode{
           background-color: transparent !important;
-          color: $gray-500 !important;
+          color: $gray-600 !important;
         }
         a.attribution--link .attribution--link__icon{
-          color: $gray-500 !important;
+          color: $gray-600 !important;
         }
 
         .tile-wrap{
@@ -26,23 +26,56 @@
               color: $gray-100 !important;
               background-color: $theme-color !important;
               box-shadow: none !important;
+              background-color: hsla(hue($theme-color), 100%, 50%, .75) !important;
+              backdrop-filter: blur(2px)saturate(150%);
+            }
+            i{
+              $i-offset: 2px;
+              &.tile-nav--next:before{
+                left: $i-offset !important;
+              }
+              &.tile-nav--prev:before{
+                right: $i-offset !important;
+              }
             }
             .tile{
               background-color: $gray-200 !important;
               border: solid 1px darken($gray-200, 1) !important;
               box-shadow: none !important;
+              // box-shadow: 0 2px 11px -3px rgba(50, 99, 252, 0.1) !important;
               border-radius: 1em !important;
               border-bottom-color: darken($gray-200, 1) !important;
 
               .tile__title a{
                 color: $body-text-color !important;
                 font-weight: 500 !important;
+                &:hover{
+                  color: $theme-color-on-ui !important;
+                  text-decoration: none !important;
+                }
+
+                // &:after {
+                //     content: "";
+                //     background: blue;
+                //     height: 12px;
+                //     width: 12px;
+                //     display: block;
+                //     position: absolute;
+                //     top: 8px;
+                //     right: 8px;
+                //     border-radius: 50%;
+                //     opacity: 0;
+                //     transition: all .2s ease;
+                // }
+                // &:hover:after {
+                //     opacity: 1;
+                // }
               }
               .tile__title__sub {
-                color: $gray-500 !important;
+                color: $gray-600 !important;
               }
               .tile__content{
-                color: $gray-500 !important;
+                color: $gray-600 !important;
               }
             }
 
@@ -53,3 +86,22 @@
     }
   }
 }
+
+
+// .tile__title a:after {
+//     content: "";
+//     background: blue;
+//     height: 12px;
+//     width: 12px;
+//     display: block;
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
+//     border-radius: 50%;
+//     opacity: 0;
+//     transition: all .2s ease;
+// }
+//
+// .tile__title a:hover:after {
+//     opacity: 1;
+// }

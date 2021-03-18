@@ -8,12 +8,18 @@
 
 .has-zcm{
   #links{
+    margin-top: 0 !important;
     .result{
+      border-radius: 1em !important;
       .result__body {
-        padding: .8em !important;
+      // padding-left: 10px;
+      // padding-right: 10px;
+      padding-top: 0.6em;
+      padding-bottom: 0.8em;
+
         h2.result__title{
           display: inline-block !important;
-          
+
           a.result__a{
             font-weight: 500 !important;
             color: $body-text-color !important;
@@ -45,12 +51,16 @@
           -webkit-font-smoothing: antialiased !important;
           color: $gray-600 !important;
           text-decoration: none !important;
+          .result__snippet b,
+          .result__snippet strong{
+            color: $gray-600 !important;
+          }
         }
       }
       &.highlight{
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
-        border-radius: 8px !important;
+        // border-radius: 1em !important;
         background-color: $gray-200 !important;
         border: solid 1px transparent !important;
       }
@@ -71,13 +81,3 @@
     }
   }
 }
-
-
-
-
-// h2:hover ~ div {
-//     text-decoration: underline;
-// }
-// .result__snippet{
-//     text-decoration: none !important;
-// }

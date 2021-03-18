@@ -1,3 +1,7 @@
+*::selection {
+  background-color: hsl(225deg, 100%, 90%);
+}
+
 .has-zcm body{
   font-family: $system-fonts;
   background-color: $gray-100 !important;

@@ -26,15 +26,18 @@
     }
     .dir-btn{
       .dir-btn__link.btn {
-        color: $theme-color !important;
+        color: hsl(hue($theme-color), 100%, 54%) !important;
+        background-color: hsl(hue($theme-color+2), 29%, 86%) !important;
+        border: 1px solid hsl(hue($theme-color+2), 32%, 84%) !important;
         font-weight: 600 !important;
-        background-color: transparentize($theme-color, .8) !important;
-        border: 1px solid transparentize($theme-color, .93) !important;
         -webkit-font-smoothing: auto !important;
         transition: all .1s ease-out;
 
         &:hover{
-          background-color: transparentize($theme-color, .78) !important;
+
+          color: hsl(hue($theme-color), 100%, 54%) !important;
+          background-color: hsl(hue($theme-color+2), 15%, 79%) !important;
+          border: solid 1px hsl(hue($theme-color+2), 14%, 79%) !important;
         }
       }
 
@@ -74,6 +77,9 @@
       .about-info-box__info-row{
         border-top: $gray-400 !important;
       }
+      .about-info-box__info-value{
+        color: $gray-600 !important;
+      }
     }
     a.about-profiles__link{
       color: $body-text-color !important;
@@ -81,8 +87,11 @@
     .module__toggle {
       background-color: transparent !important;
       border-top: none !important;
-      border-radius: .25rem !important;
       color: $theme-color !important;
+
+      &:hover{
+        background-color: hsla(226, 30%, 30%, .02) !important;
+      }
     }
     .module__toggle--more::after{
       background: linear-gradient(rgba(255,255,255,0), #f0f1f4) !important;

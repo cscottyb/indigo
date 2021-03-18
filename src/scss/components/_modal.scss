@@ -26,10 +26,11 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
       border-radius: .5em !important;
 
       a{
+        $modal-a: 0.9em;
         color: $body-text-color !important;
-        height: 0.8125em !important;
-        line-height: 0.8125em !important;
-        font-size: 0.8125em !important;
+        height: $modal-a !important;
+        line-height: $modal-a !important;
+        font-size: $modal-a !important;
         padding: $modal-padd-size-3fifths $modal-padd-size !important;
         -webkit-font-smoothing: auto !important;
         border-radius: 0.25em !important;
@@ -68,6 +69,8 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
                   margin-top: 0 !important;
                   top: -3px !important;
                   transform: scale(0.75) !important;
+                  width: 1em !important;
+                  height: 1em !important;
                 }
               }
 
@@ -154,8 +157,8 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
         height: 1.5em !important;
 
         a.modal__header__clear{
-          height: 15px !important;
-          width: 65px !important;
+          height: 1em !important;
+          width: 6em !important;
           text-align: center !important;
 
           &:hover{

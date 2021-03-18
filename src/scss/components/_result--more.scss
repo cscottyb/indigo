@@ -9,15 +9,15 @@
       -o-transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
       transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
       border: 1px solid transparent !important;
-      color: #698bff !important;
-      // background-color: $bg-color_result--more !important;
-      background-color: transparentize($theme-color, .8) !important;
-      font-weight: 500 !important;
+      color: $theme-color-on-ui !important;
+      background-color: $gray-200 !important;
+      font-weight: 400 !important;
       border-radius: 1em !important;
 
       &:hover{
-        background-color: transparentize($theme-color, .9) !important;
-        border-color: transparentize($theme-color, .9) !important;
+        background-color: hsl(hue($theme-color+2), 15%,86%) !important;
+        border-color: hsl(hue($theme-color+2), 13%, 84%) !important;
+        color: $theme-color-on-ui !important;
       }
     }
   }
