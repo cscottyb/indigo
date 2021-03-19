@@ -1,4 +1,15 @@
-# indigo
-A DuckDuckGo theme project in development
+# Indigo
+ DuckDuckGo theme project under development
 
-[alt text](/src/READMEassets/screenshot/png)
+![screenshot](./src/READMEassets/screenshot.png)
+
+## Features
+- Modern UI
+- Light/Dark themes
+- SASS customization
+- Support for Blink, Mozilla, and Webkit browsers
+- WCAC AA compliant
+
+
+## Contribute
+Watch project for announcements and submit issues when beta is release.
