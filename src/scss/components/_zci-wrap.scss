@@ -22,6 +22,25 @@
 
         .tile-wrap{
           .zci__main{
+            .tile{
+              &:after {
+                  content: "";
+                  background: $theme-color;
+                  height: 11px;
+                  width: 11px;
+                  display: block;
+                  position: absolute;
+                  top: 8px;
+                  right: 8px;
+                  border-radius: 50%;
+                  opacity: 0;
+                  transition: all 0.01s ease;
+              }
+              &:hover:after {
+                  opacity: 1;
+              }
+            }
+
             .tile-nav.can-scroll, .tile-nav.can-scroll:after{
               color: $gray-100 !important;
               background-color: $theme-color !important;
@@ -29,6 +48,7 @@
               background-color: hsla(hue($theme-color), 100%, 50%, .75) !important;
               backdrop-filter: blur(2px)saturate(150%);
             }
+
             i{
               $i-offset: 2px;
               &.tile-nav--next:before{
@@ -38,6 +58,7 @@
                 right: $i-offset !important;
               }
             }
+
             .tile{
               background-color: $gray-200 !important;
               border: solid 1px darken($gray-200, 1) !important;
@@ -46,34 +67,24 @@
               border-radius: 1em !important;
               border-bottom-color: darken($gray-200, 1) !important;
 
+              &:hover{
+                // border: solid 1px $theme-color !important;
+              }
+
               .tile__title a{
                 color: $body-text-color !important;
                 font-weight: 500 !important;
                 &:hover{
                   color: $theme-color-on-ui !important;
-                  text-decoration: none !important;
+                  text-decoration-color: $gray-600 !important;
                 }
 
-                // &:after {
-                //     content: "";
-                //     background: blue;
-                //     height: 12px;
-                //     width: 12px;
-                //     display: block;
-                //     position: absolute;
-                //     top: 8px;
-                //     right: 8px;
-                //     border-radius: 50%;
-                //     opacity: 0;
-                //     transition: all .2s ease;
-                // }
-                // &:hover:after {
-                //     opacity: 1;
-                // }
               }
+
               .tile__title__sub {
                 color: $gray-600 !important;
               }
+
               .tile__content{
                 color: $gray-600 !important;
               }
@@ -86,22 +97,3 @@
     }
   }
 }
-
-
-// .tile__title a:after {
-//     content: "";
-//     background: blue;
-//     height: 12px;
-//     width: 12px;
-//     display: block;
-//     position: absolute;
-//     top: 8px;
-//     right: 8px;
-//     border-radius: 50%;
-//     opacity: 0;
-//     transition: all .2s ease;
-// }
-//
-// .tile__title a:hover:after {
-//     opacity: 1;
-// }

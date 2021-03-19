@@ -10,10 +10,17 @@
     box-shadow: none !important;
     border: solid 1px darken($gray-200, 1) !important;
     border-bottom-color: transparent !important;
-
+ 
     .module__header{
       .module__header__shadow{
         box-shadow: 0 -1px 1px darken($gray-200, 3);
+      }
+      span.label {
+        backdrop-filter: blur(7px);
+        background-color: hsla(hue($theme-color+2), 38%, 26%, .42);
+        color: #ffffff;
+        border-top-left-radius: 0.5em;
+        padding-bottom: 0.55em !important;
       }
     }
 

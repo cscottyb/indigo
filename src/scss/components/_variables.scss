@@ -45,11 +45,17 @@ $body-text-weight:  400;
 $body-text-size:    90%; //90% default size
 $text-thick:        auto !important;
 
-//border
+// border
 $border-radius:  1em;
 $border-color: $gray-100;
 
 $feedback-prompt_display: none; //display?
+
+// $code  letter-spacing: 0.4px;
+$code-color:hsl(145deg, 87%, 26%);
+$code-background:$gray-200;
+$code-border:$gray-200;
+$code-highlight:hsl(144deg, 59%, 80%);
 
 //
 // search results
