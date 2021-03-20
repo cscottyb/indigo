@@ -1,7 +1,7 @@
 #links{
   .result{
     h2:hover ~ div {
-      text-decoration: underline;
+      text-decoration: underline !important;
     }
   }
 }
@@ -12,10 +12,10 @@
     .result{
       border-radius: 1em !important;
       .result__body {
-      // padding-left: 10px;
-      // padding-right: 10px;
-      padding-top: 0.6em;
-      padding-bottom: 0.8em;
+      // padding-left: 10px; //Don't change
+      // padding-right: 10px; //Don't change
+      padding-top: 0.6em !important;
+      padding-bottom: 0.8em !important;
 
         h2.result__title{
           display: inline-block !important;
@@ -43,6 +43,12 @@
               -webkit-font-smoothing: auto !important;
               color: $theme-color !important;
 
+              &:hover{
+                color: $theme-color !important;
+              }
+              &:visited{
+                color: $theme-color !important;
+              }
             }
           }
 
@@ -54,6 +60,11 @@
           .result__snippet b,
           .result__snippet strong{
             color: $gray-600 !important;
+
+            b, strong{
+              color: $gray-600 !important;
+              font-weight: 500 !important;
+            }
           }
         }
       }
@@ -81,3 +92,16 @@
     }
   }
 }
+
+
+
+// underline.js
+// hover event for 'a' elements
+//
+// .has-zcm .module--carousel__item:hover div ~ span .module--carousel__gray-text {
+// 	text-decoration: underline !important;
+// }
+//
+// .has-zcm .module.module--carousel .module--carousel__footer:hover span.module--carousel__gray-text{
+//   text-decoration: none !important;
+// }

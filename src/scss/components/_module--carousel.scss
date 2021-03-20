@@ -26,10 +26,24 @@
     }
     .module--carousel__item{
       background-color: $gray-200 !important;
-      border-radius: .5em !important;
+      border-radius: 1em !important;
       border: solid 1px darken($gray-200, 1) !important;
       -webkit-box-shadow: 0px 0px 0px transparent !important;
       box-shadow: 0px 0px 0px transparent !important;
+
+      &:hover{
+        background-color: hsl(hue($theme-color+2), 15%, 86%) !important;
+      }
+
+      .module--carousel__image{
+        background-position:center;
+        transition: all .2s ease;
+        background-size: 100%;
+      }
+
+      &:hover .module--carousel__image{
+        // background-size: 105%;
+      }
     }
     .module--carousel__body{
       a.module--carousel__body__title{

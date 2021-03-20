@@ -357,15 +357,15 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     border-top: 1px solid #d8dce8 !important; }
 
 #links .result h2:hover ~ div {
-  text-decoration: underline; }
+  text-decoration: underline !important; }
 
 .has-zcm #links {
   margin-top: 0 !important; }
   .has-zcm #links .result {
     border-radius: 1em !important; }
     .has-zcm #links .result .result__body {
-      padding-top: 0.6em;
-      padding-bottom: 0.8em; }
+      padding-top: 0.6em !important;
+      padding-bottom: 0.8em !important; }
       .has-zcm #links .result .result__body h2.result__title {
         display: inline-block !important; }
         .has-zcm #links .result .result__body h2.result__title a.result__a {
@@ -381,6 +381,10 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       .has-zcm #links .result .result__body .result__extras .result__extras__url a.result__url {
         -webkit-font-smoothing: auto !important;
         color: #3363ff !important; }
+        .has-zcm #links .result .result__body .result__extras .result__extras__url a.result__url:hover {
+          color: #3363ff !important; }
+        .has-zcm #links .result .result__body .result__extras .result__extras__url a.result__url:visited {
+          color: #3363ff !important; }
       .has-zcm #links .result .result__body .result__snippet {
         -webkit-font-smoothing: antialiased !important;
         color: #666c7f !important;
@@ -388,6 +392,11 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
         .has-zcm #links .result .result__body .result__snippet .result__snippet b,
         .has-zcm #links .result .result__body .result__snippet .result__snippet strong {
           color: #666c7f !important; }
+          .has-zcm #links .result .result__body .result__snippet .result__snippet b b, .has-zcm #links .result .result__body .result__snippet .result__snippet b strong,
+          .has-zcm #links .result .result__body .result__snippet .result__snippet strong b,
+          .has-zcm #links .result .result__body .result__snippet .result__snippet strong strong {
+            color: #666c7f !important;
+            font-weight: 500 !important; }
     .has-zcm #links .result.highlight {
       -webkit-box-shadow: none !important;
       box-shadow: none !important;
@@ -555,10 +564,16 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 
 .has-zcm .module.module--carousel .module--carousel__item {
   background-color: #ecedf1 !important;
-  border-radius: .5em !important;
+  border-radius: 1em !important;
   border: solid 1px #e9eaef !important;
   -webkit-box-shadow: 0px 0px 0px transparent !important;
   box-shadow: 0px 0px 0px transparent !important; }
+  .has-zcm .module.module--carousel .module--carousel__item:hover {
+    background-color: #d6d8e1 !important; }
+  .has-zcm .module.module--carousel .module--carousel__item .module--carousel__image {
+    background-position: center;
+    transition: all .2s ease;
+    background-size: 100%; }
 
 .has-zcm .module.module--carousel .module--carousel__body a.module--carousel__body__title {
   text-decoration: none !important;
