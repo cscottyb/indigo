@@ -1,6 +1,6 @@
 {
   "name": "indigo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Duck Duck Go Indigo Theme.",
   "main": "index.js",
   "scripts": {

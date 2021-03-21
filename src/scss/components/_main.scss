@@ -21,4 +21,14 @@
     border-bottom-color: transparent !important;
     margin: 0 0 1em 0 !important;
   }
+  .serp__bottom-right{
+    display: $feedback-prompt_display !important;
+
+    .btn.feedback-btn{
+      @include card-button;
+
+      font-size: 0.8em;
+      line-height: 2.2em;
+    }
+  }
 }

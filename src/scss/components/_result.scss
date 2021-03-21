@@ -23,6 +23,7 @@
           a.result__a{
             font-weight: 500 !important;
             color: $body-text-color !important;
+            -webkit-font-smoothing: $font-smoothing !important;
             b{
               font-weight: 600 !important;
             }
@@ -41,45 +42,46 @@
           .result__extras__url{
             a.result__url{
               -webkit-font-smoothing: auto !important;
-              color: $theme-color !important;
+              color: $search-result-url !important;
 
               &:hover{
-                color: $theme-color !important;
+                color: $search-result-url-hover !important;
               }
               &:visited{
-                color: $theme-color !important;
+                color: $search-result-url-visited !important;
               }
             }
           }
 
         }
         .result__snippet{
-          -webkit-font-smoothing: antialiased !important;
+          -webkit-font-smoothing: $font-smoothing !important;
           color: $gray-600 !important;
           text-decoration: none !important;
-          .result__snippet b,
-          .result__snippet strong{
-            color: $gray-600 !important;
 
-            b, strong{
-              color: $gray-600 !important;
-              font-weight: 500 !important;
-            }
+          b, strong{
+            color: $gray-600 !important;
+            font-weight: 500 !important;
           }
+
         }
       }
       &.highlight{
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        // border-radius: 1em !important;
-        background-color: $gray-200 !important;
-        border: solid 1px transparent !important;
+        @include card;
+        
+        // -webkit-box-shadow: none !important;
+        // box-shadow: none !important;
+        // // border-radius: 1em !important;
+        // background-color: $gray-200 !important;
+        // border: solid 1px transparent !important;
       }
 
     }
     .results__sitelink--organics{
+      -webkit-font-smoothing: $font-smoothing !important;
       a.result__sitelink-title{
         color: $body-text-color !important;
+        font-weight: 500 !important;
 
         &:visited{
           color:$gray-600 !important;

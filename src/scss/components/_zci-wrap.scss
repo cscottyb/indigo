@@ -15,6 +15,9 @@
         .metabar__mode{
           background-color: transparent !important;
           color: $gray-600 !important;
+          .metabar__grid-btn, .metabar__grid-btn:hover{
+            border: solid 1px transparent !important;
+          }
         }
         a.attribution--link .attribution--link__icon{
           color: $gray-600 !important;

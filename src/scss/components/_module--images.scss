@@ -1,6 +1,6 @@
 //
 // module--images
-// 
+//
 
 .has-zcm{
   .module.module--images{
@@ -10,6 +10,10 @@
 
       b{
         font-weight:600 !important;
+      }
+
+      &:hover{
+        text-decoration: none !important;
       }
     }
     .module__footer {
@@ -21,6 +25,9 @@
       b{
         font-weight:600 !important;
       }
+    }
+    .module--images__thumbnails__tile{
+      border-radius: $border-radius / 4 !important;
     }
   }
 }

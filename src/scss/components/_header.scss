@@ -11,39 +11,10 @@
         background-color: $theme-color !important;
         border-radius: 50% !important;
         background-size: cover !important;
-        width: 36px !important;
-        height: 36px !important;
+        width: 2.25em !important;
+        height: 2.25em !important;
       }
     }
-
-    a.header__button--menu{
-      color: $gray-600 !important;
-
-      &:hover{
-        color: $gray-600 !important;
-        background-color: $gray-400 !important;
-      }
-      &:active{
-        color: #ffffff !important;
-        background-color: $theme-color !important;
-      }
-      &:focus{
-        color: $gray-600 !important;
-        background-color: $gray-400 !important;
-      }
-    }
-
-
-    .header__search-wrap{
-      // max-width: 590px !important;
-
-
-    }
-
-
-
 
   }
-
-
 }

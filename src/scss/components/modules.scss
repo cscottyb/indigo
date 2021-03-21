@@ -2,30 +2,34 @@
 
 //main
 @import "main.scss";
+@import "pg-index.scss";
 
 
 
 //header
 @import "header.scss";
-@import "search.scss";
-@import "zcm.scss";
-@import "burger-menu.scss";
-@import "pg-index.scss";
+@import "header--search.scss";
+@import "header--suggestions";
+@import "header--zcm.scss";
+@import "header--aside.scss";
 
-//components
+// components
 @import "search-filters.scss";
-@import "modal.scss"; 
+@import "modal.scss";
+@import "tooltip.scss";
 @import "result.scss";
 @import "related-searches.scss";
 @import "result--more.scss";
 
 
 // modules
+@import "zci-wrap";
 @import "module--about.scss";
 @import "module--carousel.scss";
 @import "module--images.scss";
 @import "module--places.scss";
-@import "zci-wrap";
+@import "module--stacks-overflow";
+@import "module--forcast";
 
 //pages
 

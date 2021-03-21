@@ -12,11 +12,11 @@
       color: $theme-color-on-ui !important;
       background-color: $gray-200 !important;
       font-weight: 400 !important;
-      border-radius: 1em !important;
+      border-radius: $border-radius !important;
 
       &:hover{
-        background-color: hsl(hue($theme-color+2), 15%,86%) !important;
-        border-color: hsl(hue($theme-color+2), 13%, 84%) !important;
+        background-color: hsl(hue($theme-color), 15%,86%) !important;
+        border-color: hsl(hue($theme-color), 13%, 84%) !important;
         color: $theme-color-on-ui !important;
       }
     }

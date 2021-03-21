@@ -1,8 +1,13 @@
 .has-zcm{
   .module.module--places{
-    background-color: $gray-200;
-    border-radius: $border-radius !important;
-    overflow: hidden !important;
+    @include card;
+    // background-color: $gray-200;
+    // border-radius: $border-radius !important;
+
+    .module__header{
+      border-top-left-radius:  1em !important;
+	    border-top-right-radius: 1em !important;
+    }
 
     .user-loc-tile{
       box-shadow: none !important;
@@ -10,15 +15,20 @@
     }
     .module__place-list{
       .module__section.place-list-item {
-        border-top: solid 1px transparent !important;
+        @include card-button;
+
+
+        // border-top: solid 1px transparent !important;
         margin: 1em !important;
         padding: 1em !important;
-        border-radius: 1em !important;
+        // border-radius: 1em !important;
         display:block;
         overflow:visible !important;
         min-height:5em !important;
 
-        .place-list-item__info{
+
+        .place-list-item__info,
+        .place-list-item__rating{
           color: $gray-600 !important;
         }
         &:first-child{
@@ -27,14 +37,14 @@
         &:last-child{
           margin-bottom:0.5em !important;
         }
-        &:hover{
-          background-color: $theme-color !important;
-          color: #ffffff !important;
-
-          .place-list-item__info{
-            color: #ffffff !important;
-          }
-        }
+        // &:hover{
+        //   background-color: $theme-color !important;
+        //   color: #ffffff !important;
+        //
+        //   .place-list-item__info{
+        //     color: #ffffff !important;
+        //   }
+        // }
         &:after{
           display:block !important;
           width:100% !important;
@@ -42,14 +52,38 @@
           background-color:transparent !important;
           content:" " !important;
           position:absolute !important;
-          bottom: -0.5em !important;
+          bottom: -0.6em !important;
           right:0 !important;
           border-bottom: solid 1px $gray-400 !important;
         }
         &:last-child:after{
-          display:none !important; 
+          display:none !important;
         }
       }
+    }
+    .module__link--blue{
+      color: $theme-color !important;
+
+      &:hover{
+        color: $theme-color !important;
+        text-decoration: none !important;
+      }
+      &:active{
+        color: $theme-color !important;
+      }
+      &:focus{
+        color: $theme-color !important;
+      }
+    }
+    .module__section.module__places-more{
+        border-top: solid 1px $gray-400 !important;
+    }
+    .place-list-item__image{
+      border-radius: $border-radius / 4 !important;
+    }
+
+    .feedback-prompt{
+      display: $feedback-prompt_display !important;
     }
   }
 }
