@@ -4,7 +4,7 @@
 .has-zcm body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   background-color: #fbfbfb !important;
-  color: #000000 !important; }
+  color: #646a7d !important; }
   .has-zcm body a {
     color: #3363ff !important; }
   .has-zcm body .is-mobile .results_links_deep,
@@ -73,7 +73,7 @@
     background-color: #fbfbfb;
     z-index: 9001;
     left: 43px;
-    color: #6d7283 !important;
+    color: #646a7d !important;
     font-size: 26px;
     height: 36px;
     width: 159px;
@@ -128,7 +128,8 @@
     border-radius: 50% !important;
     background-size: cover !important;
     width: 2.25em !important;
-    height: 2.25em !important; }
+    height: 2.25em !important;
+    font-size: 1em !important; }
 
 .has-zcm form#search_form,
 #pg-index form#search_form_homepage {
@@ -457,7 +458,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     background: transparent !important; }
   .has-zcm .related-searches .related-searches__title-long,
   .has-zcm .related-searches .related-searches__title-short {
-    font-weight: 500 !important; }
+    font-weight: 500 !important;
+    color: #000000 !important; }
   .has-zcm .related-searches .related-searches__list a.related-searches__link {
     font-weight: 400 !important;
     color: #3363ff !important;
@@ -491,16 +493,13 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     background-color: transparent !important;
     color: #000000 !important;
     border-bottom: 1px solid transparent !important; }
-    .has-zcm .zci-wrap .zci .tileview .metabar--fixed,
-    .has-zcm .zci-wrap .zci .tileview--grid .metabar--fixed {
-      background-color: transparent !important; }
     .has-zcm .zci-wrap .zci .tileview .metabar__mode,
     .has-zcm .zci-wrap .zci .tileview--grid .metabar__mode {
       background-color: transparent !important;
       color: #646a7d !important; }
-      .has-zcm .zci-wrap .zci .tileview .metabar__mode .metabar__grid-btn, .has-zcm .zci-wrap .zci .tileview .metabar__mode .metabar__grid-btn:hover,
-      .has-zcm .zci-wrap .zci .tileview--grid .metabar__mode .metabar__grid-btn,
-      .has-zcm .zci-wrap .zci .tileview--grid .metabar__mode .metabar__grid-btn:hover {
+      .has-zcm .zci-wrap .zci .tileview .metabar__mode.metabar__grid-btn, .has-zcm .zci-wrap .zci .tileview .metabar__mode.metabar__grid-btn:hover,
+      .has-zcm .zci-wrap .zci .tileview--grid .metabar__mode.metabar__grid-btn,
+      .has-zcm .zci-wrap .zci .tileview--grid .metabar__mode.metabar__grid-btn:hover {
         border: solid 1px transparent !important; }
     .has-zcm .zci-wrap .zci .tileview a.attribution--link .attribution--link__icon,
     .has-zcm .zci-wrap .zci .tileview--grid a.attribution--link .attribution--link__icon {
@@ -614,7 +613,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     .has-zcm .module.module--about .about-info-box .about-info-box__info-value {
       color: #646a7d !important; }
   .has-zcm .module.module--about a.about-profiles__link {
-    color: #000000 !important; }
+    color: #646a7d !important; }
   .has-zcm .module.module--about .module__toggle {
     background-color: transparent !important;
     border-top: none !important;
@@ -632,7 +631,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   .has-zcm .module.module--about {
     border-radius: 1em !important; }
     .has-zcm .module.module--about .module__title {
-      color: #000000 !important; }
+      color: #646a7d !important; }
     .has-zcm .module.module--about .module__official-url {
       color: #3363ff !important; }
     .has-zcm .module.module--about .dir-btn .dir-btn__link.btn {
@@ -650,7 +649,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       .has-zcm .module.module--about .about-info-box .about-info-box__info-row {
         border-top: #d1d3dc !important; }
     .has-zcm .module.module--about a.about-profiles__link {
-      color: #000000 !important; }
+      color: #646a7d !important; }
     .has-zcm .module.module--about .module__toggle {
       color: #3363ff !important; } }
 
@@ -837,6 +836,63 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   background-color: #e0e6e2 !important;
   display: inline-block !important;
   padding: 0px 0.3em !important; }
+
+.has-zcm .forecast-wrapper .module.module--forecast {
+  background-color: #eeeff2 !important;
+  border: solid 1px #eeeff2 !important;
+  border-radius: 1em !important;
+  box-shadow: none !important;
+  border-bottom-color: #eeeff2 !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__place.text--primary {
+    color: #000000 !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__summary {
+    color: #646a7d !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-value {
+    color: #000000 !important;
+    font-weight: 500 !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature a.module__temperature-unit {
+    font-weight: 400 !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature a.module__temperature-unit .module__temperature-unit--on {
+      border-bottom: 1px solid #646a7d !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature a.module__temperature-unit .module__temperature-unit-separator {
+      color: #646a7d !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--right {
+    color: #646a7d !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--right .summary-more {
+      font-weight: 400 !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__bottom {
+    padding: 0 0 1.1875em !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__bottom .module__detail.module__detail--hours canvas {
+      filter: contrast(0) sepia(1) hue-rotate(188deg) brightness(1) saturate(1.4) !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__bottom .module__detail--hours__labels {
+      justify-content: space-around !important; }
+      .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__bottom .module__detail--hours__labels .module__detail--hours__labels__item .module__detail__temp-label {
+        font-size: 500 !important;
+        color: #000000 !important; }
+      .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__bottom .module__detail--hours__labels .module__detail--hours__labels__item .module__detail__hour-label {
+        color: #646a7d !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item {
+    border-top: solid 1px transparent !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item:not(:last-child) {
+      border-right: solid 1px #d1d3dc !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item.module__items-item--selected {
+      background-color: transparent !important;
+      border-top: solid 1px transparent !important; }
+      .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item.module__items-item--selected .module__items-day {
+        color: #3363ff !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item:hover {
+      background-color: #f8f9fc !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item .module__items-unit--low {
+      color: #646a7d !important; }
+
+.has-zcm .forecast-wrapper .module__more-at-and-feedback p a {
+  text-decoration: none !important; }
+  .has-zcm .forecast-wrapper .module__more-at-and-feedback p a:hover {
+    text-decoration: underline !important; }
+  .has-zcm .forecast-wrapper .module__more-at-and-feedback p a.module__more-at {
+    color: #646a7d !important; }
+  .has-zcm .forecast-wrapper .module__more-at-and-feedback p a.feedback-prompt__link {
+    display: none !important; }
 
 .has-zcm .footer {
   display: none !important; }

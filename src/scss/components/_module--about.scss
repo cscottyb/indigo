@@ -21,7 +21,7 @@
     }
 
     .module__title{
-      color: $body-text-color !important;
+      color: $header-text-color !important;
     }
     .module__official-url{
       color: $theme-color !important;
@@ -51,7 +51,7 @@
       border-bottom: none !important;
 
       .module__link.module__link--blue.module__link--two-line.tx--bold {
-          color: $body-text-color !important;
+          color: $header-text-color !important;
           font-weight: 600 !important;
           font-size: 1.5em !important;
       }

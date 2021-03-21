@@ -44,7 +44,7 @@
     .module--carousel__body{
       a.module--carousel__body__title{
         text-decoration-color: $gray-600 !important;
-        color: $body-text-color !important;
+        color: $header-text-color !important;
         font-weight: 600 !important;
         -webkit-font-smoothing: $font-smoothing !important;
       }
@@ -53,7 +53,7 @@
         color: $gray-600 !important;
       }
       .module--carousel__body__content{
-        color: $gray-600 !important;
+        color: $body-text-color !important;
       }
 
     }
@@ -62,13 +62,13 @@
         color: $gray-500 !important;
       }
       .module--carousel__source.result__url{
-        color: $gray-600 !important;
+        color: $body-text-color !important;
       }
       .sep{
         border-left: 1px solid transparent !important;
       }
       .tile__time{
-        color: $gray-600 !important;
+        color: $body-text-color !important;
       }
 
     }
@@ -90,7 +90,7 @@
     }
     .module--carousel__main-source{
       a{
-        color: $gray-600 !important;
+        color: $body-text-color !important;
       }
     }
     .feedback-prompt{

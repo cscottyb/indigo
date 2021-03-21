@@ -8,7 +8,6 @@
 
   .logo-wrap--home{
     color: $gray-600 !important;
-    // display: none !important;
     max-width: 590px !important;
     padding: 0 1.25em !important;
     margin-bottom: -.5em;
@@ -17,7 +16,7 @@
 
     &::after{
       content: 'DuckDuckGo';
-      color: $gray-600 !important;
+      color: $body-text-color !important;
       display: block;
       position: absolute;
       width: 148px;
@@ -48,7 +47,7 @@
       background-color: #fbfbfb;
       z-index: 9001;
       left: 43px;
-      color: #6d7283 !important;
+      color: $body-text-color !important;
       font-size: 26px;
       height: 36px;
       width: 159px;
@@ -63,7 +62,7 @@
   .tag-home{
     display:none !important;
     .tag-home__item{
-      color: $gray-600 !important;
+      color: $body-text-color !important;
       a.tag-home__link{
         color: $theme-color !important;
 

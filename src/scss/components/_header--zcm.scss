@@ -5,11 +5,11 @@
 .has-zcm{
   .zcm{
     a.zcm__link{
-      color: $body-text-color !important;
+      color: $header-text-color !important;
       font-weight: 400 !important;
 
       &.is-active{
-        border-bottom: solid 1px $body-text-color !important;
+        border-bottom: solid 1px $header-text-color !important;
         cursor: default !important;
       }
     }

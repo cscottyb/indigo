@@ -1,8 +1,6 @@
 .has-zcm{
   .module.module--places{
     @include card;
-    // background-color: $gray-200;
-    // border-radius: $border-radius !important;
 
     .module__header{
       border-top-left-radius:  1em !important;
@@ -18,10 +16,8 @@
         @include card-button;
 
 
-        // border-top: solid 1px transparent !important;
         margin: 1em !important;
         padding: 1em !important;
-        // border-radius: 1em !important;
         display:block;
         overflow:visible !important;
         min-height:5em !important;
@@ -29,7 +25,7 @@
 
         .place-list-item__info,
         .place-list-item__rating{
-          color: $gray-600 !important;
+          color: $body-text-color !important;
         }
         &:first-child{
           margin-top:0.5em !important;

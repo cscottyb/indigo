@@ -20,8 +20,8 @@ $transparent:           transparent;
 $gray-100:       #fbfbfb;  // page-bg
 $gray-200:       hsl(hue($theme-color), 13%, 94%); //#ecedf1; //#f0f1f4; //card-bg
 $gray-300:       hsl(hue($theme-color), 13%, 89%);  // card-bg:hover
-$gray-400:       hsl(226deg, 13%, 84%); // #e1e3e8; // hr, border
-$gray-500:       hsl(226deg, 20%, 70%); // #b3b3c7; //#8e8e93;
+$gray-400:       hsl(hue($theme-color), 13%, 84%); // #e1e3e8; // hr, border
+$gray-500:       hsl(hue($theme-color), 20%, 70%); // #b3b3c7; //#8e8e93;
 $gray-600:       hsl(hue($theme-color), 11%, 44%); //#666c7f; //#6d7283;//#636367; //body color
 $gray-700:       #202020;
 $gray-800:       #1e1e1e;
@@ -50,12 +50,13 @@ $DDG_ProximaNova:"DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1"
 $font-smoothing-nav: antialiased;   // for navigation and options
 $font-smoothing:     antialiased;   // for header and body
 
+$header-text-color: #000000;
+$header-weight: 500;
 
-
-$body-text-color:   #000000;
+$body-text-color:   $gray-600;
 $body-text-weight:  400;
+
 $body-text-size:    90%; //90% default size
-$text-thick:        auto !important;
 
 // rounded border
 // Recommend value between 0 - 1. 0 for 90deg corners
@@ -88,7 +89,7 @@ $search-result-url-hover:    $theme-color;
 $search-result-url-visited:  $theme-color;
 
 $search-result-url-font-weight:            $body-text-weight;
-$search-result-url-font-weight-thickness:  $text-thick;
+$search-result-url-font-weight-thickness:  auto;
 
 
 // search description

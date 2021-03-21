@@ -27,7 +27,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
 
       a{
         $modal-a: 0.9em;
-        color: $body-text-color !important;
+        color: $header-text-color !important;
         height: $modal-a !important;
         line-height: $modal-a !important;
         font-size: $modal-a !important;
@@ -163,7 +163,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
 
           &:hover{
             background: transparent !important;
-            color: $gray-600 !important;
+            color: $body-text-color !important;
           }
         }
       }
