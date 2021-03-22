@@ -1,34 +1,35 @@
-*::selection {
-  background-color: hsl(225deg, 100%, 90%);
-}
-
-.has-zcm body{
-  font-family: $system-fonts;
-  background-color: $gray-100 !important;
-  color: $body-text-color !important;
-
-  a{
-    color: $theme-color !important;
+.has-zcm{
+  &::selection {
+    background-color: $selection-color;
   }
 
-  .is-mobile .results_links_deep,
-  .is-mobile .results_links,
-  .is-mobile .result--news,
-  .is-mobile .related-searches {
-    border-radius: .5em !important;
-    box-shadow: none !important;
-    border:solid 1px transparent !important;
-    border-bottom-color: transparent !important;
-    margin: 0 0 1em 0 !important;
-  }
-  .serp__bottom-right{
-    display: $feedback-prompt_display !important;
+  body{
+    background-color: $gray-100 !important;
+    color: $body-text-color !important;
 
-    .btn.feedback-btn{
-      @include card-button;
+    a{
+      color: $theme-color !important;
+    }
 
-      font-size: 0.8em;
-      line-height: 2.2em;
+    .is-mobile .results_links_deep,
+    .is-mobile .results_links,
+    .is-mobile .result--news,
+    .is-mobile .related-searches {
+      border-radius: .5em !important;
+      box-shadow: none !important;
+      border:solid 1px transparent !important;
+      border-bottom-color: transparent !important;
+      margin: 0 0 1em 0 !important;
+    }
+    .serp__bottom-right{
+      display: $feedback-prompt_display !important;
+
+      .btn.feedback-btn{
+        @include card-button;
+
+        font-size: 0.8em;
+        line-height: 2.2em;
+      }
     }
   }
 }

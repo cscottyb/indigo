@@ -1,6 +1,6 @@
 #pg-index{
   background-color: $gray-100 !important;
-  font-family: $system-fonts;
+  // font-family: $font-family;
 
   .content-wrap--home{
     top: 40% !important;
@@ -25,7 +25,7 @@
       left: 69px;
       z-index: 8000;
       top: -1px;
-      font-family: $DDG_ProximaNova !important;
+      // font-family: $DDG_ProximaNova !important;
     }
 
     a{
@@ -53,7 +53,7 @@
       width: 159px;
       padding: 0;
       font-weight: 500;
-      font-family: $DDG_ProximaNova !important;
+      // font-family: $DDG_ProximaNova !important;
       transition: opacity .05s ease 0s;
       &:before{
         border-right-color: transparent;

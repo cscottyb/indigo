@@ -1,7 +1,7 @@
 # Indigo
  DuckDuckGo theme project under development
 
-![screenshot](./src/READMEassets/screenshot.png)
+![screenshot](./src/assets/screenshot.png)
 
 ## Features
 - Modern UI
