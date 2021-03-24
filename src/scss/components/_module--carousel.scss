@@ -12,7 +12,8 @@
       box-shadow: none !important;
       border: none !important;
       &:hover{
-        background-color: $gray-600 !important;
+        color: $gray-200 !important;
+        background-color: $gray-800 !important;
       }
     }
     .ddgsi-right:before,
@@ -43,14 +44,15 @@
     }
     .module--carousel__body{
       a.module--carousel__body__title{
-        text-decoration-color: $gray-600 !important;
+        text-decoration-color: $gray-700 !important;
         color: $header-text-color !important;
-        font-weight: 600 !important;
+        font-weight: 500 !important;
         -webkit-font-smoothing: $font-smoothing !important;
+
       }
       .module--carousel__extra-row,
       .module--carousel__gray-text{
-        color: $gray-600 !important;
+        color: $gray-700 !important;
       }
       .module--carousel__body__content{
         color: $body-text-color !important;
@@ -64,6 +66,14 @@
       .module--carousel__source.result__url{
         color: $body-text-color !important;
       }
+      .module--carousel__extra-row{
+        color: $body-text-color !important;
+      }
+      .module--carousel__more-at{
+        span.module--carousel__gray-text{
+          color: $body-text-color !important;
+        }
+      }
       .sep{
         border-left: 1px solid transparent !important;
       }
@@ -72,22 +82,22 @@
       }
 
     }
-    a.module__footer{
-      color: $theme-color !important;
-
-      &:before{
-        transition: left 0.2s ease-in !important;
-      }
-
-      &:hover{
-        text-decoration: none !important;
-
-        &:before{
-          left: 4px !important;
-        }
-      }
-
-    }
+    // a.module__footer{
+    //   color: $theme-color !important;
+    //
+    //   &:before{
+    //     transition: left 0.2s ease-in !important;
+    //   }
+    //
+    //   &:hover{
+    //     text-decoration: none !important;
+    //
+    //     &:before{
+    //       left: 4px !important;
+    //     }
+    //   }
+    //
+    // }
     .module--carousel__main-source{
       a{
         color: $body-text-color !important;

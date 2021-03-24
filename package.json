@@ -6,7 +6,6 @@
   "scripts": {
     "test": "node-sass -w .notes/test/scss -o .notes/test/css",
     "pingen": "js/pingin.js",
-    "mypingen": "js/mypingen.js",
     "watch-scss": "node-sass -w src/scss -o src/build/css",
     "watch-modules": "node-sass -w src/scss/components -o src/build/css/components"
   },

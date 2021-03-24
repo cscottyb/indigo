@@ -1,5 +1,5 @@
 .has-zcm{
-  &::selection {
+  ::selection {
     background-color: $selection-color;
   }
 
@@ -9,6 +9,10 @@
 
     a{
       color: $theme-color !important;
+    }
+
+    .site-wrapper{
+      background-color: $gray-100 !important;
     }
 
     .is-mobile .results_links_deep,

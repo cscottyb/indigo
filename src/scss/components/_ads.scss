@@ -1,0 +1,47 @@
+.has-zcm{
+  .result--ad{
+    // display: $ads_display !important;
+
+    .result__body{
+      h2.result__title{
+        a.result__a{
+          color: $gray-900 !important;
+        }
+        .badge--ad, .badge--ad:hover, .badge--ad:focus {
+          color: $theme-color !important;
+          padding: 0.2em .25em !important;
+          border-color: $theme-color !important;
+        }
+      }
+      .result__extras a{
+        color: $theme-color !important;
+        &.report-ad__link{
+          color: $gray-1000 !important;
+        }
+      }
+      .result__snippet{
+        a{
+          color: $gray-700 !important;
+          b{
+            color: $gray-700 !important;
+          }
+          &.sponsored__sitelink{
+            color: $gray-900 !important;
+
+            b{
+              color: $gray-900 !important;
+            }
+          }
+        }
+
+        .sponsored__sitelink-description{
+          color: $gray-700 !important;
+          
+          b{
+            color: $gray-700 !important;
+          }
+        }
+      }
+    }
+  }
+}

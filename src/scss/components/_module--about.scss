@@ -59,7 +59,7 @@
 
 
     .module__text{
-      color: $gray-600 !important;
+      color: $gray-700 !important;
 
       .module__more-a.tx--bold{
         font-weight:500 !important;
@@ -71,7 +71,7 @@
     }
     .about-info-box {
       padding-top: .25em !important;
-      color: $gray-600 !important;
+      color: $gray-700 !important;
 
       .about-info-box__info-row:first-child,
       .about-info-box__link-row:first-child{
@@ -79,9 +79,13 @@
       }
       .about-info-box__info-row{
         border-top: $gray-400 !important;
+
+        .about-info-box__info-label{
+          color: $header-text-color !important;
+        }
       }
       .about-info-box__info-value{
-        color: $gray-600 !important;
+        color: $gray-700 !important;
       }
     }
     a.about-profiles__link{
@@ -126,14 +130,14 @@
       }
 
       .module__text{
-        color: $gray-600 !important;
+        color: $gray-700 !important;
 
         .module__more-a.tx--bold{
           color: $theme-color !important;
         }
       }
       .about-info-box {
-        color: $gray-600 !important;
+        color: $gray-700 !important;
 
         .about-info-box__info-row:first-child,
         .about-info-box__link-row:first-child{

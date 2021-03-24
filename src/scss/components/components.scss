@@ -1,3 +1,7 @@
+@import "images";
+
+
+// EDIT THIS FIRST
 @import "variables.scss";
 
 //main
@@ -23,6 +27,7 @@
 
 
 // modules
+@import "modules";
 @import "zci-wrap";
 @import "module--about.scss";
 @import "module--carousel.scss";
@@ -39,4 +44,5 @@
 // @import "logo.scss";
 // @import "pin.scss"
 
+@import "ads";
 @import "footer.scss"
