@@ -15,7 +15,7 @@
       }
       .result__extras a{
         color: $theme-color !important;
-        &.report-ad__link{
+        &.report-ad__link{ 
           color: $gray-1000 !important;
         }
       }
@@ -36,7 +36,7 @@
 
         .sponsored__sitelink-description{
           color: $gray-700 !important;
-          
+
           b{
             color: $gray-700 !important;
           }
