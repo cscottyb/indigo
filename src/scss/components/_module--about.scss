@@ -97,7 +97,7 @@
       color: $theme-color !important;
 
       &:hover{
-        background-color: hsla(226, 30%, 30%, .02) !important;
+        background-color: $gray-300 !important; //hsla(226, 30%, 30%, .02)
       }
     }
     .module__toggle--more::after{
@@ -125,7 +125,7 @@
       .dir-btn{
         .dir-btn__link.btn {
           color: $theme-color !important;
-          background-color: adjust-color($theme-color, $alpha: -90%) !important;
+          background-color: $gray-300 !important; //adjust-color($theme-color, $alpha: -90%)
         }
       }
 

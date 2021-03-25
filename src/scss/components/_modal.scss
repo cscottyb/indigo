@@ -1,6 +1,7 @@
 $modal-border-color: $gray-400; //hsl(hue($theme-color), 25%, 92%);
 $modal-divider-color: hsl(hue($theme-color), 26%, 88%);
 $modal-bg-color: hsl(hue($theme-color), 50%, 99%);
+$modal-body-color: $header-text-color;
 
 $modal-padd-size: 0.5em;
 $modal-padd-size-3fifths: $modal-padd-size * 3/5;
@@ -10,6 +11,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
   border-bottom: 1px solid $modal-divider-color !important;
   background-color: transparent !important;
 }
+
 
 
 .has-zcm{
@@ -116,6 +118,11 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
           margin: 0.2em 0 !important;
           &:first-child{
             margin-top: 0 !important;
+            line-height: 1.6em;
+          }
+
+          .settings-dropdown--header--label{
+            color: $modal-body-color !important;
           }
       }
       .set-themes .set-theme.is-checked .set-theme__check{
@@ -124,23 +131,42 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
       .frm__field {
         font-size: .8em !important;
         margin: 0.4em 0 !important;
+        // color: $modal-body-color !important;
+
+
+        .frm__switch{
+          color: $modal-body-color !important;
+        }
 
         .frm__switch .frm__switch__label.btn{
           background-color: $gray-700 !important;
+
+          &:after{
+            background-color: $background-color !important;
+          }
         }
         &.is-checked{
           .frm__switch .frm__switch__label.btn{
             background-color: $theme-color !important;
           }
         }
+        .frm__label{
+          color: $modal-body-color !important;
+          line-height: 1em !important;
+        }
         .frm__select{
-          background-color: rgba(97, 107, 143, 0.1) !important;
+
+          select{
+            background-color: rgba(97, 107, 143, 0.1) !important;
+            color: $modal-body-color !important;
+          }
 
           &:before{
             background-image: none !important;
           }
           &:after {
             right: 3px;
+            color: $modal-body-color !important;
           }
         }
 
@@ -167,8 +193,6 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
           }
         }
       }
-
-
       .frm__input{
         background-color: transparent !important;
         padding-left: 30px !important;

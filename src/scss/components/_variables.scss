@@ -29,7 +29,8 @@ $gray-900:       hsl(hue($accent-color), 15%, 16%); // page-bg-dim
 $gray-950:       hsl(hue($accent-color), 28%,  7%); // page-bg-dark
 $gray-1000:      #000000; // black
 
-// backdrop
+// background and backdrop
+$background-color: $gray-100;
 $backdrop-filter: saturate(180%) blur(20px);
 
 

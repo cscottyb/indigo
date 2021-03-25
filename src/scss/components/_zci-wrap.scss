@@ -28,21 +28,11 @@
         .tile-wrap{
           .zci__main{
             .tile{
-              &:after {
-                  content: "";
-                  background: $theme-color;
-                  height: 11px;
-                  width: 11px;
-                  display: block;
-                  position: absolute;
-                  top: 8px;
-                  right: 8px;
-                  border-radius: 50%;
-                  opacity: 0;
-                  transition: all 0.01s ease;
-              }
-              &:hover:after {
-                  opacity: 1;
+              &.highlight{
+                .tile__title a{
+                  color: $theme-color !important;
+                  none: $gray-700 !important;
+                }
               }
             }
 
@@ -65,15 +55,23 @@
             }
 
             .tile{
-              background-color: $gray-200 !important;
-              border: solid 1px darken($gray-200, 1) !important;
+              background-color: transparent !important;
+              border: solid 1px transparent !important;
               box-shadow: none !important;
               // box-shadow: 0 2px 11px -3px rgba(50, 99, 252, 0.1) !important;
               border-radius: 1em !important;
-              border-bottom-color: darken($gray-200, 1) !important;
+              border-bottom-color: transparent !important;
 
               &:hover{
                 // border: solid 1px $theme-color !important;
+              }
+
+              .tile__body{
+                background-color: $gray-200 !important;
+                border: solid 1px $gray-200 !important;
+                box-shadow: none !important;
+                border-radius: 1em !important;
+                border-bottom-color: $gray-200 !important;
               }
 
               .tile__title a{
