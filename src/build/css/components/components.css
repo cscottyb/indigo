@@ -132,11 +132,14 @@
 .has-zcm form#search_form,
 #pg-index form#search_form_homepage {
   background-color: #eeeff2 !important;
-  background-color: rgba(107, 115, 143, 0.1) !important;
+  background-color: rgba(104, 120, 156, 0.1) !important;
   border-radius: 0.5em !important;
   box-shadow: none !important;
   border: 1px solid rgba(104, 112, 135, 0) !important;
   color: #5e6478 !important; }
+  .has-zcm form#search_form input#search_form_input,
+  #pg-index form#search_form_homepage input#search_form_input {
+    color: #000000 !important; }
   .has-zcm form#search_form .search__button,
   #pg-index form#search_form_homepage .search__button {
     background-color: transparent !important;
@@ -883,12 +886,12 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-value {
     color: #000000 !important;
     font-weight: 500 !important; }
-  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature a.module__temperature-unit {
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-units {
     font-weight: 400 !important; }
-    .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature a.module__temperature-unit .module__temperature-unit--on {
-      border-bottom: 1px solid #5e6478 !important; }
-    .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature a.module__temperature-unit .module__temperature-unit-separator {
-      color: #5e6478 !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-unit--on {
+    border-bottom: 1px solid #5e6478 !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-unit-separator {
+    color: #5e6478 !important; }
   .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--right {
     color: #5e6478 !important; }
     .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--right .summary-more {
@@ -904,28 +907,39 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
         color: #000000 !important; }
       .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__bottom .module__detail--hours__labels .module__detail--hours__labels__item .module__detail__hour-label {
         color: #5e6478 !important; }
-  .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item {
-    border-top: solid 1px transparent !important; }
-    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item:not(:last-child) {
-      border-right: solid 1px #d1d3dc !important; }
-    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item.module__items-item--selected {
-      background-color: transparent !important;
+  .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days {
+    color: #5e6478 !important; }
+    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item {
       border-top: solid 1px transparent !important; }
-      .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item.module__items-item--selected .module__items-day {
-        color: #003cff !important; }
-    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item:hover {
-      background-color: #f8f9fc !important; }
-    .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item .module__items-unit--low {
-      color: #5e6478 !important; }
+      .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item:not(:last-child) {
+        border-right: solid 1px #d1d3dc !important; }
+      .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item.module__items-item--selected {
+        background-color: transparent !important;
+        border-top: solid 1px #003cff !important;
+        color: #5e6478 !important; }
+        .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item.module__items-item--selected .module__items-day {
+          color: #000000 !important; }
+        .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item.module__items-item--selected .module__items-unit {
+          color: #5e6478 !important; }
+      .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item:hover {
+        background-color: #f8f9fc !important;
+        color: #5e6478 !important; }
+      .has-zcm .forecast-wrapper .module.module--forecast .module__items.align-days .module__items-item .module__items-unit--low {
+        color: #5e6478 !important; }
+  .has-zcm .forecast-wrapper .module.module--forecast img {
+    filter: contrast(0.88) brightness(0.98); }
 
 .has-zcm .forecast-wrapper .module__more-at-and-feedback p a {
   text-decoration: none !important; }
   .has-zcm .forecast-wrapper .module__more-at-and-feedback p a:hover {
     text-decoration: underline !important; }
-  .has-zcm .forecast-wrapper .module__more-at-and-feedback p a.module__more-at {
-    color: #5e6478 !important; }
   .has-zcm .forecast-wrapper .module__more-at-and-feedback p a.feedback-prompt__link {
     display: none !important; }
+  .has-zcm .forecast-wrapper .module__more-at-and-feedback p a img {
+    opacity: 1 !important; }
+
+.has-zcm .forecast-wrapper .module__more-at-and-feedback p.module__more-at a.zci__more-at {
+  color: #5e6478 !important; }
 
 .has-zcm .result--ad .result__body h2.result__title a.result__a {
   color: #23262f !important; }

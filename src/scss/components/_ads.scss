@@ -15,6 +15,7 @@
       }
       .result__extras a{
         color: $theme-color !important;
+
         &.report-ad__link{
           color: $gray-1000 !important;
         }
@@ -22,6 +23,7 @@
       .result__snippet{
         a{
           color: $gray-700 !important;
+
           b{
             color: $gray-700 !important;
           }

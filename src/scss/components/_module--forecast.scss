@@ -17,19 +17,18 @@
                 color: $header-text-color !important;
                 font-weight: $header-weight !important;
               }
-              a.module__temperature-unit {
-              	font-weight: $body-text-weight !important;
-
-              	.module__temperature-unit--on {
-              		border-bottom: 1px solid $body-text-color !important;
-              	}
-
-                .module__temperature-unit-separator{
-                  color: $body-text-color !important;
-                }
+              .module__temperature-units {
+                font-weight: $body-text-weight !important;
+              }
+              .module__temperature-unit--on {
+                border-bottom: 1px solid $body-text-color !important;
               }
 
+              .module__temperature-unit-separator{
+                color: $body-text-color !important;
+              }
             }
+
           }
           .module__detail.module__detail--right {
           	color: $body-text-color !important;
@@ -60,13 +59,14 @@
               .module__detail__hour-label{
                 color: $body-text-color !important;
               }
-
             }
           }
         }
 
       }
       .module__items.align-days{
+        color: $body-text-color !important;
+
         .module__items-item {
           border-top: solid 1px transparent !important;
 
@@ -75,14 +75,19 @@
           }
           &.module__items-item--selected{
             background-color: transparent !important;
-            border-top: solid 1px transparent !important;
+            border-top: solid 1px $theme-color !important;
+            color: $body-text-color !important;
 
             .module__items-day{
-              color: $theme-color !important;
+              color: $gray-1000 !important;
+            }
+            .module__items-unit{
+              color: $body-text-color !important;
             }
           }
           &:hover{
             background-color: hsl(hue($theme-color), 44%, 98%) !important;
+            color: $body-text-color !important;
           }
 
           .module__items-unit--low{
@@ -90,12 +95,10 @@
 
           }
         }
-
       }
-
-
-
-
+      img {
+	      filter: contrast(0.88)brightness(0.98);
+      }
     }
     .module__more-at-and-feedback{
       p{
@@ -105,13 +108,21 @@
           &:hover{
             text-decoration: underline !important;
           }
-          &.module__more-at{
-            color: $body-text-color !important;
-          }
+
           &.feedback-prompt__link{
             display: $feedback-prompt_display !important;
           }
 
+          img{
+            opacity: 1 !important;
+          }
+
+        }
+        &.module__more-at{
+          a.zci__more-at{
+            color: $body-text-color !important;
+
+          }
         }
       }
 
