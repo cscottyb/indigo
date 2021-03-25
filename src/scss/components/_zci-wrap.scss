@@ -7,6 +7,14 @@
       color: $header-text-color !important;
       border-bottom: 1px solid transparent !important;
 
+      .attribution--link__icon{
+        color: $gray-700 !important;
+
+        &:hover{
+          color: $gray-700 !important;
+        }
+      }
+
       .tileview,
       .tileview--grid{
         .metabar--fixed{

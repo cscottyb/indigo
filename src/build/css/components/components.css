@@ -531,6 +531,10 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     background-color: transparent !important;
     color: #000000 !important;
     border-bottom: 1px solid transparent !important; }
+    .has-zcm .zci-wrap .zci .attribution--link__icon {
+      color: #5e6478 !important; }
+      .has-zcm .zci-wrap .zci .attribution--link__icon:hover {
+        color: #5e6478 !important; }
     .has-zcm .zci-wrap .zci .tileview .metabar__mode,
     .has-zcm .zci-wrap .zci .tileview--grid .metabar__mode {
       background-color: transparent !important;
@@ -948,6 +952,90 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 
 .has-zcm .forecast-wrapper .module__more-at-and-feedback p.module__more-at a.zci__more-at {
   color: #5e6478 !important; }
+
+.has-zcm .zci--calculator .tile__calc .tile__skip-calc {
+  background-color: #eeeff2 !important;
+  border: 1px solid #d1d3dc !important;
+  color: #000000 !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__skip-calc:hover {
+    background-color: #dfe1e7 !important; }
+
+.has-zcm .zci--calculator .tile__calc .tile__display {
+  background-color: #ffffff !important;
+  border: 1px solid #d1d3dc !important;
+  border-top: solid 2px #d1d3dc !important;
+  border-left: solid 2px #d1d3dc !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__display.hover {
+    box-shadow: inset -1px -1px 0px #a3aac2, inset 1px 1px 0px #a3aac2; }
+  .has-zcm .zci--calculator .tile__calc .tile__display.selected {
+    box-shadow: inset -1px -1px 0px #003cff, inset 1px 1px 0px #003cff; }
+  .has-zcm .zci--calculator .tile__calc .tile__display .tile__display__aside--wrap .tile__display__aside {
+    color: #5e6478 !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__display .tile__display__main {
+    color: #000000 !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__display .tile__options .tile__option {
+    color: #5e6478 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__display .tile__options .tile__option.tile__option--active {
+      color: #003cff !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__display .tile__display__main {
+    background: transparent !important; }
+
+.has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__sci {
+  border-bottom: 1px solid #d1d3dc !important;
+  border-left: 1px solid #d1d3dc !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__sci span.tile__ctrl__toggle {
+    background-color: #eeeff2 !important;
+    border: 1px solid #d1d3dc !important;
+    color: #000000 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__sci span.tile__ctrl__toggle:hover {
+      background-color: #dfe1e7 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__sci span.tile__ctrl__toggle .tile__ctrl__toggle-slider {
+      background-color: #a3aac2 !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__sci button.tile__ctrl__btn {
+    background-color: #eeeff2 !important;
+    border: 1px solid #d1d3dc !important;
+    color: #000000 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__sci button.tile__ctrl__btn:hover {
+      background-color: #dfe1e7 !important; }
+
+.has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__basic {
+  border-bottom: 1px solid #d1d3dc !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__basic button.tile__ctrl__btn {
+    background-color: #ffffff !important;
+    border: 1px solid #d1d3dc !important;
+    color: #000000 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__basic button.tile__ctrl__btn:hover {
+      background-color: #dfe1e7 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__basic button.tile__ctrl__btn.tile__ctrl--important {
+      background-color: #7a99ff !important;
+      border: 1px solid #d1d3dc !important;
+      color: #000000 !important; }
+      .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__basic button.tile__ctrl__btn.tile__ctrl--important:hover {
+        background-color: #668aff !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__basic button.tile__ctrl__btn.tile__ctrl--ops {
+      background-color: #eeeff2 !important;
+      border: 1px solid #d1d3dc !important;
+      color: #000000 !important; }
+      .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__tab__basic button.tile__ctrl__btn.tile__ctrl--ops:hover {
+        background-color: #dfe1e7 !important; }
+
+.has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history {
+  background-color: #f6f7f8 !important;
+  border: 1px solid #d1d3dc !important;
+  color: #000000 !important; }
+  .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history li {
+    background-color: #ffffff !important;
+    border: 1px solid #d1d3dc !important;
+    color: #000000 !important;
+    border: none !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history li:hover {
+      background-color: #dfe1e7 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history li.tile__past-calc {
+      border-bottom: 1px solid #d1d3dc !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history li .tile__past-formula {
+      color: #5e6478 !important; }
+    .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history li .tile__past-result {
+      color: #000000 !important; }
 
 .has-zcm .result--ad .result__body h2.result__title a.result__a {
   color: #23262f !important; }
