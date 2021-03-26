@@ -733,6 +733,12 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     transition: all .2s ease;
     background-size: 100%; }
 
+.has-zcm .module.module--carousel .module--carousel__image-wrapper {
+  background-color: transparent !important;
+  background: transparent !important; }
+  .has-zcm .module.module--carousel .module--carousel__image-wrapper .module--carousel__image.is-contain-image {
+    border-radius: 0.5em !important; }
+
 .has-zcm .module.module--carousel .module--carousel__body a.module--carousel__body__title {
   text-decoration-color: #5e6478 !important;
   color: #000000 !important;
@@ -744,6 +750,9 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   color: #5e6478 !important; }
 
 .has-zcm .module.module--carousel .module--carousel__body .module--carousel__body__content {
+  color: #5e6478 !important; }
+
+.has-zcm .module.module--carousel .module--carousel__body .module--carousel__body__pricing .module--carousel__body__price {
   color: #5e6478 !important; }
 
 .has-zcm .module.module--carousel .module--carousel__footer .result__url {
@@ -762,6 +771,9 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   border-left: 1px solid transparent !important; }
 
 .has-zcm .module.module--carousel .module--carousel__footer .tile__time {
+  color: #5e6478 !important; }
+
+.has-zcm .module.module--carousel .module--carousel__footer .module--carousel__gray-text.one-line {
   color: #5e6478 !important; }
 
 .has-zcm .module.module--carousel .module--carousel__main-source a {
@@ -1042,12 +1054,13 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 
 .has-zcm .result--ad .result__body h2.result__title .badge--ad, .has-zcm .result--ad .result__body h2.result__title .badge--ad:hover, .has-zcm .result--ad .result__body h2.result__title .badge--ad:focus {
   color: #003cff !important;
-  padding: 0.2em .25em !important;
+  padding: 0.12em .25em !important;
   border-color: #003cff !important; }
 
-.has-zcm .result--ad .result__body .result__extras a {
+.has-zcm .result--ad .result__body .result__extras {
   color: #003cff !important; }
-  .has-zcm .result--ad .result__body .result__extras a.report-ad__link {
+  .has-zcm .result--ad .result__body .result__extras a.report-ad__link,
+  .has-zcm .result--ad .result__body .result__extras i.ddgsi-comment.ddgsi {
     color: #000000 !important; }
 
 .has-zcm .result--ad .result__body .result__snippet a {
@@ -1055,14 +1068,37 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   .has-zcm .result--ad .result__body .result__snippet a b {
     color: #5e6478 !important; }
   .has-zcm .result--ad .result__body .result__snippet a.sponsored__sitelink {
-    color: #23262f !important; }
+    color: #000000 !important; }
     .has-zcm .result--ad .result__body .result__snippet a.sponsored__sitelink b {
-      color: #23262f !important; }
+      color: #000000 !important; }
 
 .has-zcm .result--ad .result__body .result__snippet .sponsored__sitelink-description {
   color: #5e6478 !important; }
   .has-zcm .result--ad .result__body .result__snippet .sponsored__sitelink-description b {
     color: #5e6478 !important; }
+
+.has-zcm .badge--ad__tooltip {
+  background-color: #fbfcfe !important;
+  background-color: rgba(251, 252, 254, 0.88) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+  border: 1px solid #d1d3dc !important;
+  box-shadow: 0px 2px 8px -6px #000000;
+  color: #5e6478 !important; }
+  .has-zcm .badge--ad__tooltip.badge--ad__tooltip--right .badge--ad__tooltip__triangle-inner {
+    border-right-color: #fbfcfe !important; }
+  .has-zcm .badge--ad__tooltip.badge--ad__tooltip--right .badge--ad__tooltip__triangle-outer {
+    border-right-color: #d1d3dc !important; }
+  .has-zcm .badge--ad__tooltip.badge--ad__tooltip--below .badge--ad__tooltip__triangle-inner {
+    border-bottom-color: #fbfcfe !important; }
+  .has-zcm .badge--ad__tooltip.badge--ad__tooltip--below .badge--ad__tooltip__triangle-outer {
+    border-bottom-color: #d1d3dc !important; }
+  .has-zcm .badge--ad__tooltip.badge--ad__tooltip--mobile .badge--ad__tooltip__triangle-inner {
+    border-bottom-color: #fbfcfe !important; }
+  .has-zcm .badge--ad__tooltip.badge--ad__tooltip--mobile .badge--ad__tooltip__triangle-outer {
+    border-bottom-color: #d1d3dc !important; }
+
+.has-zcm .badge--ad.js-badge--ad {
+  color: #5e6478 !important; }
 
 .has-zcm .footer {
   display: none !important; }

@@ -9,41 +9,81 @@
         }
         .badge--ad, .badge--ad:hover, .badge--ad:focus {
           color: $theme-color !important;
-          padding: 0.2em .25em !important;
+          padding: 0.12em .25em !important;
           border-color: $theme-color !important;
         }
       }
-      .result__extras a{
+      .result__extras{
         color: $theme-color !important;
 
-        &.report-ad__link{
-          color: $gray-1000 !important;
+        a.report-ad__link,
+        i.ddgsi-comment.ddgsi{
+          color: $header-text-color !important;
         }
       }
       .result__snippet{
         a{
-          color: $gray-700 !important;
+          color: $body-text-color !important;
 
           b{
-            color: $gray-700 !important;
+            color: $body-text-color !important;
           }
           &.sponsored__sitelink{
-            color: $gray-900 !important;
+            color: $header-text-color !important;
 
             b{
-              color: $gray-900 !important;
+              color: $header-text-color !important;
             }
           }
         }
 
         .sponsored__sitelink-description{
-          color: $gray-700 !important;
+          color: $body-text-color !important;
 
           b{
-            color: $gray-700 !important;
+            color: $body-text-color !important;
           }
         }
       }
     }
+  }
+
+  .badge--ad__tooltip{
+    background-color: $modal-bg-color !important;
+    background-color: transparentize($modal-bg-color, .12) !important;
+    backdrop-filter: $backdrop-filter !important;
+    border: 1px solid $modal-border-color !important;
+    box-shadow: 0px 2px 8px -6px #000000;
+    // border-radius: ($border-radius / 2) !important;
+    color: $body-text-color !important;
+
+
+    // right
+    &.badge--ad__tooltip--right .badge--ad__tooltip__triangle-inner{
+      border-right-color: $modal-bg-color !important;
+    }
+    &.badge--ad__tooltip--right .badge--ad__tooltip__triangle-outer{
+      border-right-color: $modal-border-color !important;
+    }
+
+    // below
+    &.badge--ad__tooltip--below .badge--ad__tooltip__triangle-inner{
+      border-bottom-color: $modal-bg-color !important;
+    }
+    &.badge--ad__tooltip--below .badge--ad__tooltip__triangle-outer{
+      border-bottom-color: $modal-border-color !important;
+    }
+
+    // mobile
+    &.badge--ad__tooltip--mobile .badge--ad__tooltip__triangle-inner{
+      border-bottom-color: $modal-bg-color !important;
+    }
+    &.badge--ad__tooltip--mobile .badge--ad__tooltip__triangle-outer{
+      border-bottom-color: $modal-border-color !important;
+    }
+  }
+
+  .badge--ad.js-badge--ad{
+    color: $body-text-color !important;
   }
 }

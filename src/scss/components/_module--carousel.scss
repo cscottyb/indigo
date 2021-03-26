@@ -43,9 +43,19 @@
         // background-size: 105%;
       }
     }
+
+    .module--carousel__image-wrapper{
+      background-color: transparent !important;
+      background: transparent !important;
+
+      .module--carousel__image.is-contain-image{
+        border-radius: $border-radius / 2 !important;
+      }
+    }
+
     .module--carousel__body{
       a.module--carousel__body__title{
-        text-decoration-color: $gray-700 !important;
+        text-decoration-color: $body-text-color !important;
         color: $header-text-color !important;
         font-weight: 500 !important;
         -webkit-font-smoothing: $font-smoothing !important;
@@ -57,6 +67,12 @@
       }
       .module--carousel__body__content{
         color: $body-text-color !important;
+      }
+
+      .module--carousel__body__pricing{
+        .module--carousel__body__price{
+          color: $body-text-color !important;
+        }
       }
 
     }
@@ -79,6 +95,10 @@
         border-left: 1px solid transparent !important;
       }
       .tile__time{
+        color: $body-text-color !important;
+      }
+
+      .module--carousel__gray-text.one-line{
         color: $body-text-color !important;
       }
 
