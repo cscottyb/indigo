@@ -32,6 +32,7 @@ $gray-1000:      #000000; // black
 // background and backdrop
 $background-color: $gray-100;
 $backdrop-filter: saturate(180%) blur(20px);
+$backdrop-opacity: 0.12;
 
 
 
@@ -41,7 +42,28 @@ $backdrop-filter: saturate(180%) blur(20px);
 // quality of life
 //
 
+// browser support
+
+//    Opacity       Translucency           Compatibility
 //
+// 0: 100% opacity ; translucency off     ; Webkit, Blink, Modified Gecko, Default Gecko, Other Browsers
+// 1:  98% opacity ; translucency limited ; Webkit, Blink, Modified Gecko, Default Gecko
+// 2:  88% opacity ; translucency limited ; Webkit, Blink, Modified Gecko
+// 3:  88% opacity ; translucency on      ; Webkit(Safari)
+
+$browser-support: 3;
+
+
+
+
+
+
+
+
+
+
+
+
 
 // scale
 $body-text-size:    90%; //default-size: 90%;
@@ -250,3 +272,33 @@ $modal-list-bg-hover:  $theme-color;
   }
 
 }
+
+
+
+
+// @mixin translucency {
+//   @if $browser-support == 0{
+//     background-color: $background-color !important;
+//   }
+//   @else if $browser-support == 1{
+//     -webkit-backdrop-filter: $backdrop-filter !important;
+//     backdrop-filter: $backdrop-filter !important;
+//     background-color: $background-color !important;
+//     background-color: transparentize($background-color, .02) !important;
+//   }
+//   @else if $browser-support == 2{
+//     -webkit-backdrop-filter: $backdrop-filter !important;
+//     backdrop-filter: $backdrop-filter !important;
+//     background-color: $background-color !important;
+//     background-color: transparentize($background-color, $backdrop-opacity) !important;
+//   }
+//   @else if $browser-support == 3{
+//     -webkit-backdrop-filter: $backdrop-filter !important;
+//     backdrop-filter: $backdrop-filter !important;
+//     background-color: $background-color !important;
+//     background-color: transparentize($background-color, $backdrop-opacity) !important;
+//   }
+//   @else{
+//       background-color: $background-color !important;
+//   }
+// }

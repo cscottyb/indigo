@@ -39,7 +39,7 @@
               &.highlight{
                 .tile__title a{
                   color: $theme-color !important;
-                  none: $gray-700 !important;
+                  text-decoration-color: $gray-700 !important;
                 }
               }
             }

@@ -1,8 +1,34 @@
+@mixin header-translucency {
+  @if $browser-support == 0{
+    background-color: $background-color !important;
+  }
+  @else if $browser-support == 1{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $background-color !important;
+    background-color: transparentize($background-color, .02) !important;
+  }
+  @else if $browser-support == 2{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $background-color !important;
+    background-color: transparentize($background-color, $backdrop-opacity) !important;
+  }
+  @else if $browser-support == 3{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $background-color !important;
+    background-color: transparentize($background-color, $backdrop-opacity) !important;
+  }
+  @else{
+    background-color: $background-color !important;
+  }
+}
+
+
 .has-zcm{
   #header_wrapper{
-    backdrop-filter: saturate(180%) blur(20px)!important;
-    background-color: $gray-100 !important;
-    background-color: transparentize($gray-100, .12) !important;
+    @include header-translucency;
     box-shadow: 0 1px 0 $gray-300 !important;
 
     .header__search-wrap{

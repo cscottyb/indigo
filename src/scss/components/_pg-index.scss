@@ -10,23 +10,9 @@
     color: $gray-700 !important;
     max-width: 590px !important;
     padding: 0 1.25em !important;
-    margin-bottom: -.5em;
-    width:70%;
-    margin-top: -3.25em;
-
-    &::after{
-      content: 'DuckDuckGo';
-      color: $body-text-color !important;
-      display: block;
-      position: absolute;
-      width: 148px;
-      height: 36px;
-      font-size: 1.8em;
-      left: 69px;
-      z-index: 8000;
-      top: -1px;
-      // font-family: $DDG_ProximaNova !important;
-    }
+    margin-bottom: -.5em !important;
+    width:70% !important;
+    margin-top: -3.25em !important;
 
     a{
       color: $theme-color;
@@ -38,25 +24,47 @@
       margin: 0 0 0 8px !important;
       background-color: $theme-color !important;
       border-radius: 50% !important;
-      background-image: $header__logo;
+      background-image: $header__logo !important;
+
+      &::before{
+        content: "DuckDuckGo" !important;
+        color: $body-text-color !important;
+        display: block !important;
+        position: absolute !important;
+        width: 148px !important;
+        height: 36px !important;
+        font-size: 26px !important;
+        left: 43px !important;
+        z-index: 8000 !important;
+        top: -1px !important;
+        // font-family: $DDG_ProximaNova !important;
+        opacity: 1 !important;
+        text-indent: 0 !important;
+      }
+
+      &:hover{
+        &::before{
+          opacity: 0 !important;
+        }
+      }
+
     }
   }
   span.logo_homepage__tt {
-      bottom: auto;
-      top: -0.05em;
-      background-color: #fbfbfb;
-      z-index: 9001;
-      left: 43px;
+      bottom: auto !important;
+      top: -0.05em !important;
+      z-index: 9001 !important;
+      left: 43px !important;
       color: $body-text-color !important;
-      font-size: 26px;
-      height: 36px;
-      width: 159px;
-      padding: 0;
-      font-weight: 500;
-      // font-family: $DDG_ProximaNova !important;
-      transition: opacity .05s ease 0s;
+      font-size: 26px !important;
+      height: 36px !important;
+      width: 159px !important;
+      padding: 0 !important;
+      font-weight: 400 !important;
+      transition: opacity 0s ease 0s !important;
+      background-color: transparent !important;
       &:before{
-        border-right-color: transparent;
+        border-right-color: transparent !important;
       }
   }
   .tag-home{
@@ -106,7 +114,7 @@
       margin-bottom: 0 !important;
       margin-top:0em !important;
     }
-    .logo-wrap--home::after,
+    .logo-wrap--home a#logo_homepage_link::before,
     .logo_homepage__tt,
     .logo_homepage__tt:before{
       display: none !important;

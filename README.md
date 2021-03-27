@@ -8,7 +8,7 @@
 - Light/Dark themes
 - SASS customization
 - Support for Blink, Mozilla, and Webkit browsers
-- WCAC AA compliant
+- WGAC AA compliant color scheme
 
 
 ## Contribute
