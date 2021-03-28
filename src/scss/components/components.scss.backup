@@ -1,10 +1,14 @@
+@import "images";
+
+
 // EDIT THIS FIRST
 @import "variables.scss";
 
 //main
-@import "main--img";
 @import "main.scss";
-@import "main--pg-index.scss";
+@import "pg-index.scss";
+
+
 
 //header
 @import "header.scss";
@@ -14,17 +18,17 @@
 @import "header--aside.scss";
 
 // components
-@import "component--search-filters.scss";
-@import "component--modal.scss";
-@import "component--tooltip.scss";
-@import "component--result.scss";
-@import "component--related-searches.scss";
-@import "component--result-more.scss";
+@import "search-filters.scss";
+@import "modal.scss";
+@import "tooltip.scss";
+@import "result.scss";
+@import "related-searches.scss";
+@import "result--more.scss";
 
 
 // modules
 @import "modules";
-@import "module--zci-wrap";
+@import "zci-wrap";
 @import "module--about.scss";
 @import "module--carousel.scss";
 @import "module--images.scss";
@@ -36,6 +40,11 @@
 //pages
 @import "page--news";
 
-// ze end (the end)
-@import "zend--ads";
-@import "zend--footer.scss"
+
+
+//img
+// @import "logo.scss";
+// @import "pin.scss"
+
+@import "ads";
+@import "footer.scss"

@@ -762,6 +762,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 .has-zcm .module.module--carousel .module--carousel__image-wrapper {
   background-color: transparent !important;
   background: transparent !important; }
+  .has-zcm .module.module--carousel .module--carousel__image-wrapper .module--carousel__placeholder {
+    background-color: #003cff !important; }
   .has-zcm .module.module--carousel .module--carousel__image-wrapper .module--carousel__image.is-contain-image {
     border-radius: 0.5em !important; }
 

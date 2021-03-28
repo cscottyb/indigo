@@ -48,6 +48,10 @@
       background-color: transparent !important;
       background: transparent !important;
 
+      .module--carousel__placeholder{
+        background-color: $theme-color !important;
+      }
+
       .module--carousel__image.is-contain-image{
         border-radius: $border-radius / 2 !important;
       }
