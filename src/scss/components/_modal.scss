@@ -188,6 +188,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
           select{
             background-color: rgba(97, 107, 143, 0.1) !important;
             color: $modal-body-color !important;
+            font-family: $system-fonts !important;
           }
 
           &:before{
