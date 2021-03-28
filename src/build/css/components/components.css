@@ -395,7 +395,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
         line-height: 1em !important; }
       .has-zcm .modal.modal--dropdown--settings .modal__body .frm__field .frm__select select {
         background-color: rgba(97, 107, 143, 0.1) !important;
-        color: #000000 !important; }
+        color: #000000 !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; }
       .has-zcm .modal.modal--dropdown--settings .modal__body .frm__field .frm__select:before {
         background-image: none !important; }
       .has-zcm .modal.modal--dropdown--settings .modal__body .frm__field .frm__select:after {
@@ -523,27 +524,31 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   .has-zcm .related-searches .related-searches__title-long,
   .has-zcm .related-searches .related-searches__title-short {
     font-weight: 500 !important;
-    color: #000000 !important; }
+    color: #000000 !important;
+    font-size: 0.875em !important; }
   .has-zcm .related-searches .related-searches__list a.related-searches__link {
     font-weight: 400 !important;
-    color: #003cff !important;
+    color: #0037eb !important;
     font-size: 1em !important; }
   .has-zcm .related-searches .related-searches__list .related-searches__item-text::before {
-    color: #003cff !important; }
+    color: #0037eb !important; }
+
+.has-zcm .results--sidebar .module-slot .related-searches {
+  background-color: transparent !important; }
 
 .has-zcm .result--more a.result--more__btn {
   -webkit-transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   -o-transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   border: 1px solid transparent !important;
-  color: #295bff !important;
+  color: #0037eb !important;
   background-color: #eeeff2 !important;
   font-weight: 400 !important;
   border-radius: 1em !important; }
   .has-zcm .result--more a.result--more__btn:hover {
     background-color: #d6d8e1 !important;
     border-color: #d1d3dc !important;
-    color: #295bff !important; }
+    color: #0037eb !important; }
 
 .has-zcm .result--sep.result--sep--hr:before {
   background-color: #a3aac2 !important; }
@@ -624,7 +629,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
         font-weight: 500 !important; }
         .has-zcm .zci-wrap .zci .tileview .tile-wrap .zci__main .tile .tile__title a:hover,
         .has-zcm .zci-wrap .zci .tileview--grid .tile-wrap .zci__main .tile .tile__title a:hover {
-          color: #295bff !important;
+          color: #0037eb !important;
           text-decoration-color: #5e6478 !important; }
       .has-zcm .zci-wrap .zci .tileview .tile-wrap .zci__main .tile .tile__title__sub,
       .has-zcm .zci-wrap .zci .tileview--grid .tile-wrap .zci__main .tile .tile__title__sub {
@@ -640,9 +645,13 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   box-shadow: none !important;
   border-bottom-color: #eeeff2 !important;
   overflow: hidden !important; }
+  .has-zcm .module.module--about .module__header.module__header--with-image {
+    border-top-right-radius: 1em !important;
+    border-top-left-radius: 1em !important; }
   .has-zcm .module.module--about .module__header .module__header__shadow {
     box-shadow: 0 -1px 1px #e5e6eb; }
   .has-zcm .module.module--about .module__header span.label {
+    -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     background-color: rgba(41, 51, 91, 0.42);
     color: #ffffff;
@@ -654,14 +663,15 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     color: #003cff !important;
     -webkit-font-smoothing: auto !important; }
   .has-zcm .module.module--about .dir-btn .dir-btn__link.btn {
-    color: #144bff !important;
-    background-color: #d1d5e6 !important;
-    border: 1px solid #c9cee3 !important;
+    background-color: #dfe1e7 !important;
+    border-radius: 0.5em !important;
     font-weight: 600 !important;
     -webkit-font-smoothing: auto !important;
     transition: all .1s ease-out; }
     .has-zcm .module.module--about .dir-btn .dir-btn__link.btn:hover {
-      color: #144bff !important;
+      background-color: #d1d3dc !important; }
+    .has-zcm .module.module--about .dir-btn .dir-btn__link.btn:hover {
+      color: #0037eb !important;
       background-color: #c1c5d1 !important;
       border: solid 1px #c2c5d1 !important; }
   .has-zcm .module.module--about a.module__clickable-header {
@@ -705,32 +715,6 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     height: 1.25em !important; }
   .has-zcm .module.module--about .feedback-prompt {
     display: none !important; }
-
-@media (prefers-color-scheme: dark) {
-  .has-zcm .module.module--about {
-    border-radius: 1em !important; }
-    .has-zcm .module.module--about .module__title {
-      color: #5e6478 !important; }
-    .has-zcm .module.module--about .module__official-url {
-      color: #003cff !important; }
-    .has-zcm .module.module--about .dir-btn .dir-btn__link.btn {
-      color: #003cff !important;
-      background-color: #dfe1e7 !important; }
-    .has-zcm .module.module--about .module__text {
-      color: #5e6478 !important; }
-      .has-zcm .module.module--about .module__text .module__more-a.tx--bold {
-        color: #003cff !important; }
-    .has-zcm .module.module--about .about-info-box {
-      color: #5e6478 !important; }
-      .has-zcm .module.module--about .about-info-box .about-info-box__info-row:first-child,
-      .has-zcm .module.module--about .about-info-box .about-info-box__link-row:first-child {
-        padding-top: .125em !important; }
-      .has-zcm .module.module--about .about-info-box .about-info-box__info-row {
-        border-top: #d1d3dc !important; }
-    .has-zcm .module.module--about a.about-profiles__link {
-      color: #5e6478 !important; }
-    .has-zcm .module.module--about .module__toggle {
-      color: #003cff !important; } }
 
 .has-zcm .module.module--carousel .module--carousel__left,
 .has-zcm .module.module--carousel .module--carousel__right {

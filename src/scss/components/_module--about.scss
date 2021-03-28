@@ -8,10 +8,17 @@
     overflow: hidden !important;
 
     .module__header{
+      &.module__header--with-image{
+        border-top-right-radius: $border-radius !important;
+        border-top-left-radius: $border-radius !important;
+      }
+
+
       .module__header__shadow{
         box-shadow: 0 -1px 1px darken($gray-200, 3);
       }
       span.label {
+        -webkit-backdrop-filter: blur(7px);
         backdrop-filter: blur(7px);
         background-color: hsla(hue($theme-color)+2, 38%, 26%, .42);
         color: #ffffff;
@@ -29,16 +36,18 @@
     }
     .dir-btn{
       .dir-btn__link.btn {
-        color: hsl(hue($theme-color), 100%, 54%) !important;
-        background-color: hsl(hue($theme-color)+2, 29%, 86%) !important;
-        border: 1px solid hsl(hue($theme-color)+2, 32%, 84%) !important;
+        // color: hsl(hue($theme-color), 100%, 54%) !important;
+        // background-color: hsl(hue($theme-color)+2, 29%, 86%) !important;
+        // border: 1px solid hsl(hue($theme-color)+2, 32%, 84%) !important;
+        @include button-bg($gray-200,2);
         font-weight: 600 !important;
         -webkit-font-smoothing: auto !important;
         transition: all .1s ease-out;
 
         &:hover{
 
-          color: hsl(hue($theme-color), 100%, 54%) !important;
+          // color: hsl(hue($theme-color), 100%, 54%) !important;
+          color: $theme-color-ui !important;
           background-color: hsl(hue($theme-color)+2, 15%, 79%) !important;
           border: solid 1px hsl(hue($theme-color)+2, 14%, 79%) !important;
         }
@@ -111,51 +120,51 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .has-zcm{
-    .module.module--about{
-      border-radius: $border-radius !important;
-
-      .module__title{
-        color: $body-text-color !important;
-      }
-      .module__official-url{
-        color: $theme-color !important;
-      }
-      .dir-btn{
-        .dir-btn__link.btn {
-          color: $theme-color !important;
-          background-color: $gray-300 !important; //adjust-color($theme-color, $alpha: -90%)
-        }
-      }
-
-      .module__text{
-        color: $gray-700 !important;
-
-        .module__more-a.tx--bold{
-          color: $theme-color !important;
-        }
-      }
-      .about-info-box {
-        color: $gray-700 !important;
-
-        .about-info-box__info-row:first-child,
-        .about-info-box__link-row:first-child{
-          padding-top: .125em !important;
-        }
-        .about-info-box__info-row{
-          border-top: $gray-400 !important;
-        }
-      }
-      a.about-profiles__link{
-        color: $body-text-color !important;
-      }
-      .module__toggle {
-        color: $theme-color !important;
-      }
-      .feedback-prompt{
-
-      }
-    }
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   .has-zcm{
+//     .module.module--about{
+//       border-radius: $border-radius !important;
+//
+//       .module__title{
+//         color: $body-text-color !important;
+//       }
+//       .module__official-url{
+//         color: $theme-color !important;
+//       }
+//       .dir-btn{
+//         .dir-btn__link.btn {
+//           color: $theme-color !important;
+//           background-color: $gray-300 !important; //adjust-color($theme-color, $alpha: -90%)
+//         }
+//       }
+//
+//       .module__text{
+//         color: $gray-700 !important;
+//
+//         .module__more-a.tx--bold{
+//           color: $theme-color !important;
+//         }
+//       }
+//       .about-info-box {
+//         color: $gray-700 !important;
+//
+//         .about-info-box__info-row:first-child,
+//         .about-info-box__link-row:first-child{
+//           padding-top: .125em !important;
+//         }
+//         .about-info-box__info-row{
+//           border-top: $gray-400 !important;
+//         }
+//       }
+//       a.about-profiles__link{
+//         color: $body-text-color !important;
+//       }
+//       .module__toggle {
+//         color: $theme-color !important;
+//       }
+//       .feedback-prompt{
+//
+//       }
+//     }
+//   }
+// }
