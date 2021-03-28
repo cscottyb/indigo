@@ -5,6 +5,15 @@
     .module__header{
       border-top-left-radius:  1em !important;
 	    border-top-right-radius: 1em !important;
+
+      span.label{
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+        background-color: hsla(hue($theme-color)+2, 38%, 26%, .42);
+        color: #ffffff;
+        border-top-left-radius: 0.5em;
+        padding-bottom: 0.55em !important;
+      }
     }
 
     .user-loc-tile{
@@ -22,8 +31,13 @@
         overflow:visible !important;
         min-height:5em !important;
 
-        place-list-item__title{
-          color:$header-text-color !important;
+        .place-list-item__title{
+          color:$body-text-color !important;
+        }
+        .place-list-item__info{
+          .place-list-item__info__item{
+            color:$body-text-color !important;
+          }
         }
 
 
@@ -57,14 +71,14 @@
       color: $theme-color !important;
 
       &:hover{
-        color: $theme-color !important;
+        color: $theme-color-ui !important;
         text-decoration: none !important;
       }
       &:active{
-        color: $theme-color !important;
+        color: $theme-color-ui !important;
       }
       &:focus{
-        color: $theme-color !important;
+        color: $theme-color-ui !important;
       }
     }
     .module__section.module__places-more{

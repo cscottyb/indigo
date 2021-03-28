@@ -53,26 +53,18 @@ $backdrop-opacity: 0.12;
 
 $browser-support: 3;
 
-
-
-
-
-
-
-
-
-
-
-
+// pro mode
+// Director's cut of the indigo theme. Override some theming option
+$pro-mode: 1;
 
 // scale
 $body-text-size:    90%; //default-size: 90%;
 
 //feedback display
-$feedback-prompt_display: none; //display?
+$feedback-prompt_display: none; //display: none or block
 
 //ads
-$ads_display: none;
+$ads_display: none; //display: none or block
 
 
 
