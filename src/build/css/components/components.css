@@ -658,13 +658,15 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     border-top-left-radius: 0.5em;
     padding-bottom: 0.55em !important; }
   .has-zcm .module.module--about .module__title {
-    color: #000000 !important; }
+    color: #000000 !important;
+    -webkit-font-smoothing: antialiased !important; }
   .has-zcm .module.module--about .module__official-url {
     color: #003cff !important;
     -webkit-font-smoothing: auto !important; }
   .has-zcm .module.module--about .dir-btn .dir-btn__link.btn {
     background-color: #dfe1e7 !important;
     border-radius: 0.5em !important;
+    color: #003cff !important;
     font-weight: 600 !important;
     -webkit-font-smoothing: auto !important;
     transition: all .1s ease-out; }
@@ -903,7 +905,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       border-radius: 0.5em !important;
       display: inline-block !important;
       padding: 0.15em 0.5em;
-      font-weight: 500 !important; }
+      font-weight: 600 !important; }
       .has-zcm .module.module--places .module__section.module__places-more span:hover {
         background-color: #d1d3dc !important; }
   .has-zcm .module.module--places .place-list-item__image {
@@ -942,7 +944,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     color: #5e6478 !important; }
   .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-value {
     color: #000000 !important;
-    font-weight: 500 !important; }
+    font-weight: 600 !important; }
   .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-units {
     font-weight: 400 !important; }
   .has-zcm .forecast-wrapper .module.module--forecast .js-forecast-module-detail .module__top .module__detail.module__detail--left .module__temperature .module__temperature-unit--on {
@@ -1081,6 +1083,38 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       color: #5e6478 !important; }
     .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history li .tile__past-result {
       color: #000000 !important; }
+
+.has-zcm .vertical--news .results--main .results .result.result--news {
+  border: solid 1px transparent !important; }
+  .has-zcm .vertical--news .results--main .results .result.result--news .result__body h2.result__title a.result__a {
+    color: #000000 !important;
+    font-weight: 600 !important;
+    -webkit-font-smoothing: antialiased; }
+    .has-zcm .vertical--news .results--main .results .result.result--news .result__body h2.result__title a.result__a:hover {
+      text-decoration: none !important; }
+  .has-zcm .vertical--news .results--main .results .result.result--news .result__body h2.result__title:hover ~ div .result__extras__url a.result__url {
+    text-decoration: underline !important; }
+  .has-zcm .vertical--news .results--main .results .result.result--news .result__body .result__extras .result__extras__url a.result__url {
+    color: #0037eb !important; }
+  .has-zcm .vertical--news .results--main .results .result.result--news .result__body .result__extras .result__extras__url .result__extras__sep,
+  .has-zcm .vertical--news .results--main .results .result.result--news .result__body .result__extras .result__extras__url .result__timestamp {
+    color: #5e6478 !important; }
+  .has-zcm .vertical--news .results--main .results .result.result--news .result__body .result__snippet {
+    color: #5e6478 !important;
+    text-decoration: none !important; }
+    .has-zcm .vertical--news .results--main .results .result.result--news .result__body .result__snippet b {
+      color: #5e6478 !important;
+      font-weight: 600 !important; }
+  .has-zcm .vertical--news .results--main .results .result.result--news .result__body .result__image {
+    margin: 0.2em 0em 0.2em 1.5em !important; }
+    .has-zcm .vertical--news .results--main .results .result.result--news .result__body .result__image .result__image__plc {
+      background-color: #003cff !important; }
+  .has-zcm .vertical--news .results--main .results .result.result--news.highlight {
+    background-color: #eeeff2 !important;
+    border: solid 1px #eeeff2 !important;
+    border-radius: 1em !important;
+    box-shadow: none !important;
+    border-bottom-color: #eeeff2 !important; }
 
 .has-zcm .result--ad .result__body h2.result__title a.result__a {
   color: #23262f !important; }
