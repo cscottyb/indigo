@@ -20,11 +20,13 @@
 @import "component--result.scss";
 @import "component--related-searches.scss";
 @import "component--result-more.scss";
-
+// @import "component--metabar"; //pair with search-filter
+//@import "component--sidebar";
 
 // modules
 @import "modules";
-@import "module--zci-wrap";
+@import "module--zci-wrap"; // pair with all
+// @import "module--tile";
 @import "module--about.scss";
 @import "module--carousel.scss";
 @import "module--images.scss";
@@ -34,7 +36,7 @@
 @import "module--calculator";
 
 //pages
-@import "page--news";
+// @import "page--news";
 
 // ze end (the end)
 @import "zend--ads";

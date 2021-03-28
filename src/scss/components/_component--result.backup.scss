@@ -1,17 +1,17 @@
 .has-zcm{
-  .results{
+  #links{
+    margin-top: 0 !important;
     .result{
       border-radius: 1em !important;
-      border: solid 1px transparent !important;
       .result__body {
       padding-top: 0.6em !important;
-      padding-bottom: 0.6em !important;
+      padding-bottom: 0.8em !important;
 
         h2.result__title{
-          // display: inline-block !important;
+          display: inline-block !important;
 
           a.result__a{
-            font-weight: $header-weight !important;
+            font-weight: 500 !important;
             color: $header-text-color !important;
             -webkit-font-smoothing: $font-smoothing !important;
             b{
@@ -44,11 +44,6 @@
               &:visited{
                 color: $search-result-url-visited !important;
               }
-
-              .result__extras__sep,
-              .result__timestamp{
-                color: $body-text-color !important;
-              }
             }
           }
 
@@ -60,22 +55,17 @@
 
           b, strong{
             color: $body-text-color !important;
-            font-weight: $header-weight !important;
+            font-weight: 600 !important;
           }
-        }
-        .result__image{
-          margin: 0.2em 0em 0.2em 1.5em !important;
 
-          .result__image__plc{
-            background-color: $theme-color !important;
-          }
         }
       }
       &.highlight{
         @include card;
-      }
-    }
 
+      }
+
+    }
     .results__sitelink--organics{
       -webkit-font-smoothing: $font-smoothing !important;
       a.result__sitelink-title{
@@ -91,9 +81,6 @@
       }
 
     }
-  }
-  #links{
-    margin-top: 0 !important;
   }
 }
 
