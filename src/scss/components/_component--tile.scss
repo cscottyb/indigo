@@ -1,0 +1,117 @@
+@mixin tile {
+  border: solid 1px $ui-bg-color !important;
+  border-bottom-color: $ui-bg-color !important;
+  background-color: $ui-bg-color !important;
+  box-shadow: none !important;
+  border-radius: $border-radius !important;
+
+  &:hover{
+    border: solid 1px $ui-bg-color-hover !important;
+    border-bottom-color: $ui-bg-color-hover !important;
+    background-color: $ui-bg-color-hover !important;
+  }
+  &.active-topic{
+    border: solid 1px $gray-400 !important;
+    border-bottom-color: $gray-400 !important;
+  }
+
+  .tile__body{
+    background-color: transparent !important;
+    border: solid 0px transparent !important;
+    box-shadow: none !important;
+    border-radius: 1em !important;
+    border-bottom-color: transparent !important;
+  }
+
+
+}
+
+
+.has-zcm{
+  .tile-wrap{
+    .tile{
+      @include tile;
+
+      .tile__media{
+        background-color: transparent !important;
+
+        img{
+          background-color: transparent !important;
+        }
+      }
+      .tile__body{
+
+        .tile__title{
+          a{
+            color: $header-text-color !important;
+            font-weight: $header-weight !important;
+            &:hover{
+              text-decoration-color: $body-text-color !important;
+            }
+          }
+          .tile__title__sub {
+            color: $theme-color-dark !important;
+          }
+        }
+        .tile__content{
+          color: $body-text-color !important;
+        }
+      }
+
+
+
+      &.tile--vid{
+        span{
+          img{
+          }
+          .video-source{
+            color:$header-text-color !important;
+          }
+        }
+        .tile__count{
+          color: $body-text-color !important;
+        }
+      }
+    }
+  }
+}
+
+
+// .tile{
+//   background-color: transparent !important;
+//   border: solid 1px transparent !important;
+//   box-shadow: none !important;
+//   // box-shadow: 0 2px 11px -3px rgba(50, 99, 252, 0.1) !important;
+//   border-radius: 1em !important;
+//   border-bottom-color: transparent !important;
+//
+//   &:hover{
+//     // border: solid 1px $theme-color !important;
+//   }
+//
+//   .tile__body{
+//     background-color: $gray-200 !important;
+//     border: solid 1px $gray-200 !important;
+//     box-shadow: none !important;
+//     border-radius: 1em !important;
+//     border-bottom-color: $gray-200 !important;
+//   }
+//
+//   .tile__title a{
+//     color: $header-text-color !important;
+//     font-weight: 500 !important;
+//     &:hover{
+//       color: $theme-color-ui !important;
+//       text-decoration-color: $gray-700 !important;
+//     }
+//
+//   }
+//
+//   .tile__title__sub {
+//     color: $body-text-color !important;
+//   }
+//
+//   .tile__content{
+//     color: $body-text-color !important;
+//   }
+// }

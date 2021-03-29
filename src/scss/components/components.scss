@@ -21,13 +21,13 @@
 @import "component--result.scss";
 @import "component--related-searches.scss";
 @import "component--result-more.scss";
+@import "component--tile";
 
 //@import "component--sidebar";
 
 // modules
 @import "modules";
 @import "module--zci-wrap"; // pair with all
-// @import "module--tile";
 @import "module--about.scss";
 @import "module--carousel.scss";
 @import "module--images.scss";
@@ -38,6 +38,8 @@
 
 //pages
 // @import "page--news"; //depreciated
+@import "page--videos";
+@import "page--shopping";
 
 // ze end (the end)
 @import "zend--ads";
