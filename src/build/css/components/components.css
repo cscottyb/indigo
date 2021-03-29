@@ -646,6 +646,30 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   .has-zcm .tile-wrap .tile.tile--vid .tile__count {
     color: #5e6478 !important; }
 
+.has-zcm .nav-menu--slideout,
+#pg-index .nav-menu--slideout {
+  background-color: #fbfbfb !important;
+  -webkit-box-shadow: -1px 0 0 #dfe1e7 !important;
+  -moz-box-shadow: -1px 0 0 #dfe1e7 !important;
+  -ms-box-shadow: -1px 0 0 #dfe1e7 !important;
+  -o-box-shadow: -1px 0 0 #dfe1e7 !important;
+  box-shadow: -1px 0 0 #dfe1e7 !important; }
+  .has-zcm .nav-menu--slideout .nav-menu__close,
+  #pg-index .nav-menu--slideout .nav-menu__close {
+    color: #5e6478 !important; }
+    .has-zcm .nav-menu--slideout .nav-menu__close:hover,
+    #pg-index .nav-menu--slideout .nav-menu__close:hover {
+      color: #000000 !important; }
+  .has-zcm .nav-menu--slideout .nav-menu__heading,
+  #pg-index .nav-menu--slideout .nav-menu__heading {
+    color: #000000 !important; }
+  .has-zcm .nav-menu--slideout .nav-menu__item a,
+  #pg-index .nav-menu--slideout .nav-menu__item a {
+    color: #5e6478 !important; }
+    .has-zcm .nav-menu--slideout .nav-menu__item a:hover,
+    #pg-index .nav-menu--slideout .nav-menu__item a:hover {
+      color: #003cff !important; }
+
 .has-zcm .module .module__header {
   color: #000000 !important; }
   .has-zcm .module .module__header:hover {
