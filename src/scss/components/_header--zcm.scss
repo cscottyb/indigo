@@ -12,7 +12,7 @@
 
       &:hover,
       &:active{
-        border-bottom: solid 1px $gray-400 !important;
+        border-bottom: solid 1px transparent !important;
         cursor: default !important;
         background-color: transparent !important;
       }

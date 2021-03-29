@@ -14,13 +14,14 @@
 @import "header--aside.scss";
 
 // components
-@import "component--search-filters.scss";
+// @import "component--search-filters.scss"; //depreciated
+@import "component--metabar";
 @import "component--modal.scss";
 @import "component--tooltip.scss";
 @import "component--result.scss";
 @import "component--related-searches.scss";
 @import "component--result-more.scss";
-// @import "component--metabar"; //pair with search-filter
+
 //@import "component--sidebar";
 
 // modules
@@ -36,7 +37,7 @@
 @import "module--calculator";
 
 //pages
-// @import "page--news";
+// @import "page--news"; //depreciated
 
 // ze end (the end)
 @import "zend--ads";
