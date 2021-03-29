@@ -31,8 +31,17 @@
       .btn.feedback-btn{
         @include card-button;
 
-        font-size: 0.8em;
-        line-height: 2.2em;
+        font-size: 0.8em !important;
+        line-height: 2.2em !important;
+      }
+    }
+  }
+  #message{
+    .msg__line{
+      color: $header-text-color !important;
+
+      a{
+        color: $theme-color-ui !important;
       }
     }
   }

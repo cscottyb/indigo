@@ -25,14 +25,19 @@
       border-radius: 1em !important;
       box-shadow: none !important;
       border-bottom-color: #eeeff2 !important;
-      font-size: 0.8em;
-      line-height: 2.2em; }
+      font-size: 0.8em !important;
+      line-height: 2.2em !important; }
       .has-zcm body .serp__bottom-right .btn.feedback-btn:hover {
         background-color: #dfe1e7 !important;
         border: solid 1px #dfe1e7 !important;
         border-radius: 1em !important;
         box-shadow: none !important;
         border-bottom-color: #dfe1e7 !important; }
+
+.has-zcm #message .msg__line {
+  color: #000000 !important; }
+  .has-zcm #message .msg__line a {
+    color: #0037eb !important; }
 
 #pg-index {
   background-color: #fbfbfb !important; }
@@ -300,6 +305,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     .has-zcm .metabar .metabar__in .metabar__mode-wrap a.metabar__mode:hover {
       border: solid 1px #dfe1e7 !important;
       background-color: #dfe1e7 !important; }
+  .has-zcm .metabar .metabar__in .metabar__attribution .metabar__attribution__sep {
+    color: #5e6478 !important; }
   .has-zcm .metabar .metabar__in .metabar__attribution .modal-trig a.attribution--link .attribution--link__icon {
     color: #5e6478 !important; }
   .has-zcm .metabar .metabar__in .metabar__attribution .modal-trig a.attribution--link:hover .attribution--link__icon {
@@ -316,6 +323,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       text-decoration: underline !important; }
       .has-zcm .metabar .metabar__in .zcm.zcm--sub ul.zcm__menu li.zcm__item a.zcm__link--sub:hover sup.zvm__link__count {
         color: #000000 !important; }
+  .has-zcm .metabar .metabar__in .metabar__more-at a.zci__more-at {
+    color: #000000 !important; }
 
 .has-zcm .search-filters-wrap::before, .has-zcm .search-filters-wrap::after,
 .has-zcm .metabar__dropdowns-wrap::before,
@@ -836,7 +845,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 .has-zcm .module.module--carousel .module--carousel__footer .tile__time {
   color: #5e6478 !important; }
 
-.has-zcm .module.module--carousel .module--carousel__footer .module--carousel__gray-text.one-line {
+.has-zcm .module.module--carousel .module--carousel__footer .module--carousel__gray-text,
+.has-zcm .module.module--carousel .module--carousel__footer .one-line {
   color: #5e6478 !important; }
 
 .has-zcm .module.module--carousel .module--carousel__main-source a {
@@ -1121,11 +1131,22 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     .has-zcm .zci--calculator .tile__calc .tile__tabs .tile__calc__col.tile__history li .tile__past-result {
       color: #000000 !important; }
 
-.has-zcm .tile-wrap .tileview__videos.has-tiles--grid .tile.tile--vid span .video-source {
+.has-zcm .tileview__recipes .tile .tile__body .opt {
+  display: block !important;
+  color: #5e6478 !important; }
+
+.has-zcm .tileview__recipes .tile .tile__body .tile__source.one-line {
   color: #000000 !important; }
 
-.has-zcm .tile-wrap .tileview__videos.has-tiles--grid .tile.tile--vid .tile__count {
-  color: #5e6478 !important; }
+.has-zcm .star {
+  color: #a3aac2 !important; }
+
+.has-zcm .tile-wrap .tileview__videos.has-tiles--grid .tile {
+  margin-top: 0.5em !important; }
+  .has-zcm .tile-wrap .tileview__videos.has-tiles--grid .tile.tile--vid span .video-source {
+    color: #000000 !important; }
+  .has-zcm .tile-wrap .tileview__videos.has-tiles--grid .tile.tile--vid .tile__count {
+    color: #5e6478 !important; }
 
 .has-zcm .sidebar-filters .sidebar-filter__show-more {
   background-color: #eeeff2 !important;
@@ -1165,6 +1186,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   .has-zcm .result--ad .result__body .result__extras a.report-ad__link,
   .has-zcm .result--ad .result__body .result__extras i.ddgsi-comment.ddgsi {
     color: #000000 !important; }
+  .has-zcm .result--ad .result__body .result__extras span.report-ad__start {
+    border-left: solid 1px #5e6478 !important; }
 
 .has-zcm .result--ad .result__body .result__snippet a {
   color: #5e6478 !important; }

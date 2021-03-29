@@ -20,6 +20,9 @@
         }
       }
       .metabar__attribution{
+        .metabar__attribution__sep{
+          color: $body-text-color !important;
+        }
         .modal-trig{
           a.attribution--link{
             .attribution--link__icon{
@@ -55,6 +58,11 @@
               }
             }
           }
+        }
+      }
+      .metabar__more-at{
+        a.zci__more-at{
+          color: $header-text-color !important;
         }
       }
     }

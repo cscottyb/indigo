@@ -20,6 +20,9 @@
         i.ddgsi-comment.ddgsi{
           color: $header-text-color !important;
         }
+        span.report-ad__start{
+          border-left: solid 1px $body-text-color !important;
+        }
       }
       .result__snippet{
         a{
