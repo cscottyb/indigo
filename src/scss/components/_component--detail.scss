@@ -1,0 +1,61 @@
+.has-zcm{
+  .detail{
+    background-color: $gray-950 !important;
+    border-color: $gray-950 !important;
+
+    .detail__wrap{
+      .detail__close{
+        color: $gray-700 !important;
+
+        &:hover{
+          color: $gray-100 !important;
+        }
+      }
+
+      .detail__panes{
+        .detail__body{
+          a{
+            color: $gray-100 !important;
+
+            &.c-detail__btn{
+              background-color: $gray-800 !important
+            }
+
+            &:hover{
+
+              &.c-detail__btn{
+                background-color: $gray-700 !important
+              }
+            }
+          }
+
+          .c-detail__filemeta{
+            color: $gray-700 !important;
+          }
+
+          .c-detail__desc{
+            p,i{
+              color: $gray-700 !important;
+            }
+          }
+        }
+
+
+
+      }
+
+      .detail__controls{
+        i{
+          color: $gray-100 !important;
+          background-color: $gray-800 !important;
+
+          &:hover{
+            background-color: $gray-700 !important;
+          }
+        }
+      }
+
+
+    }
+  }
+}
