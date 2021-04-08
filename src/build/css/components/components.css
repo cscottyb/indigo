@@ -477,6 +477,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 .has-zcm .user-loc-tooltip {
   background-color: #fbfcfe !important;
   background-color: rgba(251, 252, 254, 0.88) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
   backdrop-filter: saturate(180%) blur(20px) !important;
   border: 1px solid #d1d3dc !important;
   box-shadow: 0px 2px 8px -6px #000000; }
@@ -937,11 +938,11 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     border-top-left-radius: 1em !important;
     border-top-right-radius: 1em !important; }
     .has-zcm .module.module--places .module__header span.label {
-      -webkit-backdrop-filter: blur(7px);
-      backdrop-filter: blur(7px);
-      background-color: rgba(41, 51, 91, 0.42);
-      color: #ffffff;
-      border-top-left-radius: 0.5em;
+      -webkit-backdrop-filter: blur(7px) !important;
+      backdrop-filter: blur(7px) !important;
+      background-color: rgba(41, 51, 91, 0.42) !important;
+      color: #ffffff !important;
+      border-top-left-radius: 0.5em !important;
       padding-bottom: 0.55em !important; }
   .has-zcm .module.module--places .user-loc-tile {
     box-shadow: none !important;
@@ -1001,7 +1002,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       background-color: #dfe1e7 !important;
       border-radius: 0.5em !important;
       display: inline-block !important;
-      padding: 0.15em 0.5em;
+      padding: 0.15em 0.5em !important;
       font-weight: 600 !important; }
       .has-zcm .module.module--places .module__section.module__places-more span:hover {
         background-color: #d1d3dc !important; }
@@ -1239,6 +1240,51 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     color: #5e6478 !important; }
   .has-zcm .zci--products .tile-wrap .tileview__products.has-tiles--grid .tile.tile--products .tile--pr__sub .tile--pr__brand {
     color: #5e6478 !important; }
+
+.has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper {
+  -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+  background-color: #fbfbfb !important;
+  background-color: rgba(251, 251, 251, 0.88) !important; }
+  .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item {
+    margin: 1em 0.5em !important;
+    padding: 0.8em !important;
+    border-top: solid 1px transparent !important;
+    border-radius: 1em !important;
+    overflow: visible !important; }
+    .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item:hover {
+      background-color: #dfe1e7 !important; }
+    .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item:first-child {
+      margin-top: 0.5em !important; }
+    .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item:last-child {
+      margin-bottom: 0.5em !important; }
+    .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item:after {
+      display: block !important;
+      width: 100% !important;
+      height: 0px !important;
+      background-color: transparent !important;
+      content: " " !important;
+      position: absolute !important;
+      bottom: -0.5em !important;
+      right: 0 !important;
+      border-bottom: solid 1px #d1d3dc !important; }
+    .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item:last-child:after {
+      display: none !important; }
+    .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item .place-list-item__info,
+    .has-zcm .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item .place-list-item__rating {
+      color: #5e6478 !important; }
+
+.has-zcm .vertical--map .vertical--map__sidebar .map-control button {
+  -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+  background-color: #fbfbfb !important;
+  background-color: rgba(251, 251, 251, 0.88) !important; }
+
+.has-zcm .vertical--map .vertical--map__sidebar .js-vertical-map-sidebar-header-wrapper .vertical--map__sidebar__header {
+  -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+  backdrop-filter: saturate(180%) blur(20px) !important;
+  background-color: #fbfbfb !important;
+  background-color: rgba(251, 251, 251, 0.88) !important; }
 
 .has-zcm .result--ad .result__body h2.result__title a.result__a {
   color: #23262f !important; }
