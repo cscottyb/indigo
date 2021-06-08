@@ -1,0 +1,120 @@
+//
+// modules--carousel
+//
+
+.has-zcm{
+  .module.module--carousel{
+    .module--carousel__left,
+    .module--carousel__right{
+      background-color: $theme-color !important;
+      color: #ffffff !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      border: none !important;
+      &:hover{
+        color: $gray-200 !important;
+        background-color: $gray-800 !important;
+      }
+    }
+    .ddgsi-right:before,
+    .ddgsi-left:before {
+    position: relative;
+    top: 1px;
+    }
+    .module__header.module__header--link {
+      font-weight: 600 !important;
+      font-size: 1.125em !important;
+
+      &:hover{
+        text-decoration: none !important;
+      }
+    }
+    .module--carousel__item{
+      @include card-button;
+      background-color: darken($gray-200, 1);
+
+      .module--carousel__image{
+        background-position:center;
+        transition: all .2s ease;
+        background-size: 100%;
+      }
+
+      &:hover .module--carousel__image{
+        // background-size: 105%;
+      }
+    }
+
+    .module--carousel__image-wrapper{
+      background-color: transparent !important;
+      background: transparent !important;
+
+      .module--carousel__placeholder{
+        background-color: $theme-color !important;
+      }
+
+      .module--carousel__image.is-contain-image{
+        border-radius: $border-radius / 2 !important;
+      }
+    }
+
+    .module--carousel__body{
+      a.module--carousel__body__title{
+        text-decoration-color: $body-text-color !important;
+        color: $header-text-color !important;
+        font-weight: 500 !important;
+        -webkit-font-smoothing: $font-smoothing !important;
+
+      }
+      .module--carousel__extra-row,
+      .module--carousel__gray-text{
+        color: $gray-700 !important;
+      }
+      .module--carousel__body__content{
+        color: $body-text-color !important;
+      }
+
+      .module--carousel__body__pricing{
+        .module--carousel__body__price{
+          color: $body-text-color !important;
+        }
+      }
+
+    }
+    .module--carousel__footer{
+      .result__url{
+        color: $gray-500 !important;
+      }
+      .module--carousel__source.result__url{
+        color: $body-text-color !important;
+      }
+      .module--carousel__extra-row{
+        color: $body-text-color !important;
+      }
+      .module--carousel__more-at{
+        span.module--carousel__gray-text{
+          color: $body-text-color !important;
+        }
+      }
+      .sep{
+        border-left: 1px solid transparent !important;
+      }
+      .tile__time{
+        color: $body-text-color !important;
+      }
+
+      .module--carousel__gray-text,
+      .one-line{
+        color: $body-text-color !important;
+      }
+
+    }
+    .module--carousel__main-source{
+      a{
+        color: $body-text-color !important;
+      }
+    }
+    .feedback-prompt{
+      display: $feedback-prompt_display !important;
+    }
+  }
+}

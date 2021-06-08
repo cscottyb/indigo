@@ -1,0 +1,101 @@
+.has-zcm{
+  .metabar{
+    @include header-translucency
+    border-bottom-color: $gray-300 !important;
+    .metabar__in{
+      .metabar__mode-wrap{
+        a.metabar__mode{
+          color: $body-text-color !important;
+          &.btn--icon{
+            background-color: transparent !important;
+            border: solid 1px transparent !important;
+          }
+          &.metabar__grid-btn{
+            border: solid 1px $ui-bg-color !important;
+            background-color: $ui-bg-color !important;
+          }
+          &:hover{
+            border: solid 1px $ui-bg-color-hover !important;
+            background-color: $ui-bg-color-hover !important;
+          }
+        }
+      }
+      .metabar__attribution{
+        .metabar__attribution__sep{
+          color: $body-text-color !important;
+        }
+        .modal-trig{
+          a.attribution--link{
+            .attribution--link__icon{
+              color: $body-text-color !important;
+            }
+            &:hover .attribution--link__icon{
+              color: $header-text-color !important;
+            }
+          }
+        }
+      }
+      .metabar__primary-text{
+        color: $header-text-color !important;
+        .metabar__term{
+          font-weight: $header-weight !important;
+        }
+      }
+      .zcm{
+        &.zcm--sub{
+          ul.zcm__menu{
+            li.zcm__item{
+              a.zcm__link--sub{
+                color: $body-text-color !important;
+                &.is-selected{
+                  color: $header-text-color !important;
+                }
+                &:hover{
+                  text-decoration: underline !important;
+                  sup.zvm__link__count{
+                    color: $header-text-color !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .metabar__more-at{
+        a.zci__more-at{
+          color: $header-text-color !important;
+        }
+      }
+    }
+  }
+  .search-filters-wrap,
+  .metabar__dropdowns-wrap{
+    &::before,
+    &::after{
+      display: none !important;
+    }
+  }
+  .site-wrapper{
+    .dropdown{
+      &.is-active{
+        a.dropdown__button{
+          font-weight: 400 !important;
+        }
+      }
+      a.dropdown__button{
+        color: $header-text-color !important;
+      }
+      .dropdown__switch{
+        &.switch{
+          background-color: $body-text-color !important;
+        }
+        &.switch.is-on{
+          background-color: $theme-color !important;
+        }
+        .switch__knob{
+          background-color: $background-color !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.page-index,
+.has-zcm{
+  .site-wrapper{
+    .header-wrap--home{
+      .header--aside__item{
+        .popout-trig{
+          visibility: hidden;
+        }
+        &.header__label{
+          color: $body-text-color !important;
+        }
+        // Privacy, simplified.
+        &.showcase{
+          .header__clickable:hover,
+          .header__clickable:focus{
+            color: $body-text-color !important;
+
+            .popout-trig{
+              visibility: visible;
+            }
+          }
+        }
+        // 📢
+        &.social{
+          .header__clickable:hover,
+          .header__clickable:focus{
+            color: $body-text-color !important;
+
+            .popout-trig{
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+    // ꠵ hamburger
+    a.header__button--menu{
+      color: $body-text-color !important;
+      background-color: transparent !important;
+
+      &:hover{
+        background-color: $gray-300 !important;
+        color: $body-text-color !important;
+      }
+      &:active{
+        background-color: $gray-300 !important;
+        color: $body-text-color !important;
+      }
+      &:focus{
+        background-color: $gray-300 !important;
+        color: $body-text-color !important;
+      }
+    }
+  }
+}
+html.is-mobile .dropdown--settings--cog .dropdown__button:after{
+  color: $gray-700 !important;
+}

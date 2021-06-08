@@ -10,7 +10,7 @@
 //
 
 // colors
-$theme-color:                    hsl(226, 100%, 50%); //#698bff; // hue 226.4
+$theme-color:                    hsl(226, 96%, 70%); //#698bff; // hue 226.4
 $theme-color-ui:   hsl(hue($theme-color), 100%, 46%);
 $theme-color-dark: hsl(hue($theme-color), 100%, 35%);
 $selection-color:  hsl(hue($theme-color), 100%, 93%);
@@ -31,12 +31,12 @@ $gray-950:       hsl(hue($accent-color), 28%,  7%); // page-bg-dark
 $gray-1000:      #000000; // black
 
 // background-color and backdrop
-$background-color: $gray-100;
+$background-color: $gray-900;
 $backdrop-filter: saturate(180%) blur(20px);
 $backdrop-opacity: 0.12;
 
-$ui-bg-color: $gray-200;
-$ui-bg-color-hover: $gray-300;
+$ui-bg-color: $gray-800;
+$ui-bg-color-hover: $gray-700;
 
 
 
@@ -93,11 +93,11 @@ $font-smoothing:     auto;   // for header and body
 
 
 // font-colors, font-colors
-$body-text-color:   $gray-700;
+$body-text-color:   $gray-500;
 $body-text-weight:  400;
 $body-text-weight-b: $body-text-weight + 100;
 
-$header-text-color: $gray-1000;
+$header-text-color: $gray-300;
 $header-weight: $body-text-weight + 200;
 
 
