@@ -37,8 +37,8 @@
     }
     .dir-btn{
       .dir-btn__link.btn {
-        @include button-bg($gray-200,2);
-        color: $theme-color !important;
+        @include button-bg(#91A8F2,2);
+        color: $gray-800 !important;
 
         font-weight: 600 !important;
         -webkit-font-smoothing: auto !important;
@@ -47,9 +47,9 @@
         &:hover{
 
           // color: hsl(hue($theme-color), 100%, 54%) !important;
-          color: $theme-color-ui !important;
-          background-color: hsl(hue($theme-color)+2, 15%, 79%) !important;
-          border: solid 1px hsl(hue($theme-color)+2, 14%, 79%) !important;
+          // color: $theme-color-ui !important;
+          background-color: $gray-600 !important;
+          border: solid 1px $gray-600 !important;
         }
       }
 

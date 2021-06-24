@@ -32,7 +32,7 @@
         min-height:5em !important;
 
         .place-list-item__title{
-          color:$body-text-color !important;
+          color:$header-text-color !important;
         }
         .place-list-item__info{
           .place-list-item__info__item{
@@ -60,7 +60,7 @@
           position:absolute !important;
           bottom: -0.6em !important;
           right:0 !important;
-          border-bottom: solid 1px $gray-400 !important;
+          border-bottom: solid 1px $ui-bg-color-hover !important;
         }
         &:last-child:after{
           display:none !important;
@@ -82,7 +82,7 @@
       }
     }
     .module__section.module__places-more{
-        border-top: solid 1px $gray-400 !important;
+        border-top: solid 1px $ui-bg-color-hover !important;
 
         span{
           @include button-bg($gray-200, 2);
