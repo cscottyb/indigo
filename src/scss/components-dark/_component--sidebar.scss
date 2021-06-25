@@ -9,11 +9,11 @@
 #pg-index{
   .nav-menu--slideout{
     background-color: $background-color !important;
-    -webkit-box-shadow: -1px 0 0 $gray-300 !important;
-    -moz-box-shadow: -1px 0 0 $gray-300 !important;
-    -ms-box-shadow: -1px 0 0 $gray-300 !important;
-    -o-box-shadow: -1px 0 0 $gray-300 !important;
-    box-shadow: -1px 0 0 $gray-300 !important;
+    -webkit-box-shadow: -1px 0 0 $panel-border-color !important;
+    -moz-box-shadow: -1px 0 0 $panel-border-color !important;
+    -ms-box-shadow: -1px 0 0 $panel-border-color !important;
+    -o-box-shadow: -1px 0 0 $panel-border-color !important;
+    box-shadow: -1px 0 0 $panel-border-color !important;
 
     .nav-menu__close{
       color: $body-text-color !important;

@@ -1,10 +1,15 @@
 .page-index,
 .has-zcm{
   .site-wrapper{
-    .header-wrap--home{
+    .header-wrap{
       .header--aside__item{
-        .popout-trig{
-          visibility: hidden;
+
+        display: $clutter-d !important;
+
+
+
+        .js-popout-trig{
+          visibility: $clutter-v !important;
         }
         &.header__label{
           color: $body-text-color !important;
@@ -16,7 +21,7 @@
             color: $body-text-color !important;
 
             .popout-trig{
-              visibility: visible;
+              visibility: $clutter-v visible;
             }
           }
         }
@@ -27,7 +32,7 @@
             color: $body-text-color !important;
 
             .popout-trig{
-              visibility: visible;
+              visibility: $clutter-v visible;
             }
           }
         }

@@ -29,7 +29,7 @@
 .has-zcm{
   #header_wrapper{
     @include header-translucency;
-    box-shadow: 0 1px 0 $ui-bg-color !important;
+    box-shadow: 0 1px 0 $panel-border-color !important;
 
     .header__search-wrap{
       .header__logo{
