@@ -44,12 +44,14 @@
         -webkit-font-smoothing: auto !important;
         transition: all .1s ease-out;
 
+        border: solid 0 transparent !important;
+
         &:hover{
 
           // color: hsl(hue($theme-color), 100%, 54%) !important;
           // color: $theme-color-ui !important;
-          background-color: $gray-600 !important;
-          border: solid 1px $gray-600 !important;
+          // background-color: $gray-600 !important;
+          // border: solid 1px $gray-600 !important;
         }
       }
 

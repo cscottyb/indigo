@@ -67,7 +67,8 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
         border-radius: 0.25em !important;
 
         &:hover{
-          background-color: $theme-color-dark !important;
+          // background-color: $theme-color-dark !important;
+          background-color: $ui-bg-color-hover !important;
           color: $gray-000 !important;
           text-decoration: none !important;
           text-shadow: 0px 1px 2px #00000033 !important;

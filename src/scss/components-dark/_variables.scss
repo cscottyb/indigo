@@ -40,6 +40,7 @@ $ui-bg-color: $gray-800;
 $ui-bg-color-hover: $gray-750;
 
 $panel-border-color: $ui-bg-color-hover;
+$divider-border-color: $ui-bg-color;
 
 
 
@@ -234,9 +235,12 @@ $modal-list-bg-hover:  $theme-color;
     }
   }
   @else {
-    background-color: darken($btn-bg, 5) !important;
+    // background-color: darken($btn-bg, 5) !important;
+    background-color: $body-text-color !important;
+    color: $background-color !important;
     &:hover{
-      background-color: darken($btn-bg, 10) !important;
+      background-color: $header-text-color !important;
+      background-color: $gray-400 !important;
     }
   }
 
@@ -275,33 +279,3 @@ $modal-list-bg-hover:  $theme-color;
   }
 
 }
-
-
-
-
-// @mixin translucency {
-//   @if $browser-support == 0{
-//     background-color: $background-color !important;
-//   }
-//   @else if $browser-support == 1{
-//     -webkit-backdrop-filter: $backdrop-filter !important;
-//     backdrop-filter: $backdrop-filter !important;
-//     background-color: $background-color !important;
-//     background-color: transparentize($background-color, .02) !important;
-//   }
-//   @else if $browser-support == 2{
-//     -webkit-backdrop-filter: $backdrop-filter !important;
-//     backdrop-filter: $backdrop-filter !important;
-//     background-color: $background-color !important;
-//     background-color: transparentize($background-color, $backdrop-opacity) !important;
-//   }
-//   @else if $browser-support == 3{
-//     -webkit-backdrop-filter: $backdrop-filter !important;
-//     backdrop-filter: $backdrop-filter !important;
-//     background-color: $background-color !important;
-//     background-color: transparentize($background-color, $backdrop-opacity) !important;
-//   }
-//   @else{
-//       background-color: $background-color !important;
-//   }
-// }
