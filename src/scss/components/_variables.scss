@@ -15,19 +15,19 @@ $theme-color-ui:   hsl(hue($theme-color), 100%, 46%);
 $theme-color-dark: hsl(hue($theme-color), 100%, 35%);
 $selection-color:  hsl(hue($theme-color), 100%, 93%);
 
-$accent-color:  hsl(226, 100%, 50%);
+$theme-color:  hsl(226, 100%, 50%);
 
 $gray-000:       #ffffff; // white
 $gray-100:       #fbfbfb; // page-bg      0%, 98%
-$gray-200:       hsl(hue($accent-color), 13%, 94%); //#ecedf1; //#f0f1f4; //card-bg
-$gray-300:       hsl(244, 14%, 90%); // card-bg:hover hsl(hue($accent-color), 13%, 89%);
-$gray-400:       hsl(hue($accent-color), 13%, 84%); // #e1e3e8; // hr, border
-$gray-500:       hsl(hue($accent-color), 20%, 70%); // #b3b3c7; //#8e8e93;   // header-color-dark
-$gray-600:       hsl(hue($accent-color), 10%, 51%); // #202020 // body-color-dark // swap with 600
-$gray-700:       hsl(hue($accent-color), 12%, 42%); //#666c7f; //#6d7283;//#636367; //body-color
-$gray-800:       hsl(hue($accent-color), 13%, 20%); // #1e1e1e
-$gray-900:       hsl(hue($accent-color), 15%, 16%); // page-bg-dim
-$gray-950:       hsl(hue($accent-color), 28%,  7%); // page-bg-dark
+$gray-200:       hsl(hue($theme-color), 13%, 94%); //#ecedf1; //#f0f1f4; //card-bg
+$gray-300:       hsl(244, 14%, 90%); // card-bg:hover hsl(hue($theme-color), 13%, 89%);
+$gray-400:       hsl(hue($theme-color), 13%, 84%); // #e1e3e8; // hr, border
+$gray-500:       hsl(hue($theme-color), 20%, 70%); // #b3b3c7; //#8e8e93;   // header-color-dark
+$gray-600:       hsl(hue($theme-color), 10%, 51%); // #202020 // body-color-dark // swap with 600
+$gray-700:       hsl(hue($theme-color), 12%, 42%); //#666c7f; //#6d7283;//#636367; //body-color
+$gray-800:       hsl(hue($theme-color), 13%, 20%); // #1e1e1e
+$gray-900:       hsl(hue($theme-color), 15%, 16%); // page-bg-dim
+$gray-950:       hsl(hue($theme-color), 28%,  7%); // page-bg-dark
 $gray-1000:      #000000; // black
 
 // background-color and backdrop

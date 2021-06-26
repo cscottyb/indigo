@@ -1,0 +1,20 @@
+// colors
+$theme-color:      #91A8F2; //              hsl(226, 96%, 70%); //#698bff; // hue 226.4
+$theme-color-ui:   $theme-color; //hsl(hue($theme-color), 100%, 46%);
+$theme-color-dark: #416BF6; //hsl(hue($theme-color), 100%, 35%);
+
+
+$gray-000:       #ffffff; // white
+$gray-100:       #fbfbfb; // page-bg      0%, 98%
+$gray-200:       hsl(hue($theme-color), 0%, 94%); //#ecedf1; //#f0f1f4; //card-bg
+$gray-300:       hsl(hue($theme-color), 0%, 90%); // card-bg:hover hsl(hue($theme-color), 13%, 89%);
+$gray-400:       hsl(hue($theme-color), 0%, 84%); // #e1e3e8; // hr, border
+$gray-500:       hsl(hue($theme-color), 0%, 68%); // #b3b3c7; //#8e8e93;   // header-color-dark
+$gray-600:       hsl(hue($theme-color), 0%, 51%); // #202020 // body-color-dark // swap with 600
+$gray-700:       hsl(hue($theme-color), 0%, 42%); //#666c7f; //#6d7283;//#636367; //body-color
+$gray-750:       hsl(hue($theme-color), 0%, 27%);
+$gray-800:       hsl(hue($theme-color), 0%, 20%); // #1e1e1e
+$gray-900:       hsl(hue($theme-color), 0%, 16%); // page-bg-dim
+$gray-950:       hsl(hue($theme-color), 0%,  7%); // page-bg-dark
+$gray-975:       hsl(hue($theme-color), 0%,  2%); // page-bg-dark
+$gray-1000:      #000000; // black
