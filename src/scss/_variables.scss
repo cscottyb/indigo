@@ -1,135 +1,14 @@
-//
-//
-// component-dark/_variables.scss
-//
-//
-
-
-//
-// color
-//
-
-// // colors
-// $theme-color:      #91A8F2; //              hsl(226, 96%, 70%); //#698bff; // hue 226.4
-// $theme-color-ui:   $theme-color; //hsl(hue($theme-color), 100%, 46%);
-// $theme-color-dark: #416BF6; //hsl(hue($theme-color), 100%, 35%);
-//
-//
-// $gray-000:       #ffffff; // white
-// $gray-100:       #fbfbfb; // page-bg      0%, 98%
-// $gray-200:       hsl(hue($theme-color), 13%, 94%); //#ecedf1; //#f0f1f4; //card-bg
-// $gray-300:       hsl(hue($theme-color), 14%, 90%); // card-bg:hover hsl(hue($theme-color), 13%, 89%);
-// $gray-400:       hsl(hue($theme-color), 13%, 84%); // #e1e3e8; // hr, border
-// $gray-500:       hsl(hue($theme-color), 20%, 70%); // #b3b3c7; //#8e8e93;   // header-color-dark
-// $gray-600:       hsl(hue($theme-color), 10%, 51%); // #202020 // body-color-dark // swap with 600
-// $gray-700:       hsl(hue($theme-color), 12%, 42%); //#666c7f; //#6d7283;//#636367; //body-color
-// $gray-750: 800      hsl(hue($theme-color), 13%, 27%);
-// $gray-800: 900      hsl(hue($theme-color), 13%, 20%); // #1e1e1e
-// $gray-900: 1000      hsl(hue($theme-color), 15%, 16%); // page-bg-dim
-// $gray-950: 1100     hsl(hue($theme-color), 28%,  7%); // page-bg-dark
-// gray-975   1200
-// $gray-1000:      #000000; // black
-
 // background-color and backdrop
-$background-color: $gray-900;
 $backdrop-filter: saturate(180%) blur(20px);
 $backdrop-opacity: 0.12;
 
-$ui-bg-color: $gray-800;
-$ui-bg-color-hover: $gray-750;
-
-$panel-border-color: $ui-bg-color-hover;
-$divider-border-color: $ui-bg-color;
-
-$selection-color:  hsl(hue($theme-color), 100%, 93%);
 
 
-
-
-
-//
-// quality of life
-//
-
-// browser support
-
-//    Opacity       Translucency           Compatibility
-//
-// 0: 100% opacity ; translucency off     ; Webkit, Blink, Modified Gecko, Default Gecko, Other Browsers
-// 1:  98% opacity ; translucency limited ; Webkit, Blink, Modified Gecko, Default Gecko
-// 2:  88% opacity ; translucency limited ; Webkit, Blink, Modified Gecko
-// 3:  88% opacity ; translucency on      ; Webkit(Safari)
-
-$browser-support: 3;
-
-// pro mode
-// Director's cut of the indigo theme. Override some theming option
-$pro-mode: 1;
-
-// scale
-$body-text-size:    90%; //default-size: 90%;
-
-//feedback display
-$feedback-prompt_display: none; //display: none or block
-
-//ads
-$ads_display: none; //display: none or block
-
-//clutter
-$clutter-v: hidden; //visibility: hidden or visible;
-$clutter-d: none; //visibility: none or block;
-
-
-
-//
 // font
-//
-
-// font-family
-
-$system-fonts: -apple-system, BlinkMacSystemFont,"Segoe UI","Inter", Roboto,"Helvetica Neue", Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$custom-font: sans-serif;
-$default-font: 0;
-
-$font-family: $default-font;
-
-
-// font-smoothing: `antialiased` for crisp fonts or `auto` for more contrast. Links will be auto. Recommend non-gray color text to have auto font-smoothing. Recommend non-retinal displays to use auto.
-
-$font-smoothing-nav: antialiased;   // for navigation and options
-$font-smoothing:     auto;   // for header and body
-
-
-// font-colors, font-colors
-$body-text-color:   $gray-500;
 $body-text-weight:  400;
 $body-text-weight-b: $body-text-weight + 100;
 
-$header-text-color: $gray-300;
 $header-weight: $body-text-weight + 200;
-
-
-// rounded border radius: Recommend value between 0 - 1. 0 for 90deg corners.
-$border-radius:  1em;
-
-
-
-
-
-//
-// code
-//
-
-// $code  letter-spacing: 0.4px;
-
-  $code-color:hsl(145deg, 87%, 26%);
-  $code-background:$gray-200;
-  $code-border:$gray-200;
-  $code-highlight:hsl(144deg, 59%, 80%);
-
-//
-
-
 
 
 

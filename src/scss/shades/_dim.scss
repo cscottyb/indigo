@@ -1,0 +1,18 @@
+// Background color
+$background-color: $gray-900;
+
+// UI colors
+$ui-bg-color: $gray-800;
+$ui-bg-color-hover: $gray-750;
+
+// Border colors
+$panel-border-color: $ui-bg-color-hover;
+$divider-border-color: $ui-bg-color;
+// $ui-border-color: ???
+// $ui-border-color-hover: ???
+
+$selection-color:  hsl(hue($theme-color), 100%, 93%);
+
+// font colors
+$body-text-color:   $gray-500; 
+$header-text-color: $gray-300;
