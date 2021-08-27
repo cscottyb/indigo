@@ -13,7 +13,7 @@ $system-fonts: -apple-system, BlinkMacSystemFont,"Segoe UI","Inter", Roboto,"Hel
 $custom-font: sans-serif;
 $default-font: 0;
 
-$font-family: $default-font;
+$font-family: $system-fonts;
 
 
 // font-smoothing: `antialiased` for crisp fonts or `auto` for more contrast. Links will be auto. Recommend non-gray color text to have auto font-smoothing. Recommend non-retinal displays to use auto.
@@ -49,7 +49,7 @@ $border-radius:  1em;
 
 //clutter
 $clutter-v: hidden; //visibility: hidden or visible;
-$clutter-d: none; //visibility: none or block;
+$clutter-d: none;   //display: none or block;
 
 
 //feedback display
@@ -65,7 +65,7 @@ $ads_display: none; //display: none or block
 
 
 
-
+//
 // pro mode
 // Director's cut of the indigo theme. Override some theming option
 $pro-mode: 1;

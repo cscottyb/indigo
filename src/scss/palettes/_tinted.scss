@@ -18,3 +18,6 @@ $gray-900:       hsl(hue($theme-color), 15%, 16%); // page-bg-dim
 $gray-950:       hsl(hue($theme-color), 28%,  7%); // page-bg-dark
 $gray-975:       hsl(hue($theme-color), 56%,  1%); // darkest
 $gray-1000:      #000000; // black
+
+
+$highlight: hsl(hue($theme-color), 10%, 37%); 
