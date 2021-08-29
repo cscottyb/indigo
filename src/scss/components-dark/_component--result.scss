@@ -103,7 +103,9 @@
 }
 
 
-// .result__body {
-// padding-left: 10px; //Don't change
-// padding-right: 10px; //Don't change
-// }
+.is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news{
+  background: $background-color !important;
+border-color: $ui-border-color !important;
+border-bottom-color: $ui-border-color !important;
+box-shadow: none !important;
+}

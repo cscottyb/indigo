@@ -1,6 +1,7 @@
 html{
-  color: $background-color !important;
+  background-color: $background-color !important;
 }
+@include font;
 
 .has-zcm{
   ::selection {

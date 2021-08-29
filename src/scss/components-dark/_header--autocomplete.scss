@@ -53,7 +53,8 @@ $autocomplete-padd-size-3fifths: $autocomplete-padd-size * 3/5;
 
       border-radius: .5em !important;
       padding: 0.75em 0 !important;
-      max-height: 236px !important;
+      max-height: 265px !important;
+      max-height: initial !important;
 
       .acp{
         background-color: transparent !important;

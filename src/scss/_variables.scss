@@ -135,8 +135,14 @@ $modal-list-bg-hover:  $theme-color;
 }
 
 @mixin font{
-  @if $font-family == 0{
-    /* Using default font. */
+  @if $font-family == $default-fonts{
+    #pg-index,
+    .has-zcm{
+      body, input, select, textarea{
+        font-family: $default-fonts !important;
+      }
+
+    }
   }
   @else if $font-family == $system-fonts{
     #pg-index,

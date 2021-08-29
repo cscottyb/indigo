@@ -3,6 +3,8 @@
     background-color: $selection-color;
   }
 
+  @include font;
+
   body{
     background-color: $gray-100 !important;
     color: $body-text-color !important;

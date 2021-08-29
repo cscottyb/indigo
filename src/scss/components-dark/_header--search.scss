@@ -15,6 +15,7 @@
   .search__button{
     background-color: transparent !important;
     color: $body-text-color !important;
+
   }
 
   .search__button:hover,
@@ -37,4 +38,9 @@
     color: darken($theme-color, 3%) !important;
   }
 
+}
+
+input#search_button,
+input#search_button_homepage{
+  font-family: 'ddg-serp-icons' !important;
 }

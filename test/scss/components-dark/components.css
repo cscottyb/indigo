@@ -1,6 +1,3 @@
-html {
-  color: #23262f !important; }
-
 .has-zcm ::selection {
   background-color: #dbe4ff; }
 
@@ -43,7 +40,7 @@ html {
     color: #91A8F2 !important; }
 
 #pg-index {
-  background-color: #fbfbfb !important; }
+  background-color: #23262f !important; }
   #pg-index .content-wrap--home {
     top: 40% !important; }
   #pg-index .logo-wrap--home {
