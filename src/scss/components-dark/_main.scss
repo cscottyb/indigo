@@ -1,11 +1,12 @@
 html{
-  background-color: $background-color !important;
+  // background-color: $background-color !important;
 }
 @include font;
 
 .has-zcm{
   ::selection {
-    background-color: $selection-color;
+    background-color: $highlight-bg;
+    color: $highlight-color;
   }
 
   body{
