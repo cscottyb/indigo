@@ -204,6 +204,7 @@ $modal-list-bg-hover:  $theme-color;
 // card
 @mixin card {
   background-color: $ui-bg-color !important;
+  background: $ui-bg-color !important;
   border: solid 1px $ui-bg-color !important;
   border-radius: $border-radius !important;
   box-shadow: none !important;

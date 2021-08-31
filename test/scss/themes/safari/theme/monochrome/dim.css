@@ -752,9 +752,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       color: #292929 !important;
       background-color: #91A8F2 !important;
       box-shadow: none !important;
-      background-color: rgba(145, 168, 242, 0.75) !important;
-      -webkit-backdrop-filter: blur(2px) saturate(150%);
-      backdrop-filter: blur(2px) saturate(150%); }
+      background-color: #91A8F2 !important; }
     .has-zcm .zci-wrap .zci .tileview .tile-wrap .zci__main i.tile-nav--next:before,
     .has-zcm .zci-wrap .zci .tileview--grid .tile-wrap .zci__main i.tile-nav--next:before {
       left: 2px !important; }
@@ -968,7 +966,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     .has-zcm .module.module--places .module__header span.label {
       -webkit-backdrop-filter: blur(7px) !important;
       backdrop-filter: blur(7px) !important;
-      background-color: rgba(41, 51, 91, 0.42) !important;
+      background-color: #121212 !important;
       color: #ffffff !important;
       border-top-left-radius: 0.5em !important;
       padding-bottom: 0.55em !important; }
@@ -1040,6 +1038,14 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     border-radius: 0.25em !important; }
   .has-zcm .module.module--places .feedback-prompt {
     display: none !important; }
+
+.has-zcm .sidebar-modules .module.module--places,
+.has-zcm .place-detail {
+  background-color: #333333 !important;
+  border: solid 1px #333333 !important;
+  border-radius: 1em !important;
+  box-shadow: none !important;
+  border-bottom-color: #333333 !important; }
 
 .has-zcm .module.module--about.module--zci-stack_overflow ::selection {
   background-color: #ccffe1 !important; }

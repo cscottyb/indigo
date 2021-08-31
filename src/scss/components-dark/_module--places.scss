@@ -9,7 +9,7 @@
       span.label{
         -webkit-backdrop-filter: blur(7px) !important;
         backdrop-filter: blur(7px) !important;
-        background-color: hsla(hue($theme-color)+2, 38%, 26%, .42) !important;
+        background-color: $gray-950 !important;
         color: #ffffff !important;
         border-top-left-radius: 0.5em !important;
         padding-bottom: 0.55em !important;
@@ -99,5 +99,12 @@
     .feedback-prompt{
       display: $feedback-prompt_display !important;
     }
+  }
+}
+
+.has-zcm{
+  .sidebar-modules .module.module--places,
+  .place-detail{
+    @include card;
   }
 }
