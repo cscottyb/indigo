@@ -5,8 +5,8 @@ html{
 
 .has-zcm{
   ::selection {
-    background-color: $highlight-bg;
-    color: $highlight-color;
+    background-color: $highlight-bg !important;
+    // color: $highlight-color;
   }
 
   body{

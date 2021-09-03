@@ -17,7 +17,8 @@ $gray-800:       hsl(hue($theme-color), 0%, 20%); // #1e1e1e
 $gray-900:       hsl(hue($theme-color), 0%, 16%); // page-bg-dim
 $gray-950:       hsl(hue($theme-color), 0%,  7%); // page-bg-dark
 $gray-975:       hsl(hue($theme-color), 0%,  2%); // page-bg-dark
-$gray-1000:      #000000; // black
+$gray-1000:      #000000; // blackc
 
-$highlight-bg: $theme-color;
+$highlight-bg: rgba($theme-color, 0.25);
+// $highlight-bg: mix($theme-color, #d2e1dd, 25%);;
 $highlight-color: $gray-900;
