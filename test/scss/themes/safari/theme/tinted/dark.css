@@ -939,6 +939,9 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
   .has-zcm .module.module--images .module__header.module__header--link:hover {
     text-decoration: none !important; }
 
+.has-zcm .module.module--images .module--images__thumbnails {
+  overflow: visible !important; }
+
 .has-zcm .module.module--images .module__footer {
   font-weight: 500 !important; }
   .has-zcm .module.module--images .module__footer a {
@@ -948,6 +951,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 
 .has-zcm .module.module--images .module--images__thumbnails__tile {
   border-radius: 0.25em !important; }
+  .has-zcm .module.module--images .module--images__thumbnails__tile:hover {
+    box-shadow: 0 0 1px 1px #91A8F2 !important; }
 
 @media (prefers-color-scheme: dark) {
   .has-zcm .module.module--images .module__footer a {
