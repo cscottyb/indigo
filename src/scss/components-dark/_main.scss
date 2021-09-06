@@ -1,7 +1,15 @@
 html{
   // background-color: $background-color !important;
 }
-@include font;
+// @include font;
+
+#pg-index,
+.has-zcm{
+  body, input, select, textarea{
+    font-family: $font-family !important;
+  }
+
+}
 
 .has-zcm{
   ::selection {

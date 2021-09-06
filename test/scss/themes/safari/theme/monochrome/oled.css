@@ -703,8 +703,8 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
       color: #91A8F2 !important; }
 
 .has-zcm .detail {
-  background-color: #121212 !important;
-  border-color: #121212 !important; }
+  background-color: #000000 !important;
+  border-color: #000000 !important; }
   .has-zcm .detail .detail__wrap .detail__close {
     color: #6b6b6b !important; }
     .has-zcm .detail .detail__wrap .detail__close:hover {
