@@ -345,9 +345,9 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     .has-zcm .metabar .metabar__in .zcm.zcm--sub ul.zcm__menu li.zcm__item a.zcm__link--sub.is-selected {
       color: #e6e6e6 !important; }
     .has-zcm .metabar .metabar__in .zcm.zcm--sub ul.zcm__menu li.zcm__item a.zcm__link--sub:hover {
-      text-decoration: underline !important; }
-      .has-zcm .metabar .metabar__in .zcm.zcm--sub ul.zcm__menu li.zcm__item a.zcm__link--sub:hover sup.zvm__link__count {
-        color: #e6e6e6 !important; }
+      text-decoration: underline !important;
+      color: #e6e6e6 !important;
+      text-decoration-color: #adadad !important; }
   .has-zcm .metabar .metabar__in .metabar__more-at a.zci__more-at {
     color: #e6e6e6 !important; }
 
