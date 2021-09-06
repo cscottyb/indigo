@@ -11,8 +11,8 @@
     background-color: $ui-bg-color-hover !important;
   }
   &.active-topic{
-    border: solid 1px $gray-400 !important;
-    border-bottom-color: $gray-400 !important;
+    border: solid 1px $ui-bg-color-hover !important;
+    border-bottom-color: $ui-bg-color-hover !important;
   }
 
   .tile__body{
@@ -50,7 +50,7 @@
             }
           }
           .tile__title__sub {
-            color: $theme-color !important;
+            color: $body-text-color !important;
           }
         }
         .tile__content{

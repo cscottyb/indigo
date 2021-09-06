@@ -15,7 +15,7 @@
 
 
       .module__header__shadow{
-        box-shadow: 0 -1px 1px darken($gray-200, 3);
+        box-shadow: 0 -1px 1px darken($gray-900, 3);
       }
       span.label {
         -webkit-backdrop-filter: blur(7px);
@@ -38,7 +38,7 @@
     .dir-btn{
       .dir-btn__link.btn {
         @include button-bg(#91A8F2,2);
-        color: $gray-800 !important;
+        // color: $gray-800 !important;
 
         font-weight: 600 !important;
         -webkit-font-smoothing: auto !important;

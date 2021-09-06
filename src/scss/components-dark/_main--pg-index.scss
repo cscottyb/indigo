@@ -7,7 +7,7 @@
   }
 
   .logo-wrap--home{
-    color: $gray-700 !important;
+    // color: $gray-700 !important;
     max-width: 590px !important;
     padding: 0 1.25em !important;
     margin-bottom: -.5em !important;
@@ -25,6 +25,7 @@
       background-color: $theme-color !important;
       border-radius: 50% !important;
       background-image: $header__logo !important;
+
 
       &::before{
         content: "DuckDuckGo" !important;
@@ -48,6 +49,11 @@
         }
       }
 
+    }
+    @media(prefers-color-scheme: dark) {
+      a#logo_homepage_link {
+        background-color: transparent !important;
+      }
     }
   }
   span.logo_homepage__tt {
@@ -121,4 +127,15 @@
     }
 
   }
+  @media only screen and (max-width: 425px){
+    .logo-wrap--home {
+        width: auto !important;
+        padding: 0 0.8em !important;
+    }
+    span.logo_homepage__tt {
+      left: 49.5px !important;
+    }
+  }
+
+
 }

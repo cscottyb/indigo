@@ -23,10 +23,10 @@
   }
   .result--sep{
     &.result--sep--hr:before{
-      background-color: $gray-500 !important;
+      background-color: $body-text-color!important;
     }
     .result__pagenum {
-      color: $gray-500 !important;
+      color: $body-text-color !important;
     }
   }
 }
