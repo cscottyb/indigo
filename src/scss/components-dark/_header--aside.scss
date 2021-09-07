@@ -65,25 +65,25 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after{
   color: $gray-700 !important;
 }
 
-.page-index,
-.has-zcm{
-  .site-wrapper{
-    #zero_click_wrapper {
-      min-height: 101px;
-    }
-    .header-wrap{
-      position: fixed !important;
-      width: 100% !important;
-    }
-  }
-}
-@media (max-width: 589px){
-  .page-index,
-  .has-zcm{
-    .site-wrapper{
-      #zero_click_wrapper {
-        min-height: 136px;
-      }
-    }
-  }
-}
+// .page-index,
+// .has-zcm{
+//   .site-wrapper{
+//     #zero_click_wrapper {
+//       min-height: 101px;
+//     }
+//     .header-wrap{
+//       position: fixed !important;
+//       width: 100% !important;
+//     }
+//   }
+// }
+// @media (max-width: 589px){
+//   .page-index,
+//   .has-zcm{
+//     .site-wrapper{
+//       #zero_click_wrapper {
+//         min-height: 136px;
+//       }
+//     }
+//   }
+// }
