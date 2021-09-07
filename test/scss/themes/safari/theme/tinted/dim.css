@@ -1289,6 +1289,27 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
 .has-zcm .star {
   color: #a3aac2 !important; }
 
+.has-zcm .zci--dictionary_definition .c-base {
+  max-width: 648px !important; }
+  .has-zcm .zci--dictionary_definition .c-base h3 {
+    color: #e2e4e9 !important; }
+    .has-zcm .zci--dictionary_definition .c-base h3 .play-btn__icn {
+      background-color: #91A8F2 !important;
+      color: #23262f !important; }
+      .has-zcm .zci--dictionary_definition .c-base h3 .play-btn__icn:hover {
+        background-color: #a3aac2 !important; }
+  .has-zcm .zci--dictionary_definition .c-base ul li {
+    line-height: 1.5em !important;
+    color: #a3aac2 !important; }
+    .has-zcm .zci--dictionary_definition .c-base ul li .zci__def__part-of-speech {
+      text-align: right !important;
+      color: #e2e4e9 !important; }
+    .has-zcm .zci--dictionary_definition .c-base ul li .zci__def__definition {
+      color: #e2e4e9 !important; }
+  .has-zcm .zci--dictionary_definition .c-base .zci__def__links {
+    margin-top: 1em !important;
+    color: #a3aac2 !important; }
+
 .has-zcm .tile-wrap .tileview__videos.has-tiles--grid .tile {
   margin-top: 0.5em !important; }
   .has-zcm .tile-wrap .tileview__videos.has-tiles--grid .tile.tile--vid span .video-source {
