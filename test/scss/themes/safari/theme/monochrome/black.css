@@ -1318,8 +1318,7 @@ html.is-mobile .dropdown--settings--cog .dropdown__button:after {
     color: #b3b3b3 !important; }
 
 .has-zcm .tile-wrap .tileview__images .tile.tile--img {
-  border-radius: 0.25em !important;
-  overflow: hidden !important; }
+  border-radius: 0.25em !important; }
   .has-zcm .tile-wrap .tileview__images .tile.tile--img a.tile--img__sub .tile--img__title {
     color: #e6e6e6 !important; }
   .has-zcm .tile-wrap .tileview__images .tile.tile--img a.tile--img__sub .tile--img__domain {
