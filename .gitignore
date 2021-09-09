@@ -1,7 +1,7 @@
 .DS_Store
 .git/
-.notes/
 /node_modules/**
 .limbo/
 .triage/
 /test
+package-lock.json
