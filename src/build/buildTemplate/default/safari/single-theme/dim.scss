@@ -1,0 +1,15 @@
+// @import "../../../../global-variables.scss";
+// @import "../../safari.scss";
+// @import "../../../../palettes/monochrome.scss";
+// @import "../../../../shades/dim.scss";
+// @import "../../../../variables.scss";
+//
+// @import "../../../../components-dark/components-list.scss"
+
+@import "src/scss/_options.scss";
+@import "src/scss/palettes/_palette.scss";
+@import "src/scss/shades/_dim.scss";
+@import "../../variant.scss";
+@import "../browser.scss";
+@import "../../../../var.scss";
+@import "src/scss/components/components-list.scss";

@@ -4,7 +4,7 @@
   "description": "Duck Duck Go Indigo Theme.",
   "main": "src/js/index.js",
   "scripts": {
-    "test": "node-sass -w .notes/test/scss -o .notes/test/css",
+    "test": "node-sass -w src/build/buildTemplate -o test/",
     "watch-scss": "node-sass -w src/scss -o src/build/css",
     "watch-modules": "node-sass -w src/scss/components -o src/build/css/components",
     "watch-modules-dark": "node-sass -w src/scss/components-dark -o src/build/css/components-dark",

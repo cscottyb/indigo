@@ -1,6 +1,6 @@
 //
 //
-// _tinted-variables.scss
+// component-dark/_variables.scss
 //
 //
 
@@ -9,34 +9,39 @@
 // color
 //
 
-// colors
-$theme-color:                    hsl(226, 100%, 50%); //#698bff; // hue 226.4
-$theme-color-ui:   hsl(hue($theme-color), 100%, 46%);
-$theme-color-dark: hsl(hue($theme-color), 100%, 35%);
-$selection-color:  hsl(hue($theme-color), 100%, 93%);
-
-$theme-color:  hsl(226, 100%, 50%);
-
-$gray-000:       #ffffff; // white
-$gray-100:       #fbfbfb; // page-bg      0%, 98%
-$gray-200:       hsl(hue($theme-color), 13%, 94%); //#ecedf1; //#f0f1f4; //card-bg
-$gray-300:       hsl(244, 14%, 90%); // card-bg:hover hsl(hue($theme-color), 13%, 89%);
-$gray-400:       hsl(hue($theme-color), 13%, 84%); // #e1e3e8; // hr, border
-$gray-500:       hsl(hue($theme-color), 20%, 70%); // #b3b3c7; //#8e8e93;   // header-color-dark
-$gray-600:       hsl(hue($theme-color), 10%, 51%); // #202020 // body-color-dark // swap with 600
-$gray-700:       hsl(hue($theme-color), 12%, 42%); //#666c7f; //#6d7283;//#636367; //body-color
-$gray-800:       hsl(hue($theme-color), 13%, 20%); // #1e1e1e
-$gray-900:       hsl(hue($theme-color), 15%, 16%); // page-bg-dim
-$gray-950:       hsl(hue($theme-color), 28%,  7%); // page-bg-dark
-$gray-1000:      #000000; // black
+// // colors
+// $theme-color:      #91A8F2; //              hsl(226, 96%, 70%); //#698bff; // hue 226.4
+// $theme-color:   $theme-color; //hsl(hue($theme-color), 100%, 46%);
+// $theme-color-dark: #416BF6; //hsl(hue($theme-color), 100%, 35%);
+//
+//
+// $gray-000:       #ffffff; // white
+// $gray-100:       #fbfbfb; // page-bg      0%, 98%
+// $gray-200:       hsl(hue($theme-color), 13%, 94%); //#ecedf1; //#f0f1f4; //card-bg
+// $gray-300:       hsl(hue($theme-color), 14%, 90%); // card-bg:hover hsl(hue($theme-color), 13%, 89%);
+// $gray-400:       hsl(hue($theme-color), 13%, 84%); // #e1e3e8; // hr, border
+// $gray-500:       hsl(hue($theme-color), 20%, 70%); // #b3b3c7; //#8e8e93;   // header-color-dark
+// $gray-600:       hsl(hue($theme-color), 10%, 51%); // #202020 // body-color-dark // swap with 600
+// $gray-700:       hsl(hue($theme-color), 12%, 42%); //#666c7f; //#6d7283;//#636367; //body-color
+// $gray-750: 800      hsl(hue($theme-color), 13%, 27%);
+// $gray-800: 900      hsl(hue($theme-color), 13%, 20%); // #1e1e1e
+// $gray-900: 1000      hsl(hue($theme-color), 15%, 16%); // page-bg-dim
+// $gray-950: 1100     hsl(hue($theme-color), 28%,  7%); // page-bg-dark
+// gray-975   1200
+// $gray-1000:      #000000; // black
 
 // background-color and backdrop
-$background-color: $gray-100;
+$background-color: $gray-900;
 $backdrop-filter: saturate(180%) blur(20px);
 $backdrop-opacity: 0.12;
 
-$ui-bg-color: $gray-200;
-$ui-bg-color-hover: $gray-300;
+$ui-bg-color: $gray-800;
+$ui-bg-color-hover: $gray-750;
+
+$panel-border-color: $ui-bg-color-hover;
+$divider-border-color: $ui-bg-color;
+
+$selection-color:  hsl(hue($theme-color), 100%, 93%);
 
 
 
@@ -70,6 +75,9 @@ $feedback-prompt_display: none; //display: none or block
 //ads
 $ads_display: none; //display: none or block
 
+//clutter
+$clutter-v: hidden; //visibility: hidden or visible;
+$clutter-d: none; //visibility: none or block;
 
 
 
@@ -93,11 +101,11 @@ $font-smoothing:     auto;   // for header and body
 
 
 // font-colors, font-colors
-$body-text-color:   $gray-700;
+$body-text-color:   $gray-500;
 $body-text-weight:  400;
 $body-text-weight-b: $body-text-weight + 100;
 
-$header-text-color: $gray-1000;
+$header-text-color: $gray-300;
 $header-weight: $body-text-weight + 200;
 
 
@@ -130,9 +138,9 @@ $border-radius:  1em;
 //
 
 // search title
-$search-result-title:            $body-text-color;
-$search-result-title-hover:      $search-result-title;
-$search-result-title-visited:    $gray-700;
+$search-result-title:            $header-text-color;
+$search-result-title-hover:      $header-text-color;
+$search-result-title-visited:    $body-text-color;
 
 $search-result-title-weight:     ($body-text-weight + 100);
 $search-result-title-weight-b:   ($search-result-title-weight + 100);
@@ -148,9 +156,9 @@ $search-result-url-font-weight-thickness:  auto;
 
 
 // search description
-$search-result-desc:           $gray-700;
-$search-result-desc-hover:     $search-result-desc;
-$search-result-desc-visited:   $search-result-desc;
+$search-result-desc:           $body-text-color;
+$search-result-desc-hover:     $body-text-color;
+$search-result-desc-visited:   $body-text-color;
 
 $search-result-desc-weight:    $body-text-weight;
 $search-result-desc-weight-b:  ($search-result-desc-weight + 100);
@@ -196,6 +204,7 @@ $modal-list-bg-hover:  $theme-color;
 // card
 @mixin card {
   background-color: $ui-bg-color !important;
+  background: $ui-bg-color !important;
   border: solid 1px $ui-bg-color !important;
   border-radius: $border-radius !important;
   box-shadow: none !important;
@@ -208,7 +217,7 @@ $modal-list-bg-hover:  $theme-color;
   &:hover{
     background-color: $ui-bg-color-hover !important;
     border: solid 1px $ui-bg-color-hover !important;
-    border-radius: $border-radius !important;
+    // border-radius: $border-radius !important;
     box-shadow: none !important;
     border-bottom-color: $ui-bg-color-hover !important;
   }
@@ -228,9 +237,12 @@ $modal-list-bg-hover:  $theme-color;
     }
   }
   @else {
-    background-color: darken($btn-bg, 5) !important;
+    // background-color: darken($btn-bg, 5) !important;
+    background-color: $body-text-color !important;
+    color: $background-color !important;
     &:hover{
-      background-color: darken($btn-bg, 10) !important;
+      background-color: $header-text-color !important;
+      background-color: $gray-400 !important;
     }
   }
 
@@ -269,33 +281,3 @@ $modal-list-bg-hover:  $theme-color;
   }
 
 }
-
-
-
-
-// @mixin translucency {
-//   @if $browser-support == 0{
-//     background-color: $background-color !important;
-//   }
-//   @else if $browser-support == 1{
-//     -webkit-backdrop-filter: $backdrop-filter !important;
-//     backdrop-filter: $backdrop-filter !important;
-//     background-color: $background-color !important;
-//     background-color: transparentize($background-color, .02) !important;
-//   }
-//   @else if $browser-support == 2{
-//     -webkit-backdrop-filter: $backdrop-filter !important;
-//     backdrop-filter: $backdrop-filter !important;
-//     background-color: $background-color !important;
-//     background-color: transparentize($background-color, $backdrop-opacity) !important;
-//   }
-//   @else if $browser-support == 3{
-//     -webkit-backdrop-filter: $backdrop-filter !important;
-//     backdrop-filter: $backdrop-filter !important;
-//     background-color: $background-color !important;
-//     background-color: transparentize($background-color, $backdrop-opacity) !important;
-//   }
-//   @else{
-//       background-color: $background-color !important;
-//   }
-// }

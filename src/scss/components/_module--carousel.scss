@@ -7,13 +7,13 @@
     .module--carousel__left,
     .module--carousel__right{
       background-color: $theme-color !important;
-      color: #ffffff !important;
+      color: $background-color !important;
       -webkit-box-shadow: none !important;
       box-shadow: none !important;
       border: none !important;
       &:hover{
-        color: $gray-200 !important;
-        background-color: $gray-800 !important;
+        color: $background-color !important;
+        background-color: $gray-700 !important;
       }
     }
     .ddgsi-right:before,

@@ -1,10 +1,18 @@
 .page-index,
 .has-zcm{
   .site-wrapper{
-    .header-wrap--home{
+    .header-wrap{
+      .header--aside{
+        margin: 1.375em 1em auto 1em !important;
+      }
       .header--aside__item{
-        .popout-trig{
-          visibility: hidden;
+
+        display: $clutter-d !important;
+
+
+
+        .js-popout-trig{
+          visibility: $clutter-v !important;
         }
         &.header__label{
           color: $body-text-color !important;
@@ -16,7 +24,7 @@
             color: $body-text-color !important;
 
             .popout-trig{
-              visibility: visible;
+              visibility: $clutter-v visible;
             }
           }
         }
@@ -27,7 +35,7 @@
             color: $body-text-color !important;
 
             .popout-trig{
-              visibility: visible;
+              visibility: $clutter-v visible;
             }
           }
         }
@@ -39,16 +47,16 @@
       background-color: transparent !important;
 
       &:hover{
-        background-color: $gray-300 !important;
-        color: $body-text-color !important;
+        background-color: $ui-bg-color-hover !important;
+        color: $header-text-color !important;
       }
       &:active{
-        background-color: $gray-300 !important;
-        color: $body-text-color !important;
+        background-color: $ui-bg-color-hover !important;
+        color: $header-text-color !important;
       }
       &:focus{
-        background-color: $gray-300 !important;
-        color: $body-text-color !important;
+        background-color: $ui-bg-color-hover !important;
+        color: $header-text-color !important;
       }
     }
   }
@@ -56,3 +64,26 @@
 html.is-mobile .dropdown--settings--cog .dropdown__button:after{
   color: $gray-700 !important;
 }
+
+// .page-index,
+// .has-zcm{
+//   .site-wrapper{
+//     #zero_click_wrapper {
+//       min-height: 101px;
+//     }
+//     .header-wrap{
+//       position: fixed !important;
+//       width: 100% !important;
+//     }
+//   }
+// }
+// @media (max-width: 589px){
+//   .page-index,
+//   .has-zcm{
+//     .site-wrapper{
+//       #zero_click_wrapper {
+//         min-height: 136px;
+//       }
+//     }
+//   }
+// }

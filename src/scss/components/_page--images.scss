@@ -3,6 +3,7 @@
     .tileview__images{
       .tile.tile--img{
         border-radius: $border-radius / 4 !important;
+        // overflow: hidden !important;
 
         a.tile--img__sub{
           .tile--img__title{
@@ -25,6 +26,9 @@
 
         &:hover{
           // box-shadow: none !important;
+          border: solid 1px $theme-color !important;
+        	border-bottom-color: $theme-color !important;
+        	background-color: $theme-color !important;
 
           .tile--img__media{
             box-shadow: none !important;

@@ -16,6 +16,10 @@
         text-decoration: none !important;
       }
     }
+    .module--images__thumbnails{
+      // padding: 1px !important;
+      overflow: visible !important;
+    }
     .module__footer {
       font-weight: 500 !important;
       a{
@@ -28,6 +32,9 @@
     }
     .module--images__thumbnails__tile{
       border-radius: $border-radius / 4 !important;
+      &:hover{
+        box-shadow: 0 0 1px 1px $theme-color !important;
+      }
     }
   }
 }

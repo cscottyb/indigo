@@ -1,11 +1,16 @@
 .has-zcm{
   .vertical--map{
     .vertical--map__sidebar{
+      background-color: transparent !important;
+
       .vertical--map__sidebar__wrapper{
         @include header-translucency;
 
         .vertical--map__sidebar__results{
           .vertical--map__sidebar__results__inner{
+            background-color: transparent !important;
+            border: 0px solid transparent !important;
+
             .module__section.place-list-item{
               margin: 1em 0.5em !important;
             	padding: 0.8em !important;
@@ -32,7 +37,7 @@
                 position:absolute !important;
                 bottom: -0.5em !important;
                 right:0 !important;
-                border-bottom: solid 1px $gray-400 !important;
+                border-bottom: solid 1px $panel-border-color !important;
               }
               &:last-child:after{
                 display:none !important;

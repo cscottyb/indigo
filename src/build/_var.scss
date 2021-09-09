@@ -1,0 +1,227 @@
+#var{content:'var';}
+
+// colors
+$theme-color:      #91A8F2; //hsl(226, 96%, 70%); //#698bff; // hue 226.4
+
+
+
+$gray-000:       #ffffff;          // white
+$gray-100:       #fbfbfb;          // light-page-bg
+$gray-200:       hsl(0, 0%, 94%);  // light-card-bg
+$gray-300:       hsl(0, 0%, 90%);  // light-card-bg:hover
+$gray-400:       hsl(0, 0%, 84%);  // light-hr, light-border
+$gray-500:       hsl(0, 0%, 70%);  // light-header-color-dark
+$gray-550:       hsl(0, 0%, 61%);
+$gray-600:       hsl(0, 0%, 57%);
+$gray-650:       hsl(0, 0%, 51%);  //
+$gray-700:       hsl(0, 0%, 42%);  // light-body-color
+$gray-725:       hsl(0, 0%, 36%);
+$gray-750:       hsl(0, 0%, 27%);
+$gray-800:       hsl(0, 0%, 20%);  //
+$gray-900:       hsl(0, 0%, 16%);  // dim-page-bg
+$gray-950:       hsl(0, 0%,  7%);  // dark-page-bg
+$gray-975:       hsl(0, 0%,  2%);  // video-image-preview-bg
+$gray-1000:      #000000;
+
+$highlight-bg: rgba($theme-color, 0.25);
+
+
+// scale
+$body-text-size:    90%; //default-size: 90%;
+
+
+
+//
+// Typography
+//
+
+// font-family
+// Options: $default-fonts , $system-fonts , $segoe-fonts
+// Custom Font: $font-family: YOURCUSTOMFONT, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family: $system-fonts;
+
+// font-weight
+$body-text-weight:    400;
+$body-text-weight-b:  $body-text-weight + 100;
+$header-weight:       $body-text-weight + 200;
+
+// font-smoothing:
+$font-smoothing-nav: antialiased;   // for navigation and options
+$font-smoothing:     auto;          // for header and body
+
+
+
+//
+// Borders
+//
+
+// rounded border radius: Recommend value between 0 - 1em. 0 for 90deg corners.
+$border-radius:  1em;
+
+
+
+
+
+
+
+
+
+
+
+//
+// search results
+//
+
+// search title
+$search-result-title:            $header-text-color;
+$search-result-title-hover:      $header-text-color;
+$search-result-title-visited:    $body-text-color;
+
+$search-result-title-weight:     ($body-text-weight + 100);
+$search-result-title-weight-b:   ($search-result-title-weight + 100);
+
+
+// search url
+$search-result-url:          $theme-color;
+$search-result-url-hover:    $theme-color;
+$search-result-url-visited:  $theme-color;
+
+$search-result-url-font-weight:            $body-text-weight;
+$search-result-url-font-weight-thickness:  auto;
+
+
+// search description
+$search-result-desc:           $body-text-color;
+$search-result-desc-hover:     $body-text-color;
+$search-result-desc-visited:   $body-text-color;
+
+$search-result-desc-weight:    $body-text-weight;
+$search-result-desc-weight-b:  ($search-result-desc-weight + 100);
+
+
+// search results container
+$search-results-bg:            $gray-200;
+$search-results-border:        $gray-200;
+
+$search-results-bg-hover:      $gray-200;
+$search-results-border-hover:  $gray-200;
+
+
+// translucent background-color
+$page-bg-translucent-92:  rgba($gray-100, .92);
+$page-bg-translucent-72:  rgba($gray-100, .72);
+
+
+// search bar and auto-complete
+$search-bar-bg-translucent:  red;
+$search-bar-border-color:  red;
+
+$search-AC-bg:  red;
+$search-AC-bg-translucent:  red;
+
+
+
+// modal
+$modal-bg: $background-color;
+$modal-bg-translucent: rbga($modal-bg, .72);
+$model-body: $body-text-color;
+$model-border:  rgba(0,0,0,0.12);
+$modal-list-bg-hover:  $theme-color;
+
+
+
+
+
+
+
+
+
+
+
+//
+// Bloat
+//
+
+
+//clutter
+$clutter-v: hidden; //visibility: hidden or visible;
+$clutter-d: none;   //display: none or block;
+
+//feedback display
+$feedback-prompt_display: none; //display: none or block
+
+//ads
+$ads_display: none; //display: none or block
+
+
+
+
+
+
+
+
+
+
+.Tester{
+  font-family: $font-family;
+}
+
+
+
+//
+// mixins
+//
+
+// card
+@mixin card {
+  background-color: $ui-bg-color !important;
+  // border: solid 1px $ui-bg-color !important;
+  border: solid 1px $ui-border-color !important;
+  border-radius: $border-radius !important;
+  box-shadow: none !important;
+  // border-bottom-color: $ui-bg-color !important;
+  border-bottom-color: $ui-border-color-hover !important;
+}
+
+@mixin card-button {
+  @include card;
+
+  &:hover{
+    background-color: $ui-bg-color-hover !important;
+    border: solid 1px $ui-bg-color-hover !important;
+    // border-radius: $border-radius !important;
+    box-shadow: none !important;
+    border-bottom-color: $ui-bg-color-hover !important;
+  }
+}
+
+@mixin button-bg($btn-bg, $btn-radius-divisions){
+  @if $btn-bg == $background-color{
+    background-color: $ui-bg-color !important;
+    &:hover{
+      background-color: $ui-bg-color-hover !important;
+    }
+  }
+  @else if $btn-bg == $ui-bg-color{
+    background-color: $ui-bg-color-hover !important;
+    &:hover{
+      background-color: darken($ui-bg-color-hover, 5) !important;
+    }
+  }
+  @else {
+    // background-color: darken($btn-bg, 5) !important;
+    background-color: $body-text-color !important;
+    color: $background-color !important;
+    &:hover{
+      background-color: $header-text-color !important;
+      background-color: $gray-400 !important;
+    }
+  }
+
+  @if $btn-radius-divisions  == 0{
+    border-radius: 0 !important;
+  }
+  @else{
+    border-radius: $border-radius / $btn-radius-divisions !important;
+  }
+}

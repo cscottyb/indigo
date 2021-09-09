@@ -9,24 +9,24 @@
       -o-transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
       transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
       border: 1px solid transparent !important;
-      color: $theme-color-ui !important;
-      background-color: $gray-200 !important;
+      color: $body-text-color !important;
+      background-color: $ui-bg-color !important;
       font-weight: 400 !important;
       border-radius: $border-radius !important;
 
       &:hover{
-        background-color: hsl(hue($theme-color), 15%,86%) !important;
-        border-color: hsl(hue($theme-color), 13%, 84%) !important;
-        color: $theme-color-ui !important;
+        background-color: $ui-bg-color-hover !important; //hsl(hue($theme-color), 15%,86%) !important;
+        // border-color: hsl(hue($theme-color), 13%, 84%) !important;
+        color: $body-text-color !important;
       }
     }
   }
   .result--sep{
     &.result--sep--hr:before{
-      background-color: $gray-500 !important;
+      background-color: $body-text-color!important;
     }
     .result__pagenum {
-      color: $gray-500 !important;
+      color: $body-text-color !important;
     }
   }
 }

@@ -1,7 +1,7 @@
-$modal-border-color: $gray-400; //hsl(hue($theme-color), 25%, 92%);
-$modal-divider-color: hsl(hue($theme-color), 26%, 88%);
-$modal-bg-color: hsl(hue($theme-color), 50%, 99%);
-$modal-body-color: $header-text-color;
+// $modal-border-color: $gray-700; //hsl(hue($theme-color), 25%, 92%);
+// $modal-divider-color: $gray-800; //hsl(hue($theme-color), 26%, 88%);
+// $modal-bg-color: $gray-950; //hsl(hue($theme-color), 50%, 99%);
+// $modal-body-color: $header-text-color;
 
 $modal-padd-size: 0.5em;
 $modal-padd-size-3fifths: $modal-padd-size * 3/5;
@@ -58,7 +58,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
 
       a{
         $modal-a: 0.9em;
-        color: $header-text-color !important;
+        color: $modal-text-color !important;
         height: $modal-a !important;
         line-height: $modal-a !important;
         font-size: $modal-a !important;
@@ -67,8 +67,9 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
         border-radius: 0.25em !important;
 
         &:hover{
-          background-color: $theme-color !important;
-          color: #ffffff !important;
+          // background-color: $theme-color-dark !important;
+          background-color: $modal-bg-color-hover !important;
+          color: $modal-text-color-hover !important;
           text-decoration: none !important;
           text-shadow: 0px 1px 2px #00000033 !important;
         }
@@ -151,7 +152,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
           }
 
           .settings-dropdown--header--label{
-            color: $modal-body-color !important;
+            color: $modal-text-color !important;
           }
       }
       .set-themes .set-theme.is-checked .set-theme__check{
@@ -164,11 +165,11 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
 
 
         .frm__switch{
-          color: $modal-body-color !important;
+          color: $modal-text-color !important;
         }
 
         .frm__switch .frm__switch__label.btn{
-          background-color: $gray-700 !important;
+          background-color: $modal-border-color !important;
 
           &:after{
             background-color: $background-color !important;
@@ -180,14 +181,14 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
           }
         }
         .frm__label{
-          color: $modal-body-color !important;
+          color: $modal-text-color !important;
           line-height: 1em !important;
         }
         .frm__select{
 
           select{
             background-color: rgba(97, 107, 143, 0.1) !important;
-            color: $modal-body-color !important;
+            color: $modal-text-color !important;
             font-family: $system-fonts !important;
           }
 
@@ -196,7 +197,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
           }
           &:after {
             right: 3px;
-            color: $modal-body-color !important;
+            color: $modal-text-color !important;
           }
         }
 
