@@ -2,7 +2,7 @@
   "name": "indigo",
   "version": "0.0.1",
   "description": "Duck Duck Go Indigo Theme.",
-  "main": "index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "test": "node-sass -w .notes/test/scss -o .notes/test/css",
     "watch-scss": "node-sass -w src/scss -o src/build/css",
