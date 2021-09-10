@@ -2,33 +2,50 @@
 
 // colors
 $theme-color:      #91A8F2;
+
+// :selection color
 $highlight-bg: rgba($theme-color, 0.25);
 
 
-// $ui-000:       #ffffff;          // white
-// $ui-100:       #fbfbfb;          // light-page-bg
-// $ui-200:       hsl(0, 0%, 94%);  // light-card-bg
-// $ui-300:       hsl(0, 0%, 90%);  // light-card-bg:hover
-// $ui-400:       hsl(0, 0%, 84%);  // light-hr, light-border
-// $ui-500:       hsl(0, 0%, 70%);  // light-header-color-dark
-// $ui-550:       hsl(0, 0%, 61%);
-// $ui-600:       hsl(0, 0%, 57%);
-// $ui-650:       hsl(0, 0%, 51%);  //
-// $ui-700:       hsl(0, 0%, 42%);  // light-body-color
-// $ui-725:       hsl(0, 0%, 36%);
-// $ui-750:       hsl(0, 0%, 27%);
-// $ui-800:       hsl(0, 0%, 20%);  //
-// $ui-900:       hsl(0, 0%, 16%);  // dim-page-bg
-// $ui-950:       hsl(0, 0%,  7%);  // dark-page-bg
-// $ui-975:       hsl(0, 0%,  2%);  // video-image-preview-bg
-// $ui-1000:      #000000;
+//---------------------------------------------------------start
+//
+// Modify these variables to override the shade variables (light, smoke, dim, dark, etc.)
 
+// Background color
+$background-color: $shade-background-color;
 
+// UI colors
+$ui-bg-color: $shade-ui-bg-color;
+$ui-bg-color-hover: $shade-ui-bg-color-hover;
+$ui-bg-color-hover-secondary: $shade-ui-bg-color-hover-secondary;
 
+// Border colors
+$panel-border-color: $shade-panel-border-color;
+$divider-border-color: $shade-divider-border-color;
+$ui-border-color: $shade-ui-border-color;
+$ui-border-color-hover: $shade-ui-border-color-hover;
 
+// font colors
+$body-text-color: $shade-body-text-color;
+$header-text-color: $shade-header-text-color;
 
-// scale
-$body-text-size:    90%; //default-size: 90%;
+//modal colors
+$modal-bg-color: $shade-modal-bg-color;
+$modal-text-color: $shade-modal-text-color;
+
+$modal-bg-color-hover: $shade-modal-bg-color-hover;
+$modal-text-color-hover: $shade-modal-text-color-hover;
+
+$modal-border-color: $shade-modal-border-color;
+$modal-divider-color: $shade-modal-divider-color;
+
+// detail
+$detail-bg: $shade-detail-bg;
+$detail-color: $shade-detail-color;
+$detail-color-accent: $shade-detail-color-accent;
+
+//---------------------------------------------------------end
+
 
 
 
@@ -50,7 +67,8 @@ $header-weight:       $body-text-weight + 200;
 $font-smoothing-nav: antialiased;   // for navigation and options
 $font-smoothing:     auto;          // for header and body
 
-
+// scale
+$body-text-size:    90%; //default-size: 90%;
 
 //
 // Borders
@@ -150,9 +168,7 @@ $ads_display: none; //display: none or block
 
 
 
-.Tester{
-  font-family: $font-family;
-}
+
 
 
 

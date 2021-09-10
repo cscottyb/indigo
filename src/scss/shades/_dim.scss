@@ -1,34 +1,34 @@
+//dim
+
 // Background color
-$background-color: $ui-900;
+$shade-background-color: $ui-900;
 
 // UI colors
-$ui-bg-color: $ui-750;
-$ui-bg-color-hover: $ui-700;
-$ui-bg-color-hover-secondary: $ui-650;
+$shade-ui-bg-color: $ui-750;
+$shade-ui-bg-color-hover: $ui-700;
+$shade-ui-bg-color-hover-secondary: $ui-650;
 
 // Border colors
-$panel-border-color: $ui-bg-color-hover;
-$divider-border-color: $ui-bg-color;
-$ui-border-color: $ui-bg-color;
-$ui-border-color-hover: $ui-bg-color;
-
+$shade-panel-border-color: $shade-ui-bg-color-hover;
+$shade-divider-border-color: $shade-ui-bg-color;
+$shade-ui-border-color: $shade-ui-bg-color;
+$shade-ui-border-color-hover: $shade-ui-bg-color;
 
 // font colors
-$body-text-color:   $ui-500;
-$header-text-color: $ui-300;
-
+$shade-body-text-color:   $ui-500;
+$shade-header-text-color: $ui-300;
 
 //modal colors
-$modal-bg-color: $ui-950;
-$modal-text-color: $header-text-color;
+$shade-modal-bg-color: $ui-950;
+$shade-modal-text-color: $shade-header-text-color;
 
-$modal-bg-color-hover: $ui-bg-color-hover;
-$modal-text-color-hover: $ui-100;
+$shade-modal-bg-color-hover: $shade-ui-bg-color-hover;
+$shade-modal-text-color-hover: $ui-100;
 
-$modal-border-color: $ui-700;
-$modal-divider-color: $ui-800;
+$shade-modal-border-color: $ui-700;
+$shade-modal-divider-color: $ui-800;
 
 // component-detail background-color for image results and video results
-$detail-bg: $ui-950;
-$detail-color: $ui-300;
-$detail-color-accent: $ui-bg-color-hover-secondary;
+$shade-detail-bg: $ui-950;
+$shade-detail-color: $ui-300;
+$shade-detail-color-accent: $shade-ui-bg-color-hover-secondary;
