@@ -1,26 +1,45 @@
 // colors
-$theme-color:      #91A8F2; //              hsl(226, 96%, 70%); //#698bff; // hue 226.4
-$theme-color-ui:   $theme-color; //hsl(hue($theme-color), 100%, 46%);
-// $theme-color-dark: #416BF6; //hsl(hue($theme-color), 100%, 35%);
+$theme-color:      #91A8F2; //
 
 
-$gray-000:       #ffffff; // white
-$gray-100:       #fbfbfb; // page-bg      0%, 98%
-$gray-200:       hsl(hue($theme-color), 0%, 94%); //#ecedf1; //#f0f1f4; //card-bg
-$gray-300:       hsl(hue($theme-color), 0%, 90%); // card-bg:hover hsl(hue($theme-color), 13%, 89%);
-$gray-400:       hsl(hue($theme-color), 0%, 84%); // #e1e3e8; // hr, border
-$gray-500:       hsl(hue($theme-color), 0%, 70%); // #b3b3c7; //#8e8e93;   // header-color-dark
-$gray-550:       hsl(hue($theme-color), 0%, 61%);
-$gray-600:       hsl(hue($theme-color), 0%, 57%);
-$gray-650:       hsl(hue($theme-color), 0%, 51%); // #202020 // body-color-dark // swap with 600
-$gray-700:       hsl(hue($theme-color), 0%, 42%); //#666c7f; //#6d7283;//#636367; //body-color
-$gray-725:       hsl(hue($theme-color), 0%, 36%);
-$gray-750:       hsl(hue($theme-color), 0%, 27%);
-$gray-800:       hsl(hue($theme-color), 0%, 20%); // #1e1e1e
-$gray-900:       hsl(hue($theme-color), 0%, 16%); // page-bg-dim
-$gray-950:       hsl(hue($theme-color), 0%,  7%); // page-bg-dark
-$gray-975:       hsl(hue($theme-color), 0%,  2%); // page-bg-dark
-$gray-1000:      #000000; // blackc
+$gray-000:       #ffffff;          // white
+$gray-100:       #fbfbfb;          // light-page-bg
+$gray-200:       hsl(0, 0%, 94%);  // light-card-bg
+$gray-300:       hsl(0, 0%, 90%);  // light-card-bg:hover
+$gray-400:       hsl(0, 0%, 84%);  // light-hr, light-border
+$gray-500:       hsl(0, 0%, 70%);  // light-header-color-dark
+$gray-550:       hsl(0, 0%, 61%);
+$gray-600:       hsl(0, 0%, 57%);
+$gray-650:       hsl(0, 0%, 51%);  //
+$gray-700:       hsl(0, 0%, 42%);  // light-body-color
+$gray-725:       hsl(0, 0%, 36%);
+$gray-750:       hsl(0, 0%, 27%);
+$gray-800:       hsl(0, 0%, 20%);  //
+$gray-900:       hsl(0, 0%, 16%);  // dim-page-bg
+$gray-950:       hsl(0, 0%,  7%);  // dark-page-bg
+$gray-975:       hsl(0, 0%,  2%);  // video-image-preview-bg
+$gray-1000:      #000000;
 
 $highlight-bg: rgba($theme-color, 0.25);
 // $highlight-color: $gray-900;
+
+
+
+
+$indigo-000:       #ffffff; // white
+$indigo-100:       #fbfbfb; //             0%, 98%   // lit-page-bg
+$indigo-200:       hsl(hue($theme-color), 13%, 94%); // lit-ui-bg
+$indigo-300:       hsl(hue($theme-color), 14%, 90%); // lit-ui-bg:hover dim-header
+$indigo-400:       hsl(hue($theme-color), 13%, 84%); // lit-hr lit-border
+$indigo-500:       hsl(hue($theme-color), 20%, 70%); // dim-body
+$indigo-550:       hsl(hue($theme-color),  0%, 61%);
+$indigo-600:       hsl(hue($theme-color), 10%, 51%); // lit-body
+$indigo-650:       hsl(hue($theme-color),  0%, 51%); //
+$indigo-700:       hsl(hue($theme-color), 12%, 42%); // lit-body-color dim-ui-bg-alt
+$indigo-725:       hsl(hue($theme-color),  0%, 36%);
+$indigo-750:       hsl(hue($theme-color), 13%, 27%); // dim-ui-bg:hover
+$indigo-800:       hsl(hue($theme-color), 13%, 20%); // dim-ui-bg
+$indigo-900:       hsl(hue($theme-color), 15%, 16%); // dim-page-bg
+$indigo-950:       hsl(hue($theme-color), 28%,  7%); // dim-details-bg dark-page-bg
+$indigo-975:       hsl(hue($theme-color), 56%,  1%); // dark-details-bg
+$indigo-1000:      #91A8F2; //dark-theme-color
