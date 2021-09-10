@@ -13,7 +13,7 @@
       border: none !important;
       &:hover{
         color: $background-color !important;
-        background-color: $gray-700 !important;
+        background-color: $ui-bg-color-hover-secondary !important;
       }
     }
     .ddgsi-right:before,
@@ -31,7 +31,7 @@
     }
     .module--carousel__item{
       @include card-button;
-      background-color: darken($gray-200, 1);
+      background-color: darken($ui-bg-color, 1);
 
       .module--carousel__image{
         background-position:center;
@@ -67,7 +67,7 @@
       }
       .module--carousel__extra-row,
       .module--carousel__gray-text{
-        color: $gray-700 !important;
+        color: $ui-bg-color-hover-secondary !important;
       }
       .module--carousel__body__content{
         color: $body-text-color !important;
@@ -82,7 +82,7 @@
     }
     .module--carousel__footer{
       .result__url{
-        color: $gray-500 !important;
+        color: $body-text-color !important;
       }
       .module--carousel__source.result__url{
         color: $body-text-color !important;

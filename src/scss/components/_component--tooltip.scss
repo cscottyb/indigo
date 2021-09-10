@@ -9,7 +9,7 @@
     // border-radius: ($border-radius / 2) !important;
 
     .user-loc-tooltip__title{
-      color: $header-text-color !important; 
+      color: $header-text-color !important;
       font-size: 1em !important;
     }
 
@@ -29,9 +29,9 @@
       }
 
       &:hover{
-        background-color: $gray-300 !important;
-        border: solid 1px $gray-300 !important;
-        border-bottom-color: $gray-300 !important;
+        background-color: $header-text-color !important;
+        border: solid 1px $header-text-color !important;
+        border-bottom-color: $header-text-color !important;
       }
     }
   }

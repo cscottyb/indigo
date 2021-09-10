@@ -54,7 +54,7 @@ $calc-text-color: $body-text-color;
         border-radius: $border-radius * 2 / 3 !important;
 
         &.hover{
-          box-shadow: inset -1px -1px 0px $gray-500, inset 1px 1px 0px $gray-500;
+          box-shadow: inset -1px -1px 0px $body-text-color, inset 1px 1px 0px $body-text-color;
         }
 
         &.selected{

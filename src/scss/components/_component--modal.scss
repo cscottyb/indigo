@@ -1,7 +1,4 @@
-// $modal-border-color: $gray-700; //hsl(hue($theme-color), 25%, 92%);
-// $modal-divider-color: $gray-800; //hsl(hue($theme-color), 26%, 88%);
-// $modal-bg-color: $gray-950; //hsl(hue($theme-color), 50%, 99%);
-// $modal-body-color: $header-text-color;
+
 
 $modal-padd-size: 0.5em;
 $modal-padd-size-3fifths: $modal-padd-size * 3/5;
@@ -46,7 +43,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
     font-weight: 400 !important;
 
     .modal__box{
-      // background-color: $gray-100 !important;
+      // background-color: $1gray-100 !important;
       // background-color: $modal-bg-color !important;
       // background-color: transparentize($modal-bg-color, .12) !important;
       // backdrop-filter: $backdrop-filter !important;

@@ -11,18 +11,18 @@
           // display: inline-block !important;
 
           a.result__a{
-            font-weight: $header-weight !important;
-            color: $header-text-color !important;
+            font-weight: $search-result-title-weight !important;
+            color: $search-result-title !important;
             -webkit-font-smoothing: $font-smoothing !important;
             b{
-              font-weight: $header-weight !important;
+              font-weight: $search-result-title-weight-b !important;
             }
             &:hover{
               text-decoration: none !important;
-              color: $header-text-color !important;
+              color: $search-result-title-hover !important;
             }
             &:visited{
-              color: $body-text-color !important;
+              color: $search-result-title-visited !important;
             }
           }
 
@@ -106,6 +106,6 @@
 .is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news{
   background: $background-color !important;
 border-color: $ui-border-color !important;
-border-bottom-color: $ui-border-color !important;
+border-bottom-color: $search-results-border !important;
 box-shadow: none !important;
 }
