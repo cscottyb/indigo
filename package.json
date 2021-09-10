@@ -5,7 +5,8 @@
   "main": "src/js/index.js",
   "scripts": {
     "test": "node-sass -w src/build/ -o test/",
-    "watch-scss": "node-sass -w src/scss -o src/build/css",
+    "tests": "sass -watch src/build/:test/",
+    "watch-scss": "node-sass --w src/scss -o src/build/css",
     "watch-modules": "node-sass -w src/scss/components -o src/build/css/components",
     "watch-modules-dark": "node-sass -w src/scss/components-dark -o src/build/css/components-dark",
     "watch-modules-dim": "node-sass -w src/ -o test/"
