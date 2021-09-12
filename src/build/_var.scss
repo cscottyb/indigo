@@ -1,7 +1,15 @@
 #var{content:'var';}
 
+$theme-color: #698bff !default;
+$theme-color-dark: #91A8F2;
+
+@if $theme-dark{
+  $theme-color: $theme-color-dark;
+
+}
+
 // colors
-$theme-color:      #91A8F2;
+// $theme-color:      #91A8F2;
 
 // :selection color
 $highlight-bg: rgba($theme-color, 0.25);

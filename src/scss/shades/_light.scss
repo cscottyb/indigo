@@ -1,15 +1,15 @@
-// _dim
+// _light
 
 // theme type: true-light false-dark
-$theme-dark: true !default;
+$theme-dark: false !default;
 
 // Background color
-$shade-background-color: $ui-900;
+$shade-background-color: $ui-100;
 
 // UI colors
-$shade-ui-bg-color: $ui-800;
-$shade-ui-bg-color-hover: $ui-750;
-$shade-ui-bg-color-hover-secondary: $ui-700;
+$shade-ui-bg-color: $ui-200;
+$shade-ui-bg-color-hover: $ui-300;
+$shade-ui-bg-color-hover-secondary: $ui-400;
 
 // Border colors
 $shade-panel-border-color: $shade-ui-bg-color-hover;
@@ -18,18 +18,18 @@ $shade-ui-border-color: $shade-ui-bg-color;
 $shade-ui-border-color-hover: $shade-ui-bg-color;
 
 // font colors
-$shade-body-text-color:   $ui-500;
-$shade-header-text-color: $ui-300;
+$shade-body-text-color:   $ui-700;
+$shade-header-text-color: $ui-975;
 
 //modal colors
-$shade-modal-bg-color: $ui-950;
+$shade-modal-bg-color: $ui-200;
 $shade-modal-text-color: $shade-header-text-color;
 
-$shade-modal-bg-color-hover: $shade-ui-bg-color-hover;
-$shade-modal-text-color-hover: $ui-100;
+$shade-modal-bg-color-hover: $shade-ui-bg-color-hover-secondary;
+$shade-modal-text-color-hover: $shade-header-text-color;
 
-$shade-modal-border-color: $ui-700;
-$shade-modal-divider-color: $ui-800;
+$shade-modal-border-color: $ui-400;
+$shade-modal-divider-color: $ui-500;
 
 // component-detail background-color for image results and video results
 $shade-detail-bg: $ui-950;
