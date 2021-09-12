@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: light) {
-// @import "../../../../var.scss";
+@import '../../../single-theme/dim.scss';
 }
 
 @media (prefers-color-scheme: dark) {
-@import '../../../single-theme/dim.scss';
+@import '../../../single-theme/dark.scss';
 }
