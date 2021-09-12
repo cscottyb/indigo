@@ -1,6 +1,6 @@
 .has-zcm{
   .metabar{
-    @include header-translucency
+    @include header-translucency;
     border-bottom-color: $panel-border-color !important;
     .metabar__in{
       .metabar__mode-wrap{
