@@ -43,18 +43,47 @@
                 display:none !important;
               }
 
+              h2.place-list-item__title{
+                color: $header-text-color  !important;
+              }
+
               .place-list-item__info,
               .place-list-item__rating{
                 color: $body-text-color !important;
+
+                li.place-list-item__info__item{
+                  color: $body-text-color !important;
+
+                  span.place-detail__status .place-detail__status--off{
+                    color: $body-text-color !important;
+                  }
+                }
               }
 
             }
 
 
 
+
+
+
+
           }
 
         }
+        .vertical--map__sidebar__footer{
+          .map-sidebar-footer{
+            .feedback-prompt{
+              display: $feedback-prompt_display !important;
+
+              a.feedback-prompt__link{
+                display: $feedback-prompt_display !important;
+              }
+            }
+          }
+        }
+
+
       }
 
 
@@ -72,8 +101,55 @@
       .js-vertical-map-sidebar-header-wrapper{
         .vertical--map__sidebar__header{
           @include header-translucency;
+
+          form{
+            input.search__button{
+              font-family: $ddg-icons !important;
+            }
+
+            &#search_form{
+              color: $header-text-color !important;
+
+              input.search__input--maps{
+                color: $header-text-color !important;
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+
+
+
+//move later
+  .vertical--map__sidebar__detail{
+    .places-single-map{
+      .place-detail{
+        background-color: transparent !important;
+
+        .module__title.place-detail__name{
+          a.module__title__link{
+            color: $header-text-color  !important;
+
+            &:hover{
+              text-decoration-color: $body-text-color !important;
+            }
+          }
+
         }
       }
     }
   }
+}
+
+
+.vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon,
+.vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon--back{
+  filter:brightness(3) !important;
+  -webkit-filter: brightness(3) !important;
 }

@@ -3,6 +3,8 @@
 
 .has-zcm{
   .sidebar-filters{
+    color: $header-text-color !important;
+    
   .sidebar-filter__show-more {
       @include button-bg($background-color, 2);
       color: $theme-color !important;
