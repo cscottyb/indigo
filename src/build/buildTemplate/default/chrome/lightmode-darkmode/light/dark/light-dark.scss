@@ -1,0 +1,7 @@
+@media (prefers-color-scheme: light) {
+@import '../../../single-theme/light.scss';
+}
+
+@media (prefers-color-scheme: dark) {
+@import '../../../single-theme/dark.scss';
+}
