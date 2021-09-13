@@ -18,6 +18,10 @@
 
   }
 
+  .search__clear{
+    font-family: $ddg-icons !important;
+  }
+
   .search__button:hover,
   .search__button:focus,
   .search:hover .search__button:focus,

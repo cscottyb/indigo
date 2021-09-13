@@ -2,6 +2,11 @@
 // module--about
 //
 
+@if $theme-dark{
+  $pre-bg: $pre-bg-dark;
+
+}
+
 .has-zcm{
   .module.module--about{
     @include card;
@@ -75,8 +80,11 @@
         font-weight: 500 !important;
         color: $theme-color !important;
       }
-      pre{
-        background-color: saturate(lighten($ui-bg-color-hover-secondary, 3%),17%) !important;
+      pre,
+      pre.prettyprint,
+      pre.prettyprinted,
+      pre.prettyprint.prettyprinted{
+        background-color: $pre-bg !important;
       }
     }
     .about-info-box {
@@ -111,7 +119,7 @@
       }
     }
     .module__toggle--more::after{
-      background: linear-gradient(rgba(255,255,255,0), #f0f1f4) !important;
+      // background: linear-gradient(rgba(255,255,255,0), #f0f1f4) !important;
       top: 1.25em !important;
       height: 1.25em !important;
     }

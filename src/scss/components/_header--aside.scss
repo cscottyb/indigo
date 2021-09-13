@@ -1,4 +1,4 @@
-.page-index,
+#page-index,
 .has-zcm{
   .site-wrapper{
     .header-wrap{
@@ -58,6 +58,9 @@
         background-color: $ui-bg-color-hover !important;
         color: $header-text-color !important;
       }
+    }
+    .module__warnings{
+      border-bottom-color: $divider-border-color !important;
     }
   }
 }

@@ -15,3 +15,23 @@ $backdrop-opacity: 0.12;
 // translucent background-color
 $translucent-92: 0.92;
 $translucent-72: 0.72;
+
+
+$red-color: #CE2929 !default;
+$red-color-dark: #d06868;
+
+$warning-color: #CE2929 !default;
+$warning-color-dark: #d06868;
+
+$pre-bg: #FFF !default;
+$pre-bg-dark: #222;
+
+// @if $theme-dark{
+//   $red-color: $red-color-dark;
+//
+// }
+//
+// @if $theme-dark{
+//   $warning-color: $warning-color-dark;
+//
+// }

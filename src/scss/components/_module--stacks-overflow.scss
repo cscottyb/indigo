@@ -1,7 +1,7 @@
 .has-zcm{
   .module.module--about.module--zci-stack_overflow{
     ::selection{
-      	background-color: hsl(145deg, 100%, 90%) !important;
+      	// background-color: hsl(145deg, 100%, 90%) !important;
     }
     .module__link--url,
     .module__link--url:hover,
@@ -11,12 +11,14 @@
     .is-cssexp .module__link--url:hover,
     .is-cssexp .module__link--url:active,
     .is-cssexp .module__link--url:focus {
-    	color: hsl(145deg, 53% ,38%) !important;
+    	// color: hsl(145deg, 53% ,38%) !important;
+      color: $theme-color !important;
     }
 
     p code {
-      color: hsl(145deg, 94% ,24%) !important;
-      background-color: hsl(144deg, 12%, 89%) !important; //hsl(144deg, 25%, 88%) !important;
+      // color: hsl(145deg, 94% ,24%) !important;
+      // background-color: hsl(144deg, 12%, 89%) !important; //hsl(144deg, 25%, 88%) !important;
+      background-color: $ui-bg-color-hover !important;
     	display: inline-block !important;
     	padding: 0px 0.3em !important;
     }
