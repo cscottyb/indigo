@@ -5,7 +5,7 @@
 
     .detail__wrap{
       .detail__close{
-        color: $detail-color-accent !important;
+        color: $detail-ui-hover !important;
 
         &:hover{
           color: $detail-color !important;
@@ -18,24 +18,26 @@
             color: $detail-color !important;
 
             &.c-detail__btn{
-              background-color: $ui-bg-color !important
+              background-color: $detail-ui !important;
+              border-color: $detail-ui !important;
             }
 
             &:hover{
 
               &.c-detail__btn{
-                background-color: $detail-color-accent !important
+                background-color: $detail-ui-hover !important;
+                border-color: $detail-ui-hover !important;
               }
             }
           }
 
           .c-detail__filemeta{
-            color: $detail-color-accent !important;
+            color: $detail-ui-hover !important;
           }
 
           .c-detail__desc{
             p,i{
-              color: $detail-color-accent !important;
+              color: $detail-ui-hover !important;
             }
           }
         }
@@ -47,10 +49,10 @@
       .detail__controls{
         i{
           color: $detail-color !important;
-          background-color: $ui-bg-color !important;
+          background-color: $detail-ui !important;
 
           &:hover{
-            background-color: $detail-color-accent !important;
+            background-color: $detail-ui-hover !important;
           }
         }
       }
