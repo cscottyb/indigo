@@ -2,9 +2,13 @@
 
 
 .has-zcm{
+  // .metabar{
+  //
+  // }
+
   .sidebar-filters{
     color: $header-text-color !important;
-    
+
   .sidebar-filter__show-more {
       @include button-bg($background-color, 2);
       color: $theme-color !important;
@@ -15,7 +19,12 @@
       }
 
     }
+
+
   }
+
+
+
   .zci--products{
     .tile-wrap{
       margin-top: 40px !important;
@@ -44,5 +53,15 @@
         }
       }
     }
+  }
+
+  .bing .sidebar-filter__option,
+  .bing .sidebar-filter__title{
+    color: $header-text-color !important;
+
+  }
+
+  .zci.has-sidebar-filters .metabar .metabar__secondary-text{
+    color: $header-text-color !important;
   }
 }
