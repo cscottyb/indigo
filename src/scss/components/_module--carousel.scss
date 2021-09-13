@@ -13,7 +13,7 @@
       border: none !important;
       &:hover{
         color: $background-color !important;
-        background-color: $ui-bg-color-hover-secondary !important;
+        background-color: $btn-bg-theme-hover !important; //$ui-bg-color-hover-secondary
       }
     }
     .ddgsi-right:before,
@@ -63,6 +63,7 @@
         color: $header-text-color !important;
         font-weight: 500 !important;
         -webkit-font-smoothing: $font-smoothing !important;
+        font-size: 1.125em !important;
 
       }
       .module--carousel__extra-row,
