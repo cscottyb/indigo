@@ -85,8 +85,7 @@
         border-top: solid 1px $ui-bg-color-hover !important;
 
         span{
-          @include button-bg($body-text-color ,2);
-
+          @include button-bg($ui-bg-color-hover-secondary ,2);
           display: inline-block !important;
           padding: 0.15em 0.75em !important;
           font-weight: $header-weight !important;

@@ -1,6 +1,7 @@
 // _dim
 
 // theme type: true-light false-dark
+$theme-light: false !default;
 $theme-dark: true !default;
 
 // Background color
@@ -9,7 +10,8 @@ $shade-background-color: $ui-900;
 // UI colors
 $shade-ui-bg-color: $ui-800;
 $shade-ui-bg-color-hover: $ui-750;
-$shade-ui-bg-color-hover-secondary: $ui-700;
+$shade-ui-bg-color-hover-secondary: $ui-725;
+$shade-ui-bg-color-hover-hover: $ui-650;
 
 // Border colors
 $shade-panel-border-color: $shade-ui-bg-color-hover;

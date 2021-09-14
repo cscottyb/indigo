@@ -1,3 +1,6 @@
+
+
+
 .has-zcm{
   .vertical--map{
     .vertical--map__sidebar{
@@ -20,6 +23,7 @@
 
               &:hover{
                 background-color: $ui-bg-color-hover !important;
+                background-color: $ui-bg-color-hover-secondary !important;
               }
 
               &:first-child{
@@ -101,6 +105,7 @@
       .js-vertical-map-sidebar-header-wrapper{
         .vertical--map__sidebar__header{
           @include header-translucency;
+          border-bottom: solid 1px $panel-border-color !important;
 
           form{
             input.search__button{
@@ -147,9 +152,73 @@
   }
 }
 
+$arrow-filter: 0 !default;
+$arrow-filter-dark: 100;
 
+@if $theme-dark{
+  $arrow-filter: $arrow-filter-dark;
+
+}
 .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon,
 .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon--back{
-  filter:brightness(3) !important;
-  -webkit-filter: brightness(3) !important;
+  filter:brightness($arrow-filter) !important;
+  -webkit-filter: brightness($arrow-filter) !important;
 }
+
+
+$arrow-filter: 100 !default;
+$arrow-filter-dark: 1;
+
+
+@if $theme-dark{
+  $arrow-filter: $arrow-filter-dark;
+}
+
+.has-zcm.dark-bg {
+
+
+
+
+
+  .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item:hover{
+    // background-color: $ui-bg-color-hover-secondary !important;
+  }
+
+  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon,
+  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon--back{
+    filter: brightness($arrow-filter) !important;
+    -webkit-filter: brightness($arrow-filter) !important;
+  }
+
+
+
+}
+
+
+
+
+
+
+// $map-opacity: 0 !default; //$backdrop-opacity
+// $map-opacity-light: 1;
+//
+// @if $theme-dark{
+//   $map-opacity: $map-opacity-light;
+// }
+//
+// .has-zcm.vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper{
+//   background-color: rgba($ui-bg-color, $map-opacity) !important;
+// }
+//
+//
+//
+// $map-opacity: 1 !default; //$backdrop-opacity
+// $map-opacity-dark: 0.5;
+//
+// @if $theme-dark{
+//   $map-opacity: $map-opacity-dark;
+// }
+//
+// .has-zcm.dark-bg .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper{
+//   background-color: rgba($ui-bg-color, $map-opacity) !important;
+// }

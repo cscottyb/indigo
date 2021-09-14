@@ -1,6 +1,7 @@
 // _light
 
 // theme type: true-light false-dark
+$theme-light: true !default;
 $theme-dark: false !default;
 
 // Background color
@@ -10,6 +11,7 @@ $shade-background-color: $ui-100;
 $shade-ui-bg-color: $ui-200;
 $shade-ui-bg-color-hover: $ui-300;
 $shade-ui-bg-color-hover-secondary: $ui-400;
+$shade-ui-bg-color-hover-hover: $ui-500;
 
 // Border colors
 $shade-panel-border-color: $shade-ui-bg-color-hover;

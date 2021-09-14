@@ -26,6 +26,7 @@ $background-color: $shade-background-color;
 $ui-bg-color: $shade-ui-bg-color;
 $ui-bg-color-hover: $shade-ui-bg-color-hover;
 $ui-bg-color-hover-secondary: $shade-ui-bg-color-hover-secondary;
+$ui-bg-color-hover-hover: $shade-ui-bg-color-hover-hover;
 
 // Border colors
 $panel-border-color: $shade-panel-border-color;
@@ -203,11 +204,11 @@ $ads_display: none; //display: none or block
   @include card;
 
   &:hover{
-    background-color: $ui-bg-color-hover !important;
-    border: solid 1px $ui-bg-color-hover !important;
+    background-color: $ui-bg-color-hover-secondary !important;
+    border: solid 1px $ui-bg-color-hover-secondary !important;
     // border-radius: $border-radius !important;
     box-shadow: none !important;
-    border-bottom-color: $ui-bg-color-hover !important;
+    border-bottom-color: $ui-bg-color-hover-secondary !important;
   }
 }
 
@@ -222,6 +223,16 @@ $ads_display: none; //display: none or block
     background-color: $ui-bg-color-hover !important;
     &:hover{
       background-color: darken($ui-bg-color-hover, 5) !important;
+    }
+  }
+  @else if $btn-bg == $ui-bg-color-hover-secondary{
+    background-color: $ui-bg-color-hover-secondary !important;
+    border: 1px solid $ui-bg-color-hover-secondary !important;
+    color: $body-text-color !important;
+    &:hover{
+      background-color: $ui-bg-color-hover-hover !important;
+      border-color: $ui-bg-color-hover-hover !important;
+      color: $header-text-color !important;
     }
   }
   @else {

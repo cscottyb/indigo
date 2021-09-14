@@ -32,9 +32,21 @@
         .tile{
           .tile__media__promotion-label{
             @include modal-translucency;
+            border-color: $modal-border-color !important;
+            color: $header-text-color !important;
           }
 
           &.tile--products{
+
+            h6.tile__title{
+              color: $header-text-color !important;
+            }
+
+            .tile--pr__rating.tile__rating{
+              .review-count{
+                color: $body-text-color !important;
+              }
+            }
 
             .tile--pr__sub{
               .price{
