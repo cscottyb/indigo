@@ -82,7 +82,7 @@ You may want to stick to the compatible themes since other Indigo themes use res
 
 
 ### NPM Build
-- Errors generated during npm run scripts due to migration to Dart SASS
+- Errors generated during npm run scripts due to migration to Dart SASS.
 - Dart SASS logic not rendering images correctly in duo themes, like back-button on map page.
 - Time consuming setup to create theme.
 
