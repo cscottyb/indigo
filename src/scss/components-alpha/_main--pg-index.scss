@@ -1,0 +1,148 @@
+$ddgIcon-bg: $theme-color !default;
+$ddgIcon-bg-dark: transparent;
+
+@if $theme-dark{
+  $ddgIcon-bg: $ddgIcon-bg-dark;
+}
+
+
+html body#pg-index.body--home{
+  background-color: $background-color !important;
+  // font-family: $font-family;
+
+  .content-wrap--home{
+    top: 40% !important;
+  }
+
+  .logo-wrap--home{
+    max-width: 590px !important;
+    padding: 0 1.25em !important;
+    margin-bottom: -.5em !important;
+    width:70% !important;
+    margin-top: -3.25em !important;
+
+    a{
+      color: $theme-color;
+    }
+    a#logo_homepage_link{
+      width: 36px !important;
+      height: 36px !important;
+      background-position: left !important;
+      margin: 0 0 0 8px !important;
+      background-color: $ddgIcon-bg !important;
+      border-radius: 50% !important;
+      background-image: $header__logo !important;
+
+
+      &::before{
+        content: "DuckDuckGo" !important;
+        color: $body-text-color !important;
+        display: block !important;
+        position: absolute !important;
+        width: 148px !important;
+        height: 36px !important;
+        font-size: 26px !important;
+        left: 43px !important;
+        z-index: 8000 !important;
+        top: -1px !important;
+        // font-family: $DDG_ProximaNova !important;
+        opacity: 1 !important;
+        text-indent: 0 !important;
+      }
+
+      &:hover{
+        &::before{
+          opacity: 0 !important;
+        }
+      }
+
+    }
+    // @media(prefers-color-scheme: dark) {
+    //   a#logo_homepage_link {
+    //     background-color: transparent !important;
+    //   }
+    // }
+  }
+  span.logo_homepage__tt {
+      bottom: auto !important;
+      top: -0.05em !important;
+      z-index: 9001 !important;
+      left: 43px !important;
+      color: $body-text-color !important;
+      font-size: 26px !important;
+      height: 36px !important;
+      width: 159px !important;
+      padding: 0 !important;
+      font-weight: 400 !important;
+      transition: opacity 0s ease 0s !important;
+      background-color: transparent !important;
+      &:before{
+        border-right-color: transparent !important;
+      }
+  }
+  .tag-home{
+    display:none !important;
+    .tag-home__item{
+      color: $body-text-color !important;
+      a.tag-home__link{
+        color: $theme-color !important;
+
+      }
+    }
+  }
+
+  @media only screen and (max-width: 590px){
+    .logo-wrap--home {
+        width: auto !important;
+        padding: 0 0.8em !important;
+    }
+    .has-search-focus .search-wrap--home{
+      width: auto !important;
+    }
+    .search-wrap--home{
+     width: auto !important;
+   }
+   span.logo_homepage__tt {
+     left: 49.5px !important;
+     bottom: 2px !important;
+   }
+
+  }
+  @media only screen and (max-width: 425px){
+    .logo-wrap--home {
+        width: auto !important;
+        padding: 0 0.8em !important;
+    }
+    span.logo_homepage__tt {
+      left: 49.5px !important;
+    }
+  }
+  @media only screen and (max-height: 361.25px) and (min-width: 864px){
+    .search--home {
+
+    }
+    .logo-wrap--home {
+      max-width: 36px !important;
+      padding: 0 !important;
+      margin-bottom: 0 !important;
+      margin-top:0em !important;
+    }
+    .logo-wrap--home a#logo_homepage_link::before,
+    .logo_homepage__tt,
+    .logo_homepage__tt:before{
+      display: none !important;
+    }
+
+  }
+  @media only screen and (max-width: 425px){
+    .logo-wrap--home {
+        width: auto !important;
+        padding: 0 0.8em !important;
+    }
+    span.logo_homepage__tt {
+      left: 49.5px !important;
+    }
+  }
+
+
+}

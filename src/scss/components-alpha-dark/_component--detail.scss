@@ -1,0 +1,63 @@
+html.dark-bg.has-zcm{
+  .detail{
+    background-color: $detail-bg !important;
+    border-color: $detail-bg !important;
+
+    .detail__wrap{
+      .detail__close{
+        color: $detail-ui-hover !important;
+
+        &:hover{
+          color: $detail-color !important;
+        }
+      }
+
+      .detail__panes{
+        .detail__body{
+          a{
+            color: $detail-color !important;
+
+            &.c-detail__btn{
+              background-color: $detail-ui !important;
+              border-color: $detail-ui !important;
+            }
+
+            &:hover{
+
+              &.c-detail__btn{
+                background-color: $detail-ui-hover !important;
+                border-color: $detail-ui-hover !important;
+              }
+            }
+          }
+
+          .c-detail__filemeta{
+            color: $detail-ui-hover !important;
+          }
+
+          .c-detail__desc{
+            p,i{
+              color: $detail-ui-hover !important;
+            }
+          }
+        }
+
+
+
+      }
+
+      .detail__controls{
+        i{
+          color: $detail-color !important;
+          background-color: $detail-ui !important;
+
+          &:hover{
+            background-color: $detail-ui-hover !important;
+          }
+        }
+      }
+
+
+    }
+  }
+}

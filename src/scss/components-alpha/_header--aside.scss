@@ -1,0 +1,69 @@
+#page-index,
+html.has-zcm{
+  .site-wrapper{
+    .header-wrap{
+      .header--aside{
+        margin: 1.375em 1em auto 1em !important;
+      }
+      .header--aside__item{
+
+        display: $clutter-d !important;
+
+
+
+        .js-popout-trig{
+          visibility: $clutter-v !important;
+        }
+        &.header__label{
+          color: $body-text-color !important;
+        }
+        // Privacy, simplified.
+        &.showcase{
+          .header__clickable:hover,
+          .header__clickable:focus{
+            color: $body-text-color !important;
+
+            .popout-trig{
+              visibility: $clutter-v visible;
+            }
+          }
+        }
+        // 📢
+        &.social{
+          .header__clickable:hover,
+          .header__clickable:focus{
+            color: $body-text-color !important;
+
+            .popout-trig{
+              visibility: $clutter-v visible;
+            }
+          }
+        }
+      }
+    }
+    // ꠵ hamburger
+    a.header__button--menu{
+      color: $body-text-color !important;
+      background-color: transparent !important;
+
+      &:hover{
+        background-color: $ui-bg-color-hover !important;
+        color: $header-text-color !important;
+      }
+      &:active{
+        background-color: $ui-bg-color-hover !important;
+        color: $header-text-color !important;
+      }
+      &:focus{
+        background-color: $ui-bg-color-hover !important;
+        color: $header-text-color !important;
+      }
+    }
+    .module__warnings{
+      border-bottom-color: $divider-border-color !important;
+    }
+  }
+}
+html.has-zcm.is-mobile .dropdown--settings--cog .dropdown__button:after{
+  color: $body-text-color !important;
+}

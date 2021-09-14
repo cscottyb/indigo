@@ -1,0 +1,38 @@
+html.has-zcm{
+  .user-loc-tooltip{
+    background-color: $modal-bg-color !important;
+    background-color: transparentize($modal-bg-color, .12) !important;
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    border: 1px solid $modal-border-color !important;
+    box-shadow: 0px 2px 8px -6px #000000;
+    // border-radius: ($border-radius / 2) !important;
+
+    .user-loc-tooltip__title{
+      color: $header-text-color !important;
+      font-size: 1em !important;
+    }
+
+    .user-loc-tooltip__subtitle{
+      color: $body-text-color !important;
+      font-size: .8125em !important;
+    }
+
+    .user-loc-btn a.btn{
+      @include card-button;
+
+      &.btn--primary{
+        background-color: hsl(226deg, 50%, 91%) !important;
+        border: solid 1px hsl(226deg, 50%, 91%) !important;
+        border-bottom-color: hsl(226deg, 50%, 91%) !important;
+
+      }
+
+      &:hover{
+        background-color: $header-text-color !important;
+        border: solid 1px $header-text-color !important;
+        border-bottom-color: $header-text-color !important;
+      }
+    }
+  }
+}

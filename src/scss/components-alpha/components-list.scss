@@ -1,0 +1,55 @@
+// // EDIT THIS FIRST
+//
+// @import "../palettes/_tinted.scss";
+// @import "variables.scss";
+
+//main
+@import "main--img.scss";
+@import "main.scss";
+@import "main--pg-index.scss";
+
+//header
+@import "header.scss";
+@import "header--search.scss";
+@import "header--autocomplete";
+@import "header--zcm.scss";
+@import "header--aside.scss";
+
+// components
+@import "component--search-filters.scss";
+@import "component--metabar";
+@import "component--modal.scss";
+@import "component--tooltip.scss";
+@import "component--result.scss";
+@import "component--related-searches.scss";
+@import "component--result-more.scss";
+@import "component--tile";
+@import "component--sidebar";
+@import "component--detail";
+
+// modules
+@import "modules";
+@import "module--zci-wrap";
+@import "module--about.scss";
+@import "module--carousel.scss";
+@import "module--images.scss";
+@import "module--places.scss";
+@import "module--stacks-overflow";
+@import "module--forecast";
+@import "module--calculator";
+@import "module--recipes";
+@import "module--definition";
+
+// svg
+// @import "svg--pin"; // future feature
+
+//pages
+@import "page--news"; 
+@import "page--videos";
+@import "page--images";
+@import "page--shopping";
+@import "page--maps";
+
+// ze end (the end)
+@import "zend--ads";
+@import "zend--footer.scss"
