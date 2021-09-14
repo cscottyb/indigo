@@ -27,8 +27,8 @@ Indigo was developed for Safari first and will have the best theming thanks to n
 - Open Safari Settings and navigate to `Preferences > Advanced > Style sheet`
 - Navigate to the .css file from the downloaded folder.
 
-### Blink and Mozilla based browsers
-You'll need to install a plugin from your browser's extensions store that will allow you to override the default css style on any webpage. I recommend the Stylus extensions that are available for both browsers. Make sure you target all pages on the duckduckgo.com domain.
+### Blink and Mozilla based browsers (Chrome and Firefox)
+You'll need to install a plugin from your browser's extensions store that will allow you to override the default css style on any webpage. I recommend the *Stylus* extensions that are available for both browsers. Make sure you target all pages on the duckduckgo.com domain.
 - Open the theme file for the browser you want to use Indigo in your text editor (Notepad, Text Edit).
 - Copy and paste the css code into the textfield and save.
 
