@@ -82,7 +82,7 @@
 
     }
     .module--carousel__footer{
-      background: linear-gradient(0deg, rgba($ui-bg-color, 1) 0%, rgba($ui-bg-color, 1) 67%, rgba($ui-bg-color, 0.85) 79%, rgba($ui-bg-color, 0) 100%);
+      // background: linear-gradient(0deg, rgba($ui-bg-color, 1) 0%, rgba($ui-bg-color, 1) 67%, rgba($ui-bg-color, 0.85) 79%, rgba($ui-bg-color, 0) 100%);
 
       .result__url{
         color: $body-text-color !important;
@@ -123,7 +123,7 @@
 
 
     .module--carousel__item:hover .module--carousel__footer{
-      background: linear-gradient(0deg, rgba($ui-bg-color-hover-secondary, 1) 0%, rgba($ui-bg-color-hover-secondary, 1) 67%, rgba($ui-bg-color-hover-secondary, 0.85) 79%, rgba($ui-bg-color-hover-secondary, 0) 100%);
+      // background: linear-gradient(0deg, rgba($ui-bg-color-hover-secondary, 1) 0%, rgba($ui-bg-color-hover-secondary, 1) 67%, rgba($ui-bg-color-hover-secondary, 0.85) 79%, rgba($ui-bg-color-hover-secondary, 0) 100%);
     }
 
   }

@@ -8,11 +8,13 @@
 
       .vertical--map__sidebar__wrapper{
         @include header-translucency;
+        background-color: $ui-bg-color !important; // will remove in future release
 
         .vertical--map__sidebar__results{
           .vertical--map__sidebar__results__inner{
             background-color: transparent !important;
-            border: 0px solid transparent !important;
+            border: solid 1px $panel-border-color !important;
+
 
             .module__section.place-list-item{
               margin: 1em 0.5em !important;
@@ -23,7 +25,7 @@
 
               &:hover{
                 background-color: $ui-bg-color-hover !important;
-                background-color: $ui-bg-color-hover-secondary !important;
+                // background-color: $ui-bg-color-hover-secondary !important; // will remove in future release
               }
 
               &:first-child{
@@ -106,6 +108,8 @@
         .vertical--map__sidebar__header{
           @include header-translucency;
           border-bottom: solid 1px $panel-border-color !important;
+          -webkit-box-shadow: 0 0 0 0 transparent !important;
+          box-shadow: 0 0 0 0 transparent !important;
 
           form{
             input.search__button{
@@ -124,6 +128,22 @@
 
         }
       }
+
+
+      &.has-direction{
+
+
+          //Directions
+
+
+      }
+
+
+
+    }
+
+    .vertical--map__sidebar__toggle .vertical--map__btn{
+      color: $body-text-color !important;
     }
 
   }
@@ -131,18 +151,228 @@
 
 
 
-//move later
+  //move later
   .vertical--map__sidebar__detail{
     .places-single-map{
       .place-detail{
         background-color: transparent !important;
+        color: $body-text-color !important;
 
-        .module__title.place-detail__name{
-          a.module__title__link{
-            color: $header-text-color  !important;
+        .module__section.place-detail__section{
+          border-color: $panel-border-color !important;
+          .module__title.place-detail__name{
+            a.module__title__link{
+              color: $header-text-color  !important;
 
-            &:hover{
-              text-decoration-color: $body-text-color !important;
+              &:hover{
+                text-decoration-color: $body-text-color !important;
+              }
+            }
+          }
+          .place-detail__item.place-detail__subtitle,
+          .place-detail__review-count__price{
+            color: $body-text-color !important;
+          }
+
+          &.place-detail__section--tab{
+
+            li{
+              .btn{
+                background-color: $theme-color !important;
+              }
+              span{
+                color: $header-text-color !important;
+              }
+
+              &:hover{
+                .btn{
+                  background-color: $btn-bg-theme-hover !important;
+                }
+                span{
+                  text-decoration: underline !important;
+                  &.place-detail__cta-text{
+                    text-decoration: none !important;
+                  }
+                }
+              }
+            }
+            a{
+              .btn{
+                background-color: $theme-color !important;
+              }
+              &:hover .btn{
+                background-color: $btn-bg-theme-hover !important;
+              }
+              span{
+                color: $header-text-color !important;
+              }
+              &:hover{
+                text-decoration-color: $body-text-color !important;
+              }
+            }
+
+            $mapIcon-website: url(assets/maps/globe-icon-dark.svg) !default;
+            $mapIcon-website-dark: url(assets/maps/globe-icon.svg);
+
+            $mapIcon-directions: url(assets/maps/directions-icon-dark.svg) !default;
+            $mapIcon-directions-dark: url(assets/maps/directions-icon.svg);
+
+            $mapIcon-call: url(assets/maps/call-icon-dark.svg) !default;
+            $mapIcon-call-dark: url(assets/maps/call-icon.svg);
+
+
+            @if $theme-dark{
+              $mapIcon-website: $mapIcon-website-dark;
+              $mapIcon-directions: $mapIcon-directions-dark;
+              $mapIcon-call: $mapIcon-call-dark;
+
+            }
+
+            .place-detail__cta-item--website .place-detail__cta-icon{
+              background-image: $mapIcon-website !important;
+            }
+            .place-detail__cta-item--directions .place-detail__cta-icon{
+              background-image: $mapIcon-directions !important;
+            }
+            .place-detail__cta-item--call .place-detail__cta-icon{
+              background-image: $mapIcon-call !important;
+            }
+
+
+
+
+
+
+
+
+
+
+          }
+          &.place-detail__section--bordered{
+
+            $mapIcon-tripadvisor: url(assets/maps/logo-ta.svg) !default;
+            $mapIcon-tripadvisor-dark: url(assets/maps/logo-ta-darktheme.svg);
+
+
+            @if $theme-dark{
+              $mapIcon-tripadvisor: $mapIcon-tripadvisor-dark;
+            }
+
+            .place-detail__more-at__logo--tripadvisor{
+              background-image: $mapIcon-tripadvisor !important;
+            }
+
+            strong.place-detail__data__label,
+            span.place-detail__data__label,
+            .review__rating-date{
+              color: $header-text-color !important;
+            }
+
+            span.module__link{
+              color: $body-text-color !important;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  $arrow-filter: url(assets/maps/back_arrow.svg) !default;
+  $arrow-filter-dark: url(assets/maps/back_arrow_dark.svg);
+
+  @if $theme-dark{
+    $arrow-filter: $arrow-filter-dark;
+  }
+
+  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon,
+  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon--back{
+    background-image: $arrow-filter !important;
+  }
+}
+
+
+
+
+
+
+
+
+//Directions
+.has-directions{
+
+  .vertical--map__sidebar__inner{
+    .directions-results{
+      .directions-route{
+        .directions-route-overview{
+          &:hover{
+            background-color: $ui-bg-color-hover-secondary !important;
+          }
+        }
+        .directions-route-step-list{
+          background-color: $ui-bg-color-hover !important;
+
+          .directions-route-step-list__container{
+            .directions-route-step{
+              border-bottom-color: $panel-border-color !important;
+
+              .directions-col {
+
+                &.directions-col--icon{
+                  img.directions-col--icon__image{
+
+                  }
+                }
+                &.directions-col--content{
+                  .directions-route-step__heading{
+                    color: $header-text-color !important;
+                  }
+                  .directions-route-step__instructions{
+                    color: $body-text-color !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  // header
+  .vertical--map__sidebar__header{
+    .vertical--map__sidebar__header__content{
+      .vertical--map__sidebar__header__close-btn{
+        color: $header-text-color !important;
+      }
+      form.directions-search{
+        .directions-search__mode{
+          .directions-search__mode__type{
+            color: $header-text-color !important;
+          }
+        }
+        .directions-search__input-container{
+          .directions-search__icons{
+
+          }
+          .directions-search__inputs{
+            .map-searchbar.map-searchbar--directions{
+              // background-color: $ui-bg-color !important;
+              #search_form.search--header{
+                background-color: $ui-bg-color-hover !important;
+                border-color: $ui-bg-color-hover !important;
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+
+                .search__input--adv,
+                .search__clear{
+                  color: $header-text-color !important;
+                }
+                .search__clear{
+                  font-family: $ddg-icons !important;
+                }
+
+              }
             }
           }
 
@@ -151,74 +381,3 @@
     }
   }
 }
-
-$arrow-filter: 0 !default;
-$arrow-filter-dark: 100;
-
-@if $theme-dark{
-  $arrow-filter: $arrow-filter-dark;
-
-}
-.vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon,
-.vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon--back{
-  filter:brightness($arrow-filter) !important;
-  -webkit-filter: brightness($arrow-filter) !important;
-}
-
-
-$arrow-filter: 100 !default;
-$arrow-filter-dark: 1;
-
-
-@if $theme-dark{
-  $arrow-filter: $arrow-filter-dark;
-}
-
-.has-zcm.dark-bg {
-
-
-
-
-
-  .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper .vertical--map__sidebar__results .vertical--map__sidebar__results__inner .module__section.place-list-item:hover{
-    // background-color: $ui-bg-color-hover-secondary !important;
-  }
-
-  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon,
-  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon--back{
-    filter: brightness($arrow-filter) !important;
-    -webkit-filter: brightness($arrow-filter) !important;
-  }
-
-
-
-}
-
-
-
-
-
-
-// $map-opacity: 0 !default; //$backdrop-opacity
-// $map-opacity-light: 1;
-//
-// @if $theme-dark{
-//   $map-opacity: $map-opacity-light;
-// }
-//
-// .has-zcm.vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper{
-//   background-color: rgba($ui-bg-color, $map-opacity) !important;
-// }
-//
-//
-//
-// $map-opacity: 1 !default; //$backdrop-opacity
-// $map-opacity-dark: 0.5;
-//
-// @if $theme-dark{
-//   $map-opacity: $map-opacity-dark;
-// }
-//
-// .has-zcm.dark-bg .vertical--map .vertical--map__sidebar .vertical--map__sidebar__wrapper{
-//   background-color: rgba($ui-bg-color, $map-opacity) !important;
-// }

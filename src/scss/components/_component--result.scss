@@ -102,10 +102,11 @@
   }
 }
 
-
-.is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news{
-  background: $background-color !important;
-border-color: $ui-border-color !important;
-border-bottom-color: $search-results-border !important;
-box-shadow: none !important;
+.has-zcm{
+  .is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news{
+    background: $background-color !important;
+    border-color: $ui-border-color !important;
+    border-bottom-color: $search-results-border !important;
+    box-shadow: none !important;
+  }
 }

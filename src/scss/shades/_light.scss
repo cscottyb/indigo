@@ -9,9 +9,10 @@ $shade-background-color: $ui-100;
 
 // UI colors
 $shade-ui-bg-color: $ui-200;
-$shade-ui-bg-color-hover: $ui-300;
+$shade-ui-bg-color-hover: $ui-350;
 $shade-ui-bg-color-hover-secondary: $ui-400;
 $shade-ui-bg-color-hover-hover: $ui-500;
+$shade-ui-bg-color-map-hover: $ui-500;
 
 // Border colors
 $shade-panel-border-color: $shade-ui-bg-color-hover;
@@ -40,4 +41,4 @@ $shade-detail-ui: $ui-800;
 $shade-detail-ui-hover: $ui-700;
 
 // buttons
-$shade-btn-bg-theme-hover: $ui-550;
+$shade-btn-bg-theme-hover: $ui-700;

@@ -50,7 +50,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
 
       @include modal-translucency;
       border: 1px solid $modal-border-color !important;
-      box-shadow: 0px 2px 8px -6px #000000;
+      box-shadow: 0px 2px 8px -6px #000000 !important;
       border-radius: .5em !important;
 
       a{

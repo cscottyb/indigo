@@ -39,14 +39,14 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .has-zcm{
-    .module.module--images{
-      .module__footer {
-        a{
-          color: $theme-color !important;
-        }
-      }
-    }
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   .has-zcm{
+//     .module.module--images{
+//       .module__footer {
+//         a{
+//           color: $theme-color !important;
+//         }
+//       }
+//     }
+//   }
+// }

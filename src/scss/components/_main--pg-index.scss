@@ -1,3 +1,11 @@
+$ddgIcon-bg: $theme-color !default;
+$ddgIcon-bg-dark: transparent;
+
+@if $theme-dark{
+  $ddgIcon-bg: $ddgIcon-bg-dark;
+}
+
+
 #pg-index{
   background-color: $background-color !important;
   // font-family: $font-family;
@@ -21,7 +29,7 @@
       height: 36px !important;
       background-position: left !important;
       margin: 0 0 0 8px !important;
-      background-color: $theme-color !important;
+      background-color: $ddgIcon-bg !important;
       border-radius: 50% !important;
       background-image: $header__logo !important;
 
@@ -49,11 +57,11 @@
       }
 
     }
-    @media(prefers-color-scheme: dark) {
-      a#logo_homepage_link {
-        background-color: transparent !important;
-      }
-    }
+    // @media(prefers-color-scheme: dark) {
+    //   a#logo_homepage_link {
+    //     background-color: transparent !important;
+    //   }
+    // }
   }
   span.logo_homepage__tt {
       bottom: auto !important;

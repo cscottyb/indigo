@@ -25,6 +25,13 @@
   }
 }
 
+$ddgIcon-bg: $theme-color !default;
+$ddgIcon-bg-dark: transparent;
+
+@if $theme-dark{
+  $ddgIcon-bg: $ddgIcon-bg-dark;
+}
+
 
 .has-zcm{
   #header_wrapper{
@@ -34,7 +41,7 @@
     .header__search-wrap{
       .header__logo{
         background-image: $header__logo !important;
-        // background-color: $theme-color !important;
+        background-color: $ddgIcon-bg !important;
         border-radius: 50% !important;
         background-size: cover !important;
         width: 2.25em !important;
@@ -44,18 +51,4 @@
     }
 
   }
-}
-
-@media (prefers-color-scheme: light) {
-  .has-zcm{
-    #header_wrapper{
-      .header__search-wrap{
-        .header__logo{
-          background-color: $theme-color !important;
-        }
-      }
-
-    }
-  }
-
 }
