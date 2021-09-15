@@ -1,7 +1,7 @@
 .has-zcm{
   .user-loc-tooltip{
     background-color: $modal-bg-color !important;
-    background-color: transparentize($modal-bg-color, .12) !important;
+    background-color: transparentize($modal-bg-color, .01) !important;
     -webkit-backdrop-filter: $backdrop-filter !important;
     backdrop-filter: $backdrop-filter !important;
     border: 1px solid $modal-border-color !important;

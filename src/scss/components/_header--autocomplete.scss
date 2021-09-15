@@ -14,13 +14,13 @@ $autocomplete-padd-size-3fifths: $autocomplete-padd-size * 3/5;
     -webkit-backdrop-filter: $backdrop-filter !important;
     backdrop-filter: $backdrop-filter !important;
     background-color: $modal-bg-color !important;
-    background-color: transparentize($modal-bg-color, .02) !important;
+    background-color: transparentize($modal-bg-color, .01) !important;
   }
   @else if $browser-support == 2{
     -webkit-backdrop-filter: $backdrop-filter !important;
     backdrop-filter: $backdrop-filter !important;
     background-color: $background-color !important;
-    background-color: transparentize($modal-bg-color, $backdrop-opacity) !important;
+    background-color: transparentize($modal-bg-color, .01) !important;
   }
   @else if $browser-support == 3{
     -webkit-backdrop-filter: $backdrop-filter !important;

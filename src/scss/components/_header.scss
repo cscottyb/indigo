@@ -6,7 +6,7 @@
     -webkit-backdrop-filter: $backdrop-filter !important;
     backdrop-filter: $backdrop-filter !important;
     background-color: $background-color !important;
-    background-color: transparentize($background-color, .02) !important;
+    background-color: transparentize($background-color, .01) !important;
   }
   @else if $browser-support == 2{
     -webkit-backdrop-filter: $backdrop-filter !important;

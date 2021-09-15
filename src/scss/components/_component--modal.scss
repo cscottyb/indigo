@@ -17,7 +17,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
     -webkit-backdrop-filter: $backdrop-filter !important;
     backdrop-filter: $backdrop-filter !important;
     background-color: $modal-bg-color !important;
-    background-color: transparentize($modal-bg-color, .02) !important;
+    background-color: transparentize($modal-bg-color, .01) !important;
   }
   @else if $browser-support == 2{
     -webkit-backdrop-filter: $backdrop-filter !important;

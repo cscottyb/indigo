@@ -1,15 +1,13 @@
 {
   "name": "indigo",
-  "version": "0.1.0",
-  "description": "Duck Duck Go Indigo Theme.",
+  "version": "0.1.1",
+  "description": "DuckDuckGo Indigo Theme.",
   "main": "src/js/index.js",
   "scripts": {
-    "test": "node-sass -w src/build/ -o test/",
-    "tests": "sass --no-source-map src/build/:test/",
-    "watch-scss": "node-sass --w src/scss -o src/build/css",
-    "watch-modules": "node-sass -w src/scss/components -o src/build/css/components",
-    "watch-modules-dark": "node-sass -w src/scss/components-dark -o src/build/css/components-dark",
-    "watch-modules-dim": "node-sass -w src/ -o test/"
+    "clean": "X delete test folder and components folder",
+    "components": "X using src/scss/component to make components-build and components-build-dark && move to build/buildTemplate",
+    "build": "X build src/build folder",
+    "test": "sass --no-source-map src/build/:test/"
   },
   "keywords": [
     "duckduckgo",
