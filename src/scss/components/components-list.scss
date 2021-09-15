@@ -17,7 +17,7 @@
 
 // components
 @import "component--search-filters.scss";
-@import "component--metabar";
+@import "component--metabar.scss";
 @import "component--modal.scss";
 @import "component--tooltip.scss";
 @import "component--result.scss";
@@ -44,7 +44,7 @@
 // @import "svg--pin"; // future feature
 
 //pages
-@import "page--news"; 
+@import "page--news";
 @import "page--videos";
 @import "page--images";
 @import "page--shopping";
