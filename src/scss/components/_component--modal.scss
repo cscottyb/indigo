@@ -194,7 +194,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
         .frm__select{
 
           select{
-            background-color: rgba(97, 107, 143, 0.1) !important;
+            background-color: rgba($ui-400, 0.1) !important;
             color: $modal-text-color !important;
             font-family: $system-fonts !important;
           }
