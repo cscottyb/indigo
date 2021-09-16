@@ -35,8 +35,8 @@ $autocomplete-padd-size-3fifths: $autocomplete-padd-size * 3/5;
 
 
 
-.has-zcm,
-#pg-index{
+html.has-zcm,
+html body#pg-index{
   .search__autocomplete{
     background: transparent !important;
     border: solid 0px transparent !important;
@@ -73,7 +73,7 @@ $autocomplete-padd-size-3fifths: $autocomplete-padd-size * 3/5;
 
 }
 
-#pg-index{
+html body#pg-index{
   .search__autocomplete{
     max-height: 265px;
 

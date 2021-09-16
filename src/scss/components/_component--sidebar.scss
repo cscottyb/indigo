@@ -5,8 +5,8 @@
 //
 
 
-.has-zcm,
-#pg-index{
+html.has-zcm,
+html body#pg-index{
   .nav-menu--slideout{
     background-color: $background-color !important;
     -webkit-box-shadow: -1px 0 0 $panel-border-color !important;

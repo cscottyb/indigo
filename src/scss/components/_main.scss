@@ -3,15 +3,15 @@ html{
 }
 // @include font;
 
-#pg-index,
-.has-zcm{
+html body#pg-index,
+html.has-zcm{
   body, input, select, textarea{
     font-family: $font-family !important;
   }
 
 }
 
-.has-zcm{
+html.has-zcm{
   ::selection {
     background-color: $highlight-bg !important;
     // color: $highlight-color;

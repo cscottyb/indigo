@@ -3,7 +3,7 @@ html.dark-bg{
 }
 // @include font;
 
-html.dark-bg body#pg-index.body--home,
+html.dark-bg body#pg-index,
 html.dark-bg.has-zcm{
   body, input, select, textarea{
     font-family: $font-family !important;

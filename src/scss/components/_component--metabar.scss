@@ -39,7 +39,7 @@
 
 
 
-.has-zcm{
+html.has-zcm{
   .metabar{
     @include metabar-translucency;
     border-bottom-color: $panel-border-color !important;

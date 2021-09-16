@@ -1,4 +1,4 @@
-.has-zcm{
+html.has-zcm{
   .module.module--places{
     @include card;
 
@@ -101,7 +101,7 @@
   }
 }
 
-.has-zcm{
+html.has-zcm{
   .sidebar-modules .module.module--places,
   .place-detail{
     @include card;

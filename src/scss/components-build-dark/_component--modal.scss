@@ -17,7 +17,7 @@ $modal-padd-size-3fifths: $modal-padd-size * 3/5;
     -webkit-backdrop-filter: $backdrop-filter !important;
     backdrop-filter: $backdrop-filter !important;
     background-color: $modal-bg-color !important;
-    background-color: transparentize($modal-bg-color, .02) !important;
+    background-color: transparentize($modal-bg-color, .01) !important;
   }
   @else if $browser-support == 2{
     -webkit-backdrop-filter: $backdrop-filter !important;
@@ -74,7 +74,7 @@ html.dark-bg.has-zcm{
         &.js-settings-dropdown-reset-appearance{
           padding: 0 !important;
           background-color: transparent !important;
-          color: $body-text-size !important;
+          color: $body-text-color !important;
         }
       }
       .modal__header{
@@ -194,7 +194,7 @@ html.dark-bg.has-zcm{
         .frm__select{
 
           select{
-            background-color: rgba(97, 107, 143, 0.1) !important;
+            background-color: rgba($ui-400, 0.1) !important;
             color: $modal-text-color !important;
             font-family: $system-fonts !important;
           }

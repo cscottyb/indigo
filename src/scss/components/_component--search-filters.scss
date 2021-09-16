@@ -2,14 +2,14 @@
 // search-filters
 // - see _modal.scss for dropdown
 
-.has-zcm{
+html.has-zcm{
   .dropdown__switch.is-on:before{
     color: $background-color !important;
   }
 }
 
 
-// .has-zcm{
+// html.has-zcm{
 //   .search-filters{
 //     .dropdown{
 //       &.is-active{

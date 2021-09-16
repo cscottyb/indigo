@@ -6,11 +6,13 @@
     -webkit-backdrop-filter: $backdrop-filter !important;
     backdrop-filter: $backdrop-filter !important;
     background-color: $background-color !important;
-    background-color: transparentize($background-color, .02) !important;
+    background-color: transparentize($background-color, .01) !important;
   }
   @else if $browser-support == 2{
-    -webkit-backdrop-filter: $backdrop-filter !important;
-    backdrop-filter: $backdrop-filter !important;
+    background-image: linear-gradient(
+0deg, hsl(0deg 0% 15%) 0%, hsl(0deg 0% 15% / 33%) 20%, hsl(0deg 0% 15% / 0%) 50%, hsl(0deg 0% 15% / 33%) 80%, hsl(0deg 0% 15%) 100%);
+    -webkit-backdrop-filter: saturate(180%) blur(10px) !important;
+    backdrop-filter: saturate(180%) blur(10px) !important;
     background-color: $background-color !important;
     background-color: transparentize($background-color, $backdrop-opacity) !important;
   }

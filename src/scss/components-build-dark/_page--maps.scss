@@ -22,6 +22,7 @@ html.dark-bg.has-zcm{
             	border-top: solid 1px transparent !important;
             	border-radius: 1em !important;
               overflow: visible !important;
+              min-height: 5.4em !important;
 
               &:hover{
                 background-color: $ui-bg-color-hover !important;

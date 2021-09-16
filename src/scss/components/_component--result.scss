@@ -1,4 +1,4 @@
-.has-zcm{
+html.has-zcm{
   .results{
     .result{
       border-radius: 1em !important;
@@ -102,7 +102,7 @@
   }
 }
 
-.has-zcm{
+html.has-zcm{
   .is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news{
     background: $background-color !important;
     border-color: $ui-border-color !important;
