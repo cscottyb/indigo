@@ -1,3 +1,5 @@
+@use "sass:math";
+
 html.dark-bg.has-zcm{
   .module.module--places{
     @include card;
@@ -92,7 +94,7 @@ html.dark-bg.has-zcm{
         }
     }
     .place-list-item__image{
-      border-radius: $border-radius / 4 !important;
+      border-radius: math.div($border-radius, 4) !important;
     }
 
     .feedback-prompt{

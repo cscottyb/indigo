@@ -1,3 +1,5 @@
+@use "sass:math";
+
 #var{content:'var';}
 
 $theme-color: #698bff !default;
@@ -250,6 +252,7 @@ $ads_display: none; //display: none or block
     border-radius: 0 !important;
   }
   @else{
-    border-radius: $border-radius / $btn-radius-divisions !important;
+    // border-radius: $border-radius / $btn-radius-divisions !important;
+    border-radius: math.div($border-radius, $btn-radius-divisions) !important;
   }
 }

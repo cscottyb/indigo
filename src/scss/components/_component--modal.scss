@@ -1,7 +1,7 @@
-
+@use "sass:math";
 
 $modal-padd-size: 0.5em;
-$modal-padd-size-3fifths: $modal-padd-size * 3/5;
+$modal-padd-size-3fifths: math.div($modal-padd-size * 3, 5);
 
 @mixin modal-pad {
   padding: $modal-padd-size !important;

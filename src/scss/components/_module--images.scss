@@ -2,6 +2,8 @@
 // module--images
 //
 
+@use "sass:math";
+
 html.has-zcm{
   .module.module--images{
     .module__header.module__header--link {
@@ -31,7 +33,7 @@ html.has-zcm{
       }
     }
     .module--images__thumbnails__tile{
-      border-radius: $border-radius / 4 !important;
+      border-radius: math.div($border-radius, 4) !important;
       &:hover{
         box-shadow: 0 0 1px 1px $theme-color !important;
       }

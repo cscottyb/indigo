@@ -3,8 +3,11 @@
 // $autocomplete-bg-color: $modal-bg-color; //hsl(hue($theme-color), 50%, 99%);
 // $autocomplete-body-color: $modal-text-color;
 
+@use "sass:math";
+
 $autocomplete-padd-size: 0.5em;
-$autocomplete-padd-size-3fifths: $autocomplete-padd-size * 3/5;
+// $autocomplete-padd-size-3fifths: $autocomplete-padd-size * 3/5;
+$autocomplete-padd-size-3fifths: math.div($autocomplete-padd-size * 3, 5);
 
 @mixin autocomplete-translucency {
   @if $browser-support == 0{

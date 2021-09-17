@@ -1,3 +1,5 @@
+@use "sass:math";
+
 //
 // modules--carousel
 //
@@ -53,7 +55,8 @@ html.dark-bg.has-zcm{
       }
 
       .module--carousel__image.is-contain-image{
-        border-radius: $border-radius / 2 !important;
+        // border-radius: $border-radius / 2 !important;
+        border-radius: math.div($border-radius, 2) !important;
       }
     }
 
