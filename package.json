@@ -5,15 +5,18 @@
   "main": "src/js/index.js",
   "scripts": {
     "clean": "X delete test folder and components folder",
-    "components": "X using src/scss/component to make components-build and components-build-dark && move to build/buildTemplate",
-    "build": "X build src/build folder",
+    "build": "npm run components && npm run sass-css",
+    "components": "npm run components-build && npm run components-build-dark",
     "components-build": "node src/js/components-build.js",
-    "components-build-dark": "fast-replace 'html' 'html.dark-bg' src/build/buildTemplate/components-build-dark/",
-    "postcss": "postcss test --use autoprefixer --base test --dir postcss --verbose",
-    "postcss-test": "postcss test --use autoprefixer -replace --no-map --verbose",
+    "components-build-dark": "fast-replace 'html' 'html.dark-bg' src/scss/components-build-dark/",
     "test": "sass --no-source-map src/build/:test/",
     "rm-stdb": "node src/js/rm_single-theme-dark-bg.js",
-    "mega-test": "run-s test rm-stdb postcss-test"
+    "postcss": "postcss test --use autoprefixer -replace --no-map --verbose",
+    "sass-css": "npm run test && npm run rm-stdb && npm run postcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cscottyb/indigo.git"
   },
   "keywords": [
     "duckduckgo",
@@ -24,11 +27,11 @@
   ],
   "author": "Scott Borland",
   "license": "MIT",
+  "homepage": "https://github.com/cscottyb/indigo#readme",
   "dependencies": {
     "autoprefixer": "^10.3.4",
     "fast-replace": "^3.0.4",
     "find-remove": "^3.1.0",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "recursive-copy": "^2.0.13",
