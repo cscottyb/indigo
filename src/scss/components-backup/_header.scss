@@ -1,0 +1,56 @@
+@mixin header-translucency {
+  @if $browser-support == 0{
+    background-color: $background-color !important;
+  }
+  @else if $browser-support == 1{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $background-color !important;
+    background-color: transparentize($background-color, .01) !important;
+  }
+  @else if $browser-support == 2{
+    background-image: linear-gradient(
+0deg, rgba($background-color, 1) 0%, rbga($background-color, 0.33) 20%, rgba($background-color, 0) 50%, rgba($background-color, 0.33) 80%, rgba($background-color, 1) 100%) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(10px) !important;
+    backdrop-filter: saturate(180%) blur(10px) !important;
+    background-color: $background-color !important;
+    background-color: transparentize($background-color, $backdrop-opacity) !important;
+  }
+  @else if $browser-support == 3{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $background-color !important;
+    background-color: transparentize($background-color, $backdrop-opacity) !important;
+  }
+  @else{
+    background-color: $background-color !important;
+  }
+}
+
+$ddgIcon-bg: $theme-color !default;
+$ddgIcon-bg-dark: transparent;
+
+@if $theme-dark{
+  $ddgIcon-bg: $ddgIcon-bg-dark;
+}
+
+
+html.has-zcm{
+  #header_wrapper{
+    @include header-translucency;
+    box-shadow: 0 1px 0 $panel-border-color !important;
+
+    .header__search-wrap{
+      .header__logo{
+        background-image: $header__logo !important;
+        background-color: $ddgIcon-bg !important;
+        border-radius: 50% !important;
+        background-size: cover !important;
+        width: 2.25em !important;
+        height: 2.25em !important;
+        font-size: 1em !important;
+      }
+    }
+
+  }
+}

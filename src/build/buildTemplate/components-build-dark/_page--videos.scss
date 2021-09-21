@@ -1,0 +1,27 @@
+//see component--tile.scss
+
+
+html.dark-bg.has-zcm{
+  .tile-wrap{
+    .tileview__videos.has-tiles--grid{
+
+      .tile{
+        margin-top: 0.5em !important;
+
+        &.tile--vid{
+          span{
+            img{
+            }
+            .video-source{
+              color:$header-text-color !important;
+            }
+          }
+          .tile__count{
+            color: $body-text-color !important;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,21 @@
+html.has-zcm{
+
+  .tileview__recipes{
+    .tile{
+      .tile__body{
+        .opt{
+          display: block !important;
+          color: $body-text-color !important;
+        }
+        .tile__source.one-line{
+          color: $header-text-color !important;
+        }
+
+      }
+    }
+
+  }
+  .star{
+    color: $body-text-color !important;
+  }
+}

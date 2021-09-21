@@ -7,6 +7,8 @@
     "clean": "X delete test folder and components folder",
     "components": "X using src/scss/component to make components-build and components-build-dark && move to build/buildTemplate",
     "build": "X build src/build folder",
+    "components-build": "node src/js/components-build.js",
+    "components-build-dark": "fast-replace 'html' 'html.dark-bg' src/build/buildTemplate/components-build-dark/",
     "postcss": "postcss test --use autoprefixer --base test --dir postcss --verbose",
     "postcss-test": "postcss test --use autoprefixer -replace --no-map --verbose",
     "test": "sass --no-source-map src/build/:test/",
@@ -24,10 +26,12 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.3.4",
+    "fast-replace": "^3.0.4",
     "find-remove": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
+    "recursive-copy": "^2.0.13",
     "sass": "^1.42.0"
   }
 }
