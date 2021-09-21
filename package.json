@@ -7,6 +7,7 @@
     "clean": "X delete test folder and components folder",
     "components": "X using src/scss/component to make components-build and components-build-dark && move to build/buildTemplate",
     "build": "X build src/build folder",
+    "postcss":"postcss test --use autoprefixer --base test --dir postcss --verbose",
     "test": "sass --no-source-map src/build/:test/"
   },
   "keywords": [
@@ -19,6 +20,9 @@
   "author": "Scott Borland",
   "license": "MIT",
   "dependencies": {
-    "sass": "^1.39.2"
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.42.0"
   }
 }

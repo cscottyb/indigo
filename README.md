@@ -76,8 +76,7 @@ You may want to stick to the compatible themes since other Indigo themes use res
 ### Design
 - Header doesn't play nice with Safari theme due to backdrop-filter and DuckDuckGo default styling. Fix, reconstruct header using a different position properties.
 - Map's direction UI redesign isn't finished.
-- Browsers handles the backdrop filters differently.
-- Browser prefixes haven't been added.
+- Solved: Browsers handles the backdrop filters differently.
 
 
 ### NPM Build
