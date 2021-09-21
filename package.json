@@ -19,8 +19,6 @@
   "author": "Scott Borland",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^5.0.0",
-    "sass": "^1.39.2",
-    "sass-watch": "^0.1.0"
+    "sass": "^1.39.2"
   }
 }
