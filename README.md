@@ -1,6 +1,6 @@
 # Indigo
 
-DuckDuckGo theming project. Alpha v0.1.3
+DuckDuckGo theming project. Alpha v0.1.4
 
 
 
