@@ -7,8 +7,11 @@
     "clean": "X delete test folder and components folder",
     "components": "X using src/scss/component to make components-build and components-build-dark && move to build/buildTemplate",
     "build": "X build src/build folder",
-    "postcss":"postcss test --use autoprefixer --base test --dir postcss --verbose",
-    "test": "sass --no-source-map src/build/:test/"
+    "postcss": "postcss test --use autoprefixer --base test --dir postcss --verbose",
+    "postcss-test": "postcss test --use autoprefixer -replace --no-map --verbose",
+    "test": "sass --no-source-map src/build/:test/",
+    "rm-stdb": "node src/js/rm_single-theme-dark-bg.js",
+    "mega-test": "run-s test rm-stdb postcss-test"
   },
   "keywords": [
     "duckduckgo",
@@ -21,6 +24,8 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.3.4",
+    "find-remove": "^3.1.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "sass": "^1.42.0"
