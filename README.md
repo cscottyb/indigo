@@ -1,6 +1,6 @@
 # Indigo
 
-DuckDuckGo theming project. Alpha v0.1.4
+DuckDuckGo theming project. Alpha v0.1.5
 
 
 
@@ -26,10 +26,14 @@ Indigo was developed for Safari first and will have the best theming thanks to n
 - Open Safari Settings and navigate to `Preferences > Advanced > Style sheet`
 - Navigate to the .css file from the downloaded folder.
 
+Video Instructions: https://youtu.be/SJVcUT7q_TY
+
 ### Blink and Mozilla based browsers (Chrome and Firefox)
 You'll need to install a plugin from your browser's extensions store that will allow you to override the default css style on any webpage. I recommend the *Stylus* extensions that are available for both browsers. Make sure you target all pages on the duckduckgo.com domain.
 - Open the theme file for the browser you want to use Indigo in your text editor (Notepad, Text Edit).
 - Copy and paste the css code into the textfield and save.
+
+Video Instructions: https://youtu.be/-oRv88wUh84
 
 ### Firefox
 Firefox users can use the more advanced chrome theme by changing Advanced Preferences settings.
@@ -41,6 +45,10 @@ Firefox users can use the more advanced chrome theme by changing Advanced Prefer
 - Restart Firfox and enjoy.
 
 \* click the two-way arrow on the right to easily change settings.
+
+Video Instructions including enabling translucency: https://youtu.be/XrZWXhKnZ_4
+Video Instructions with default settings: https://youtu.be/HLIDgRbWGqI
+
 
 ### Browsers on slower and older computers
 You may want to stick to the compatible themes since other Indigo themes use resources to render some features. Your mileage may vary.
