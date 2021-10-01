@@ -4,12 +4,12 @@
 
 html.has-zcm{
   .related-searches{
-    border-radius: $border-radius !important;
-    overflow:hidden !important;
+    // border-radius: $border-radius !important;
+    // overflow:hidden !important;
     padding: .5em 1.2em 0.8em !important;
 
     &.at-bottom{
-      padding: 0px 12px !important;
+      padding: 0px 0px !important;
       background: transparent !important;
     }
 
@@ -17,21 +17,34 @@ html.has-zcm{
     .related-searches__title-short{
       font-weight: 500 !important;
       color: $header-text-color !important;
-      font-size: 0.875em !important;
+      font-size: 1em !important;
     }
 
-    .related-searches__list{
-      font-size: 0.875em !important;
+    .related-searches__lists{
+      ol.related-searches__list{
+        font-size: 0.875em !important;
 
-      a.related-searches__link{
-        font-weight: 400 !important;
-        color: $theme-color !important;
-        font-size: 1em !important;
+        li.related-searches__item{
+          @include card-button;
+
+          a.related-searches__link{
+            font-weight: 400 !important;
+            color: $theme-color !important;
+            font-size: 1em !important;
+          }
+          .related-searches__item-text::before{
+            color: $theme-color !important;
+          }
+          
+        }
+
+
       }
-      .related-searches__item-text::before{
-        color: $theme-color !important;
-      }
+
     }
+
+
+
   }
   .results--sidebar{
     .module-slot{

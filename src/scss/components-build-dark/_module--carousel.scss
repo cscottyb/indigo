@@ -119,6 +119,12 @@ html.dark-bg.has-zcm{
         color: $body-text-color !important;
       }
     }
+
+    a.js-carousel-module-more.module__footer{
+      @include card-button;
+    }
+
+
     .feedback-prompt{
       display: $feedback-prompt_display !important;
     }
