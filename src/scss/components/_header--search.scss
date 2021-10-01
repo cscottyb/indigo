@@ -1,10 +1,17 @@
 @use "sass:math";
 
+$arrow-filter: rgba($ui-650, 0.1) !default;
+$arrow-filter-dark: rgba($ui-400, 0.1);
+
+@if $theme-dark{
+  $arrow-filter: $arrow-filter-dark;
+}
+
 html.has-zcm form#search_form,
 html body#pg-index form#search_form_homepage{
   background-color: $ui-bg-color !important;
   // background-color: hsla(hue($theme-color) + 0, (13 + 5.5), (94 / 2) + 6, 0.1) !important;
-  background-color: rgba($ui-400, 0.1) !important;
+  background-color: $arrow-filter !important;
   // border-radius: ($border-radius / 2) !important;
   border-radius: math.div($border-radius, 2) !important;
   box-shadow: none !important;
