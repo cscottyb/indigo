@@ -1,0 +1,53 @@
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  .zci-wrap{
+    background-color: transparent !important;
+
+    .zci{
+      background-color: transparent !important;
+      color: $header-text-color !important;
+      border-bottom: 1px solid transparent !important;
+
+      .tileview,
+      .tileview--grid{
+
+        .tile-wrap{
+          .zci__main{
+            // .tile{
+            //   &.highlight{
+            //     .tile__title a{
+            //       color: $theme-color !important;
+            //       text-decoration-color: $1gray-700 !important;
+            //     }
+            //   }
+            // }
+
+            .tile-nav.can-scroll, .tile-nav.can-scroll:after{
+              color: $background-color !important;
+              background-color: $theme-color !important;
+              box-shadow: none !important;
+              // background-color: hsla(hue($theme-color), 100%, 50%, .75) !important;
+              // background-color: hsla(hue($theme-color), saturation($theme-color), lightness($theme-color), .75) !important;
+              background-color: $theme-color !important;
+              // -webkit-backdrop-filter: blur(2px)saturate(150%);
+              // backdrop-filter: blur(2px)saturate(150%);
+            }
+
+            i{
+              $i-offset: 2px;
+              &.tile-nav--next:before{
+                left: $i-offset !important;
+              }
+              &.tile-nav--prev:before{
+                right: $i-offset !important;
+              }
+            }
+
+
+
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,384 @@
+
+
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  .vertical--map{
+    .vertical--map__sidebar{
+      background-color: transparent !important;
+
+      .vertical--map__sidebar__wrapper{
+        @include header-translucency;
+        background-color: $ui-bg-color !important; // will remove in future release
+
+        .vertical--map__sidebar__results{
+          .vertical--map__sidebar__results__inner{
+            background-color: transparent !important;
+            border: solid 1px $panel-border-color !important;
+
+
+            .module__section.place-list-item{
+              margin: 1em 0.5em !important;
+            	padding: 0.8em !important;
+            	border-top: solid 1px transparent !important;
+            	border-radius: 1em !important;
+              overflow: visible !important;
+              min-height: 5.4em !important;
+
+              &:hover{
+                background-color: $ui-bg-color-hover !important;
+                // background-color: $ui-bg-color-hover-secondary !important; // will remove in future release
+              }
+
+              &:first-child{
+                margin-top:0.5em !important;
+              }
+              &:last-child{
+                margin-bottom:0.5em !important;
+              }
+              &:after{
+                display:block !important;
+                width:100% !important;
+                height:0px !important;
+                background-color:transparent !important;
+                content:" " !important;
+                position:absolute !important;
+                bottom: -0.5em !important;
+                right:0 !important;
+                border-bottom: solid 1px $panel-border-color !important;
+              }
+              &:last-child:after{
+                display:none !important;
+              }
+
+              h2.place-list-item__title{
+                color: $header-text-color  !important;
+              }
+
+              .place-list-item__info,
+              .place-list-item__rating{
+                color: $body-text-color !important;
+
+                li.place-list-item__info__item{
+                  color: $body-text-color !important;
+
+                  span.place-detail__status .place-detail__status--off{
+                    color: $body-text-color !important;
+                  }
+                }
+              }
+
+            }
+
+
+
+
+
+
+
+          }
+
+        }
+        .vertical--map__sidebar__footer{
+          .map-sidebar-footer{
+            .feedback-prompt{
+              display: $feedback-prompt_display !important;
+
+              a.feedback-prompt__link{
+                display: $feedback-prompt_display !important;
+              }
+            }
+          }
+        }
+
+
+      }
+
+
+
+
+      .map-control{
+        button{
+          @include header-translucency;
+        }
+      }
+
+
+
+
+      .js-vertical-map-sidebar-header-wrapper{
+        .vertical--map__sidebar__header{
+          @include header-translucency;
+          border-bottom: solid 1px $panel-border-color !important;
+          -webkit-box-shadow: 0 0 0 0 transparent !important;
+          box-shadow: 0 0 0 0 transparent !important;
+
+          form{
+            input.search__button{
+              font-family: $ddg-icons !important;
+            }
+
+            &#search_form{
+              color: $header-text-color !important;
+
+              input.search__input--maps{
+                color: $header-text-color !important;
+              }
+
+            }
+          }
+
+        }
+      }
+
+
+      &.has-direction{
+
+
+          //Directions
+
+
+      }
+
+
+
+    }
+
+    .vertical--map__sidebar__toggle .vertical--map__btn{
+      color: $body-text-color !important;
+    }
+
+  }
+
+
+
+
+  //move later
+  .vertical--map__sidebar__detail{
+    .places-single-map{
+      .place-detail{
+        background-color: transparent !important;
+        color: $body-text-color !important;
+
+        .module__section.place-detail__section{
+          border-color: $panel-border-color !important;
+          .module__title.place-detail__name{
+            a.module__title__link{
+              color: $header-text-color  !important;
+
+              &:hover{
+                text-decoration-color: $body-text-color !important;
+              }
+            }
+          }
+          .place-detail__item.place-detail__subtitle,
+          .place-detail__review-count__price{
+            color: $body-text-color !important;
+          }
+
+          &.place-detail__section--tab{
+
+            li{
+              .btn{
+                background-color: $theme-color !important;
+              }
+              span{
+                color: $header-text-color !important;
+              }
+
+              &:hover{
+                .btn{
+                  background-color: $btn-bg-theme-hover !important;
+                }
+                span{
+                  text-decoration: underline !important;
+                  &.place-detail__cta-text{
+                    text-decoration: none !important;
+                  }
+                }
+              }
+            }
+            a{
+              .btn{
+                background-color: $theme-color !important;
+              }
+              &:hover .btn{
+                background-color: $btn-bg-theme-hover !important;
+              }
+              span{
+                color: $header-text-color !important;
+              }
+              &:hover{
+                text-decoration-color: $body-text-color !important;
+              }
+            }
+
+            $mapIcon-website: url(assets/maps/globe-icon-dark.svg) !default;
+            $mapIcon-website-dark: url(assets/maps/globe-icon.svg);
+
+            $mapIcon-directions: url(assets/maps/directions-icon-dark.svg) !default;
+            $mapIcon-directions-dark: url(assets/maps/directions-icon.svg);
+
+            $mapIcon-call: url(assets/maps/call-icon-dark.svg) !default;
+            $mapIcon-call-dark: url(assets/maps/call-icon.svg);
+
+
+            @if $theme-dark{
+              $mapIcon-website: $mapIcon-website-dark;
+              $mapIcon-directions: $mapIcon-directions-dark;
+              $mapIcon-call: $mapIcon-call-dark;
+
+            }
+
+            .place-detail__cta-item--website .place-detail__cta-icon{
+              background-image: $mapIcon-website !important;
+            }
+            .place-detail__cta-item--directions .place-detail__cta-icon{
+              background-image: $mapIcon-directions !important;
+            }
+            .place-detail__cta-item--call .place-detail__cta-icon{
+              background-image: $mapIcon-call !important;
+            }
+
+
+
+
+
+
+
+
+
+
+          }
+          &.place-detail__section--bordered{
+
+            $mapIcon-tripadvisor: url(assets/maps/logo-ta.svg) !default;
+            $mapIcon-tripadvisor-dark: url(assets/maps/logo-ta-darktheme.svg);
+
+
+            @if $theme-dark{
+              $mapIcon-tripadvisor: $mapIcon-tripadvisor-dark;
+            }
+
+            .place-detail__more-at__logo--tripadvisor{
+              background-image: $mapIcon-tripadvisor !important;
+            }
+
+            strong.place-detail__data__label,
+            span.place-detail__data__label,
+            .review__rating-date{
+              color: $header-text-color !important;
+            }
+
+            span.module__link{
+              color: $body-text-color !important;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  $arrow-filter: url(assets/maps/back_arrow.svg) !default;
+  $arrow-filter-dark: url(assets/maps/back_arrow_dark.svg);
+
+  @if $theme-dark{
+    $arrow-filter: $arrow-filter-dark;
+  }
+
+  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon,
+  .vertical--map--sidebar-left .vertical--map__sidebar__header__link__icon--back{
+    background-image: $arrow-filter !important;
+  }
+}
+
+
+
+
+
+
+
+
+//Directions
+.has-directions{
+
+  .vertical--map__sidebar__inner{
+    .directions-results{
+      .directions-route{
+        .directions-route-overview{
+          &:hover{
+            background-color: $ui-bg-color-hover-secondary !important;
+          }
+        }
+        .directions-route-step-list{
+          background-color: $ui-bg-color-hover !important;
+
+          .directions-route-step-list__container{
+            .directions-route-step{
+              border-bottom-color: $panel-border-color !important;
+
+              .directions-col {
+
+                &.directions-col--icon{
+                  img.directions-col--icon__image{
+
+                  }
+                }
+                &.directions-col--content{
+                  .directions-route-step__heading{
+                    color: $header-text-color !important;
+                  }
+                  .directions-route-step__instructions{
+                    color: $body-text-color !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  // header
+  .vertical--map__sidebar__header{
+    .vertical--map__sidebar__header__content{
+      .vertical--map__sidebar__header__close-btn{
+        color: $header-text-color !important;
+      }
+      form.directions-search{
+        .directions-search__mode{
+          .directions-search__mode__type{
+            color: $header-text-color !important;
+          }
+        }
+        .directions-search__input-container{
+          .directions-search__icons{
+
+          }
+          .directions-search__inputs{
+            .map-searchbar.map-searchbar--directions{
+              // background-color: $ui-bg-color !important;
+              #search_form.search--header{
+                background-color: $ui-bg-color-hover !important;
+                border-color: $ui-bg-color-hover !important;
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+
+                .search__input--adv,
+                .search__clear{
+                  color: $header-text-color !important;
+                }
+                .search__clear{
+                  font-family: $ddg-icons !important;
+                }
+
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

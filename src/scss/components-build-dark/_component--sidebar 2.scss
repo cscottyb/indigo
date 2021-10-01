@@ -1,0 +1,41 @@
+//
+//
+// _transparentSideBar.scss
+//
+//
+
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm,
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg body#pg-index{
+  .nav-menu--slideout{
+    background-color: $background-color !important;
+    -webkit-box-shadow: -1px 0 0 $panel-border-color !important;
+    -moz-box-shadow: -1px 0 0 $panel-border-color !important;
+    -ms-box-shadow: -1px 0 0 $panel-border-color !important;
+    -o-box-shadow: -1px 0 0 $panel-border-color !important;
+    box-shadow: -1px 0 0 $panel-border-color !important;
+
+    .nav-menu__close{
+      color: $body-text-color !important;
+
+      &:hover{
+        color: $header-text-color !important;
+      }
+    }
+
+    .nav-menu__heading{
+      color: $header-text-color !important;
+    }
+
+    .nav-menu__item{
+      a{
+        color: $body-text-color !important;
+
+        &:hover{
+          color: $theme-color !important;
+
+        }
+      }
+    }
+  }
+}

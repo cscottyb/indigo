@@ -1,0 +1,79 @@
+//see component--tile.scss
+
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  // .metabar{
+  //
+  // }
+
+  .sidebar-filters{
+    color: $header-text-color !important;
+
+  .sidebar-filter__show-more {
+      @include button-bg($background-color, 2);
+      color: $theme-color !important;
+      padding: 0.4em 0 !important;
+      text-align: center !important;
+      &:hover{
+        text-decoration: none !important;
+      }
+
+    }
+
+
+  }
+
+
+
+  .zci--products{
+    .tile-wrap{
+      margin-top: 40px !important;
+      .tileview__products.has-tiles--grid{
+        .tile{
+          .tile__media__promotion-label{
+            @include modal-translucency;
+            border-color: $modal-border-color !important;
+            color: $header-text-color !important;
+          }
+
+          &.tile--products{
+
+            h6.tile__title{
+              color: $header-text-color !important;
+            }
+
+            .tile--pr__rating.tile__rating{
+              .review-count{
+                color: $body-text-color !important;
+              }
+            }
+
+            .tile--pr__sub{
+              .price{
+                .tile--pr__price{
+                  color: $header-text-color !important;
+                }
+                .tile--pr__original-price{
+                  color: $body-text-color !important;
+                }
+              }
+              .tile--pr__brand{
+                color: $body-text-color !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bing .sidebar-filter__option,
+  .bing .sidebar-filter__title{
+    color: $header-text-color !important;
+
+  }
+
+  .zci.has-sidebar-filters .metabar .metabar__secondary-text{
+    color: $header-text-color !important;
+  }
+}

@@ -1,0 +1,133 @@
+@use "sass:math";
+
+//
+// modules--carousel
+//
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  .module.module--carousel{
+    .module--carousel__left,
+    .module--carousel__right{
+      background-color: $theme-color !important;
+      color: $background-color !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      border: none !important;
+      &:hover{
+        color: $background-color !important;
+        background-color: $btn-bg-theme-hover !important; //$ui-bg-color-hover-secondary
+      }
+    }
+    .ddgsi-right:before,
+    .ddgsi-left:before {
+    position: relative;
+    top: 1px;
+    }
+    .module__header.module__header--link {
+      font-weight: 600 !important;
+      font-size: 1.125em !important;
+
+      &:hover{
+        text-decoration: none !important;
+      }
+    }
+    .module--carousel__item{
+      @include card-button;
+      background-color: darken($ui-bg-color, 1);
+
+      .module--carousel__image{
+        background-position:center;
+        transition: all .2s ease;
+        background-size: 100%;
+      }
+
+      &:hover .module--carousel__image{
+        // background-size: 105%;
+      }
+    }
+
+    .module--carousel__image-wrapper{
+      background-color: transparent !important;
+      background: transparent !important;
+
+      .module--carousel__placeholder{
+        background-color: $theme-color !important;
+      }
+
+      .module--carousel__image.is-contain-image{
+        // border-radius: $border-radius / 2 !important;
+        border-radius: math.div($border-radius, 2) !important;
+      }
+    }
+
+    .module--carousel__body{
+      a.module--carousel__body__title{
+        text-decoration-color: $body-text-color !important;
+        color: $header-text-color !important;
+        font-weight: 500 !important;
+        -webkit-font-smoothing: $font-smoothing !important;
+        font-size: 1.125em !important;
+
+      }
+      .module--carousel__extra-row,
+      .module--carousel__gray-text{
+        color: $ui-bg-color-hover-secondary !important;
+      }
+      .module--carousel__body__content{
+        color: $body-text-color !important;
+      }
+
+      .module--carousel__body__pricing{
+        .module--carousel__body__price{
+          color: $body-text-color !important;
+        }
+      }
+
+    }
+    .module--carousel__footer{
+      // background: linear-gradient(0deg, rgba($ui-bg-color, 1) 0%, rgba($ui-bg-color, 1) 67%, rgba($ui-bg-color, 0.85) 79%, rgba($ui-bg-color, 0) 100%);
+
+      .result__url{
+        color: $body-text-color !important;
+      }
+      .module--carousel__source.result__url{
+        color: $body-text-color !important;
+      }
+      .module--carousel__extra-row{
+        color: $body-text-color !important;
+      }
+      .module--carousel__more-at{
+        span.module--carousel__gray-text{
+          color: $body-text-color !important;
+        }
+      }
+      .sep{
+        border-left: 1px solid transparent !important;
+      }
+      .tile__time{
+        color: $body-text-color !important;
+      }
+
+      .module--carousel__gray-text,
+      .one-line{
+        color: $body-text-color !important;
+      }
+
+    }
+    .module--carousel__main-source{
+      a{
+        color: $body-text-color !important;
+      }
+    }
+    .feedback-prompt{
+      display: $feedback-prompt_display !important;
+    }
+
+
+
+    .module--carousel__item:hover .module--carousel__footer{
+      // background: linear-gradient(0deg, rgba($ui-bg-color-hover-secondary, 1) 0%, rgba($ui-bg-color-hover-secondary, 1) 67%, rgba($ui-bg-color-hover-secondary, 0.85) 79%, rgba($ui-bg-color-hover-secondary, 0) 100%);
+    }
+
+  }
+}

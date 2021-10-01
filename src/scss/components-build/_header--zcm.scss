@@ -12,14 +12,16 @@ html.has-zcm{
 
       &:hover,
       &:active{
-        border-bottom: solid 1px transparent !important;
+        border-bottom: solid 1px $body-text-color !important;
         cursor: default !important;
         background-color: transparent !important;
+        padding-bottom: 1px !important;
       }
       &.is-active{
         border-bottom: solid 1px $header-text-color !important;
         cursor: default !important;
         background-color: transparent !important;
+        padding-bottom: 1px !important;
       }
       &.dropdown__button{
         margin: 0 0.5em !important;

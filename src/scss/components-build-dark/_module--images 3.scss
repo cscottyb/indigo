@@ -1,0 +1,54 @@
+//
+// module--images
+//
+
+@use "sass:math";
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  .module.module--images{
+    .module__header.module__header--link {
+      font-weight: 500 !important;
+      font-size: 1.125em !important;
+
+      b{
+        font-weight:600 !important;
+      }
+
+      &:hover{
+        text-decoration: none !important;
+      }
+    }
+    .module--images__thumbnails{
+      // padding: 1px !important;
+      overflow: visible !important;
+    }
+    .module__footer {
+      font-weight: 500 !important;
+      a{
+        color: $theme-color !important;
+      }
+
+      b{
+        font-weight:600 !important;
+      }
+    }
+    .module--images__thumbnails__tile{
+      border-radius: math.div($border-radius, 4) !important;
+      &:hover{
+        box-shadow: 0 0 1px 1px $theme-color !important;
+      }
+    }
+  }
+}
+
+// @media (prefers-color-scheme: dark) {
+//   html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+//     .module.module--images{
+//       .module__footer {
+//         a{
+//           color: $theme-color !important;
+//         }
+//       }
+//     }
+//   }
+// }

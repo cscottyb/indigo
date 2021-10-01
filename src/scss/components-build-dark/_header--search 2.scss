@@ -1,0 +1,54 @@
+@use "sass:math";
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm form#search_form,
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg body#pg-index form#search_form_homepage{
+  background-color: $ui-bg-color !important;
+  // background-color: hsla(hue($theme-color) + 0, (13 + 5.5), (94 / 2) + 6, 0.1) !important;
+  background-color: rgba($ui-400, 0.1) !important;
+  // border-radius: ($border-radius / 2) !important;
+  border-radius: math.div($border-radius, 2) !important;
+  box-shadow: none !important;
+  // border: 1px solid hsla(hue($theme-color), 13%, 47%, 0.0) !important;
+  border: rgba($ui-400, 0.1) !important;
+  color: $header-text-color !important;
+
+  input#search_form_input,
+  input#search_form_input_homepage{
+    color: $header-text-color !important;
+  }
+  input#search_button,
+  input#search_button_homepage{
+    font-family: 'ddg-serp-icons' !important;
+  }
+
+  .search__button{
+    background-color: transparent !important;
+    color: $body-text-color !important;
+
+  }
+
+  .search__clear{
+    font-family: $ddg-icons !important;
+  }
+
+  .search__button:hover,
+  .search__button:focus,
+  .search:hover .search__button:focus,
+  .search--header.has-text.search--hover .search__button:hover,
+  .search--header.has-text.search--focus .search__button:hover,
+  .search--home.has-text .search__button:focus,
+  .search--home.has-text .search__button:hover{
+    background-color: transparent !important;
+    color: $theme-color !important;
+  }
+
+  .search:hover .search__button,
+  .search__input:focus ~ .search__button,
+  .search--header.has-text.search--hover .search__button,
+  .search--header.has-text.search--focus .search__button,
+  .search--home.has-text .search__button {
+    background-color: transparent !important;
+    color: darken($theme-color, 3%) !important;
+  }
+
+}

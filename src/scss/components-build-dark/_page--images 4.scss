@@ -1,0 +1,45 @@
+@use "sass:math";
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  .tile-wrap{
+    .tileview__images{
+      .tile.tile--img{
+        border-radius: math.div($border-radius, 4) !important;
+        // overflow: hidden !important;
+
+        a.tile--img__sub{
+          .tile--img__title{
+            color: $header-text-color !important;
+          }
+          .tile--img__domain{
+            color: $body-text-color !important;
+          }
+          &:hover{
+            text-decoration-color: $body-text-color !important;
+
+            .tile--img__title{
+              text-decoration-color: $body-text-color !important;
+            }
+            .tile--img__domain{
+              text-decoration-color: $theme-color !important;
+            }
+          }
+        }
+
+        &:hover{
+          // box-shadow: none !important;
+          border: solid 1px $theme-color !important;
+        	border-bottom-color: $theme-color !important;
+        	background-color: $theme-color !important;
+
+          .tile--img__media{
+            box-shadow: none !important;
+          }
+          a.tile--img__sub .tile--img__domain{
+            color: $theme-color !important;
+          }
+        }
+      }
+    }
+  }
+}

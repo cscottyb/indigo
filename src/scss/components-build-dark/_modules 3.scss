@@ -1,0 +1,36 @@
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  .module{
+    .module__header{
+      color: $header-text-color !important;
+
+      &:hover{
+        color: $body-text-color !important;
+      }
+    }
+    .module__content{
+      .module__body{
+        .module__image{
+          a.module__image{
+
+          }
+        }
+        .module__title{
+          span.module__title__link{
+            color: $header-text-color !important;
+          }
+        }
+      }
+    }
+    a.module__footer{
+      &:before{
+        transition: left 0.2s ease-in !important;
+      }
+      &:hover{
+        &:before{
+          left: 0.25em !important;
+        }
+      }
+
+    }
+  }
+}

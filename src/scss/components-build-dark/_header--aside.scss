@@ -4,6 +4,11 @@ html.dark-bg.has-zcm{
     .header-wrap{
       .header--aside{
         margin: 1.375em 1em auto 1em !important;
+
+        .text_promo{
+          width: auto !important;
+          display: $clutter-d !important;
+        }
       }
       .header--aside__item{
 

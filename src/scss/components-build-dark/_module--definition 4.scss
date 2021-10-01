@@ -1,0 +1,40 @@
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm{
+  .zci--dictionary_definition{
+
+    .c-base{
+      max-width: 648px !important;
+      h3{
+        color: $header-text-color !important;
+
+        .play-btn__icn{
+          background-color: $theme-color !important;
+          color: $background-color !important;
+
+          &:hover{
+            background-color: $body-text-color !important;
+          }
+        }
+      }
+      ul{
+        li{
+          line-height: 1.5em !important;
+          color: $body-text-color !important;
+
+          .zci__def__part-of-speech{
+            text-align: right !important;
+            color: $header-text-color !important;
+          }
+          .zci__def__definition{
+            color: $header-text-color !important;
+          }
+        }
+      }
+      .zci__def__links{
+        margin-top: 1em !important;
+        color: $body-text-color !important;
+      }
+    }
+
+
+  }
+}

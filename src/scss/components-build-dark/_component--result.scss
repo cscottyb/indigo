@@ -1,4 +1,4 @@
-html.dark-bg.has-zcm{
+html.dark-bg.has-zcm.is-link-style-exp{
   .results{
     .result{
       border-radius: 1em !important;
@@ -9,6 +9,8 @@ html.dark-bg.has-zcm{
 
         h2.result__title{
           // display: inline-block !important;
+          order: 0 !important;
+          margin: 0 !important;
 
           a.result__a{
             font-weight: $search-result-title-weight !important;
@@ -20,29 +22,57 @@ html.dark-bg.has-zcm{
             &:hover{
               text-decoration: none !important;
               color: $search-result-title-hover !important;
+
+              // .result__url__domain{
+              //   text-decoration: underline !important;
+              // }
+              // .result__url__full{
+              //   text-decoration: none !important;
+              // }
+
+
             }
             &:visited{
               color: $search-result-title-visited !important;
             }
           }
 
-          &:hover ~ div .result__extras__url a.result__url{
+          &:hover ~ div .result__extras__url a.result__url span.result__url__domain{
             text-decoration: underline !important;
           }
 
         }
 
         .result__extras{
+          margin-bottom: 2px !important;
+          letter-spacing: 0px !important;
           .result__extras__url{
             a.result__url{
               -webkit-font-smoothing: auto !important;
               color: $search-result-url !important;
 
+              .result__url__full{
+                color: $search-result-url !important;
+                transition: all .02s ease !important;
+              }
+
               &:hover{
                 color: $search-result-url-hover !important;
+
+                .result__url__domain{
+                  text-decoration: underline !important;
+                }
+
+                .result__url__full{
+                  color: $search-result-url-hover !important;
+                }
               }
               &:visited{
                 color: $search-result-url-visited !important;
+
+                .result__url__full{
+                  color: $search-result-url-visited !important;
+                }
               }
 
             }
@@ -78,6 +108,15 @@ html.dark-bg.has-zcm{
       }
       &.highlight{
         @include card;
+
+        .result__title{
+          .result__a{
+            text-decoration: none !important;
+          }
+        }
+        .result__url{
+          // text-decoration: none !important;
+        }
       }
     }
 
@@ -103,10 +142,18 @@ html.dark-bg.has-zcm{
 }
 
 html.dark-bg.has-zcm{
-  .is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news{
+  .is-mobile .results_links_deep,
+  .is-mobile .results_links,
+  .is-mobile .result--news{
     background: $background-color !important;
     border-color: $ui-border-color !important;
     border-bottom-color: $search-results-border !important;
     box-shadow: none !important;
+  }
+
+  &.is-link-style-exp:not(.is-mobile):not(.is-mobile-device) #ads .results_links,
+  &.is-link-style-exp:not(.is-mobile):not(.is-mobile-device) #links .results_links_deep,
+  &.is-link-style-exp:not(.is-mobile):not(.is-mobile-device) :is(#links,#ads) .result__sitelinks--organics.result__sitelinks--small{
+    max-width: 100% !important;
   }
 }
