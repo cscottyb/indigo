@@ -121,7 +121,7 @@ html.dark-bg.has-zcm{
     }
 
     a.js-carousel-module-more.module__footer{
-      @include card-button;
+      @include theme-card-button;
     }
 
 

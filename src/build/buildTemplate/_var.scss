@@ -2,8 +2,11 @@
 
 #var{content:'var';}
 
-$theme-color: #698bff !default;
-$theme-color-dark: #91A8F2;
+// $theme-color: #698bff !default;
+// $theme-color-dark: #91A8F2;
+
+$theme-color: #3969EF !default;
+$theme-color-dark: #769DFF;
 
 @if $theme-dark{
   $theme-color: $theme-color-dark;
@@ -254,5 +257,32 @@ $ads_display: none; //display: none or block
   @else{
     // border-radius: $border-radius / $btn-radius-divisions !important;
     border-radius: math.div($border-radius, $btn-radius-divisions) !important;
+  }
+}
+
+
+
+
+
+
+@mixin theme-card {
+  background-color: rgba($theme-color, 0.1) !important;
+  // border: solid 1px $ui-bg-color !important;
+  border: solid 1px rgba($theme-color, 0.1) !important;
+  border-radius: $border-radius !important;
+  box-shadow: none !important;
+  // border-bottom-color: $ui-bg-color !important;
+  border-bottom-color: rgba($theme-color, 0.1) !important;
+}
+
+@mixin theme-card-button {
+  @include theme-card;
+
+  &:hover{
+    background-color: rgba($theme-color, 0.2) !important;
+    border: solid 1px rgba($theme-color, 0.2) !important;
+    // border-radius: $border-radius !important;
+    box-shadow: none !important;
+    border-bottom-color: rgba($theme-color, 0.2) !important;
   }
 }
