@@ -38,6 +38,10 @@ html.has-zcm{
         box-shadow: 0 0 1px 1px $theme-color !important;
       }
     }
+
+    a.js-images-show-more.module__footer{
+      @include theme-card-button;
+    }
   }
 }
 
