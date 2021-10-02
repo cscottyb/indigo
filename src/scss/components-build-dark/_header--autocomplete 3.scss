@@ -1,0 +1,87 @@
+// $autocomplete-border-color: $modal-border-color; //hsl(hue($theme-color), 25%, 92%);
+// $autocomplete-divider-color: $modal-divider-color; //hsl(hue($theme-color), 26%, 88%);
+// $autocomplete-bg-color: $modal-bg-color; //hsl(hue($theme-color), 50%, 99%);
+// $autocomplete-body-color: $modal-text-color;
+
+@use "sass:math";
+
+$autocomplete-padd-size: 0.5em;
+// $autocomplete-padd-size-3fifths: $autocomplete-padd-size * 3/5;
+$autocomplete-padd-size-3fifths: math.div($autocomplete-padd-size * 3, 5);
+
+@mixin autocomplete-translucency {
+  @if $browser-support == 0{
+    background-color: $modal-bg-color !important;
+  }
+  @else if $browser-support == 1{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $modal-bg-color !important;
+    background-color: transparentize($modal-bg-color, .01) !important;
+  }
+  @else if $browser-support == 2{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $background-color !important;
+    background-color: transparentize($modal-bg-color, .01) !important;
+  }
+  @else if $browser-support == 3{
+    -webkit-backdrop-filter: $backdrop-filter !important;
+    backdrop-filter: $backdrop-filter !important;
+    background-color: $background-color !important;
+    background-color: transparentize($modal-bg-color, $backdrop-opacity) !important;
+  }
+  @else{
+    background-color: $autocomplete-bg-color !important;
+  }
+}
+
+
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.has-zcm,
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg body#pg-index{
+  .search__autocomplete{
+    background: transparent !important;
+    border: solid 0px transparent !important;
+    margin-top: 2px !important;
+    width: 104% !important;
+    left: -2% !important;
+    max-height: 236px !important;
+    box-shadow: 0px 2px 8px -6px #000000 !important;
+    overflow: visible !important;
+
+    .acp-wrap{
+      @include autocomplete-translucency;
+      border: 1px solid $modal-border-color !important;
+
+      border-radius: .5em !important;
+      padding: 0.75em 0 !important;
+      max-height: 265px !important;
+      max-height: initial !important;
+
+      .acp{
+        background-color: transparent !important;
+        padding: 0.3em 0.65em !important;
+        margin: 0em 0.7em !important;
+        color: $modal-text-color !important;
+        border-radius: 0.25em;
+
+        &.acp--highlight{
+          background-color: $modal-bg-color-hover !important;
+          color: $modal-text-color-hover !important;
+        }
+      }
+    }
+  }
+
+}
+
+html.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg.dark-bg body#pg-index{
+  .search__autocomplete{
+    max-height: 265px;
+
+    .acp-wrap{
+      max-height: 265px;
+    }
+  }
+}
