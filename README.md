@@ -1,6 +1,6 @@
 # Indigo
 
-DuckDuckGo theming project. Alpha v0.1.5
+DuckDuckGo theming project. Alpha v0.1.x
 
 
 
@@ -10,7 +10,7 @@ DuckDuckGo theming project. Alpha v0.1.5
 - Updated UI using css properties like backdrop-filter.
 - Light/Dark themes.
 - Coming in Beta: SASS customization.
-- Coming Soon: Support for Blink, Mozilla, and Webkit browsers.
+- Support for Blink, Mozilla, and Webkit browsers.
 - Coming Soon: WGAC AA compliant color scheme for better accessibilities.
 
 
@@ -18,7 +18,7 @@ DuckDuckGo theming project. Alpha v0.1.5
 Indigo themes will only override css styles on the DuckDuckGo landing page and the search results pages through a desktop browsers. No styling for mobile devices or the official app.
 
 - Download and Unzip latest Release to your file directory from https://github.com/cscottyb/indigo/releases
-- Find the .css file you want to use by selection browser and variants parameters.
+- Find the .css file you want to use by selecting your browser and variants parameters.
 - ALPHA MESSAGE: For the best experience for *all* browser, select a theme from the `compatible` folder.   
 
 ### Safari
@@ -47,6 +47,7 @@ Firefox users can use the more advanced chrome theme by changing Advanced Prefer
 \* click the two-way arrow on the right to easily change settings.
 
 Video Instructions including enabling translucency: https://youtu.be/XrZWXhKnZ_4
+
 Video Instructions with default settings: https://youtu.be/HLIDgRbWGqI
 
 
